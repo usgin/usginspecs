@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--*************************************************************************************************
+*** Example ISO 19139 Geospatial Service Metadata  based on the USGIN v1.1 Profile 
+*** with explicitly linked references to coupled resources (map layers) for a WMS service
+*** by USGIN Standards and Protocols Drafting Team
+*** U.S. Geoscience Information System (USGIN) - http://lab.usgin.org
+*** Contributors: Wolfgang Grunberg, Stephen M Richard
+*** 01/20/2010
+*** 
+*** DISCLAIMER: this is not an authoritative metadata example but an aide to get started. 
+*** Scope notes are mostly from NAP or ISO documentation; refer to 
+*** the USGIN profile document for more specific and reliable guidelines.
+***
+*** Validated against http://www.isotc211.org/2005/gmd (ISO 19115, CSW 2.0.2) 
+*** and http://www.isotc211.org/2005/srv (ISO 19119, CSW 2.0.2)
+*** Follows the USGIN ISO 19139 Dataset Metadata Profile v1.1 
+*** a derivative of the North American Profile (NAP) 
+***
+*** NOTES:
+*** - Codelists: 
+*** Most ISO metadata profiles and applications use ISO codelists or codelists that use ISO's codelist names. NAP does not use ISO codelist names. USGIN recommends using ISO over NAP codelists to ensure interoperability. Remember, the codeList attribute points to a Uniform Resource Identifier (URI) which defines an item's identity. It can be a URN or a URL.
+*** - napm schema extension: 
+*** http://www.cits.rncan.gc.ca/html/brodeurj/.protege/.napMetadata/napMetadataWebsite/napMetadataTools/napXsd/napm is the namespace for NAP extensions in xmlns:napm. Its schema is located at http://www.cits.rncan.gc.ca/html/brodeurj/.protege/.napMetadata/tools/napXsd/napm/napm.xsd. However, that schema does not resolve properly because it also refernces a local copy of gmd. USGIN does not follow this NAP requirement because it constitutes a barier to interoperability.
+*** - Language code: 
+*** NAP demands <ISO639-2/T three letter language code - lower case><;><blank space><ISO3166-1 three letter country code - upper case>. However, NAP's requirement is not interoperable and USGIN prefers ISO's <ISO639-2/T three letter language code - lower case> formatting.
+***
+*** KEY: (NAP-USGIN) - M/C/O/X (Mandatory, Conditional, Optional, Not Used) 
+***
+**********************************************************************************************-->
+
+<!-- USGIN ISO 19139 geospatial service metadata record with explicitly linked references to coupled resources (map layers) for a WMS service -->
+<gmd:MD_Metadata 
+	xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+	xmlns:gco="http://www.isotc211.org/2005/gco" 
+	xmlns:gml="http://www.opengis.net/gml" 
+	xmlns:srv="http://www.isotc211.org/2005/srv" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+		http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd 
+		http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd
+		">
+	<!-- (M-M) Metadata file identifier - A unique File Identifier (GUID) - USGIN recommends using a valid Universally Unique Identifier (UUID) -->
+	<gmd:fileIdentifier>
+		<gco:CharacterString>53e3ad439d6043e25d875f3959445c3d7d9a1</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<!-- (M-M) Metadata language - NAP demands <ISO639-2/T three letter language code - lower case><;><blank space><ISO3166-1 three letter country code - upper case>. However, NAP's requirement is not interoperable and USGIN prefers ISO's <ISO639-2/T three letter language code - lower case> formatting. -->
+	<!-- NAP Example -->
+	<!--
+	<gmd:language>
+		<gco:CharacterString>eng; USA</gco:CharacterString>
+	</gmd:language>
+	-->
+	<!-- ISO Example -->
+	<gmd:language>
+		<gco:CharacterString>eng</gco:CharacterString>
+	</gmd:language>
+	<!-- (M-M) Metadata character set  - NAP specifies default is "utf8", codelist = napMD_CharacterSetCode. USGIN requires that a character set code is defined to facilitate CSW servers (deegree, GeoNetwork, etc.). -->
+	<gmd:characterSet>
+		<!-- MD_CharacterSetCode names: {ucs2, ucs4, utf7, utf8, utf16, 8859part1, 8859part2, 8859part3, 8859part4, 8859part5, 8859part6, 8859part7, 8859part8, 8859part9, 8859part10, 8859part11, 8859part13, 8859part14, 8859part15, 8859part16, jis, shiftJIS, eucJP, usAscii, ebcdic, eucKR, big5, GB2312}.  -->
+		<!-- NAP example -->
+		<!--
+		<gmd:MD_CharacterSetCode 
+			codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_95" 
+			codeListValue="RI_458">utf8</gmd:MD_CharacterSetCode>
+		-->
+		<!-- ISO example -->
+		<gmd:MD_CharacterSetCode 
+			codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" 
+			codeListValue="utf8">UTF-8</gmd:MD_CharacterSetCode>
+	</gmd:characterSet>
+	<!-- (M-M) Resource type - Define if this record is a: dataset (default), service, feature, software, etc. -->
+	<gmd:hierarchyLevel>
+		<!-- MD_ScopeCode code names: {attribute, attributeType, collectionHardware, collectionSession, dataset, series, nonGeographicDataset, dimensionGroup, feature, featureType, propertyType, fieldSession, software, service, model, tile}. -->
+		<!-- NAP example -->
+		<!--
+		<gmd:MD_ScopeCode 
+			codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_108" 
+			codeListValue="RI_631">service</gmd:MD_ScopeCode>
+		-->
+		<!-- ISO example -->
+		<gmd:MD_ScopeCode 
+			codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" 
+			codeListValue="service">service</gmd:MD_ScopeCode>
+	</gmd:hierarchyLevel>
+	<!-- (O-M) Resource hierarchy level name - ISO 19115 assumes that the metadata hierarchy level name defaults to “dataset” if it is not documented. NAP does not use it, recognizing that it is redundant. USGIN makes this property mandatory to identify the USGIN resource type (see USGIN Profile, "Resources of Interest"). Default USGIN hierarchyLevelName.CharacterString is “Dataset.” Encode hierarchy by including hierarchyLevelName elements for all broader resource categories. E.g. default should also include a hierarchyLevelName=”Collection” element. For services USGIN hierarchyLevelName.CharacterString is “Service”. As use cases develop that provide rationale for definition of sub-categories of service, the resource category list will be expanded. -->
+	<gmd:hierarchyLevelName>
+		<gco:CharacterString>Service</gco:CharacterString>
+	</gmd:hierarchyLevelName>
+	<!-- (M-M) Metadata point of contact - Point of contact for the metadata record, e.g. for users to report errors, updates to metadata, etc. -->
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<!-- (M-M) (individualName + organisationName + positionName) > 0 -->
+			<gmd:individualName>
+				<gco:CharacterString>Ryan Clark</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:positionName>
+				<gco:CharacterString>GIS Manager</gco:CharacterString>
+			</gmd:positionName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<!-- Phone -->
+					<gmd:phone>
+						<gmd:CI_Telephone>
+							<gmd:voice>
+								<gco:CharacterString>520.770.3500</gco:CharacterString>
+							</gmd:voice>
+							<gmd:facsimile>
+								<gco:CharacterString>520.770.3505</gco:CharacterString>
+							</gmd:facsimile>
+						</gmd:CI_Telephone>
+					</gmd:phone>
+					<!-- Address -->
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:deliveryPoint>
+								<gco:CharacterString>416 W. Congress St., Suite 100</gco:CharacterString>
+							</gmd:deliveryPoint>
+							<gmd:city>
+								<gco:CharacterString>Tucson</gco:CharacterString>
+							</gmd:city>
+							<gmd:administrativeArea>
+								<gco:CharacterString>Arizona</gco:CharacterString>
+							</gmd:administrativeArea>
+							<gmd:postalCode>
+								<gco:CharacterString>85701-1381</gco:CharacterString>
+							</gmd:postalCode>
+							<gmd:country>
+								<gco:CharacterString>USA</gco:CharacterString>
+							</gmd:country>
+							<!-- (O-M) Metadata point of contact e-mail address - mandatory in USGIN -->
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>metadata@azgs.az.gov</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+					<!-- (O-O) online resources - this is the online resource to contact the metadata person-->
+					<gmd:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://www.azgs.az.gov</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gco:CharacterString>http</gco:CharacterString>
+							</gmd:protocol>
+							<gmd:description>
+								<gco:CharacterString>Arizona Geological Survey Web Site</gco:CharacterString>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onlineResource>
+					<!-- (O-O) hours of service -->
+					<gmd:hoursOfService>
+						<gco:CharacterString>8 AM to 5 PM Mountain Standard time (no daylight savings)</gco:CharacterString>
+					</gmd:hoursOfService>
+					<!-- (O-O) contact instructions -->
+					<gmd:contactInstructions>
+						<gco:CharacterString>Fill out contact form at http://www.azgs.az.gov </gco:CharacterString>
+					</gmd:contactInstructions>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<!-- (M-M) ISO 19139 Mandatory: contact role -->
+			<gmd:role>
+				<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}.  -->
+				<!-- NAP example -->
+				<!--
+				<gmd:CI_RoleCode 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+					codeListValue="RI_414">pointOfContact</gmd:CI_RoleCode>
+				-->
+				<!-- ISO example -->
+				<gmd:CI_RoleCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+					codeListValue="pointOfContact">point of contact</gmd:CI_RoleCode>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>	
+	<!-- (X-O) Metadata should include a URL that locates a thumbnail logo for organizations related to the metadata origination, the organization hosting the catalog that returned the metadata, the organization that originated the data, and the organization hosting online services that provide access to the data. -->
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:organisationName>
+				<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:onlineResource>
+						<gmd:CI_OnlineResource>
+							<!-- Icon image file (e.g. tif, png, jpg) for the metadata originator. This Icon will be displayed in search results to credit the metadata originator. -->
+							<gmd:linkage>
+								<gmd:URL>http://www.azgs.az.gov/logo/metadata/azgs.png</gmd:URL>
+							</gmd:linkage>
+							<!-- (X-C) For URL’s that indicate icon thumbnails, the CI_OnlineResource/name should be ‘icon’. -->
+							<gmd:name>
+								<gco:CharacterString>icon</gco:CharacterString>
+							</gmd:name>
+						</gmd:CI_OnlineResource>
+					</gmd:onlineResource>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}.  -->
+				<!-- NAP example -->
+				<!--
+				<gmd:CI_RoleCode 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+					codeListValue="RI_413">originator</gmd:CI_RoleCode>
+				-->
+				<!-- ISO example -->
+				<gmd:CI_RoleCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+					codeListValue="originator">originator</gmd:CI_RoleCode>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<!-- (M-M) Metadata date stamp - USGIN profile requires use of dateStamp/gco:DateTime (Note this contrasts with INSPIRE mandate to use dateStamp/gco:Date). This is the date and time when the metadata record was created or updated (following NAP). -->
+	<gmd:dateStamp>
+		<!-- Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00) -->
+		<gco:DateTime>2009-11-17T10:00:00</gco:DateTime>
+	</gmd:dateStamp>
+	<!-- (M-M) metadata standard - NAP specifies "NAP - Metadata". USGIN profile conformant metadata is indicated by using “ISO-NAP-USGIN" -->
+	<gmd:metadataStandardName>
+		<gco:CharacterString>ISO-USGIN</gco:CharacterString>
+	</gmd:metadataStandardName>
+	<!-- (O-M) USGIN profile version -->
+	<gmd:metadataStandardVersion>
+		<gco:CharacterString>1.2</gco:CharacterString>
+	</gmd:metadataStandardVersion>
+	<!-- (O-C) Dataset Identifier - For USGIN, this is a string that uniquely identifies the described resource. If the resource has an identifier, it should be included here; if the resource will be referenced from other metadata, it must have an identifier here. If the dataset is coupled to a service, the value of the MD_Metadata/dataSetURI attribute is the unique resource identifier used by srv:coupledResource to link the service with the dataset. For the USGIN profile, the MD_Distribution/transferOptions/MD_DigitalTransferOptions/ online/CI_OnlineResource is used to specify URLs for access to the resource. -->
+	<!-- This locale element example implies that all character string elements are available in English (from the MD_Metadata/language element), and in French. -->
+	<!--
+	<gmd:locale>
+		<gmd:PT_Locale id="FR">
+			<gmd:languageCode>
+				<gmd:LanguageCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#LanguageCode" 
+					codeListValue="fra">Français</gmd:LanguageCode>
+			</gmd:languageCode>			
+			<gmd:characterEncoding>
+				--><!-- ISO example --><!--
+				<gmd:MD_CharacterSetCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" 
+					codeListValue="utf8">UTF-8</gmd:MD_CharacterSetCode>
+			</gmd:characterEncoding>
+		</gmd:PT_Locale>
+	</gmd:locale>
+	-->
+	<!-- (C-C) Other Languages - If description in more than one language is provided, this property should indicate what those languages are. The primary language used for metadata description is identified with MD_Metadata/language and characterSet and any additional languages are identified by MD_Metadata/locale/PT_locale elements, in which the language is provided according to ISO 639-2/T three-letter terminology codes in lowercase, and an optional country is provided according to ISO 3166-1 three-letter codes in uppercase, and mandatory characterEncoding. -->
+		<!--
+		<gmd:locale/>
+		-->
+	<!-- (O-O) Resource spatial representation - Spatial representation Information for the dataset (resource). Best practice is to include metadata for spatial representation if the described resource is a georeferenced dataset. -->
+	<!--
+	<gmd:spatialRepresentationInfo/>
+	-->
+	<!-- (O-O) Resource’s spatial reference system - Description of the spatial and/or temporal reference systems used in the dataset. 
+		NAP specifies { (identificationInfo/spatialRepresentationType/MD_SpatialRepresentationTypeCode= "vector") or (../MD_SpatialRepresentationTypeCode = "grid"") or (../MD_SpatialRepresentationTypeCode = "tin") implies count referenceSystemInfo >= 1) } -->
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<!-- ISO 19115:2003 Corrigendum 1:2006 removes CRS and projection parameter information. It uses the new ISO 19111 instead  -->
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<!-- (C-C) Reference System identifier code - For USGIN the code should be a value from the EPSG Geodetic Parameter Dataset register (http://www.epsg-registry.org/) in the form "EPSG:nnnn" where nnnn is the EPSG code number for the CRS. -->
+					<gmd:code>
+						<gco:CharacterString>EPSG:5701</gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>urn:ogc:def:crs</gco:CharacterString>
+					</gmd:codeSpace>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+	<!-- (X-X) Metadata extension information - not used in USGIN -->
+	<!--
+	<gmd:metadataExtensionInfo/>
+	-->
+	<!--*******************-->
+	<!-- (M-M) Resource identification information - At least one of MD_DataIdentification (dataset, dataset series) or SV_ServiceIdentification (service) is required.  -->
+	<gmd:identificationInfo>
+		<!-- Resource Service Identification --> 
+		<srv:SV_ServiceIdentification>
+			<gmd:citation>
+				<!-- (M-M) Resource citation - For USGIN purposes, this should be viewed as information to identify the intellectual origin of the content in the described resource, along the lines of a citation in a scientific journal. Required content for a CI_Citation element are title, date, and responsibleParty -->
+				<gmd:CI_Citation>
+					<!-- (M-M) Resource title - USGIN recommends using titles that inform the human reader about the dataset’s content as well as its context.  -->
+					<gmd:title>
+						<gco:CharacterString>Arizona Geological Survey Web Map Service</gco:CharacterString>
+					</gmd:title>
+					<!-- (O-O) Alternate title -->
+					<!--
+					<gmd:alternateTitle/>
+					-->
+					<!-- (M-M) Resource reference date - Best practice is to include at least the date of publication or creation of the resource. The date of the resource reported in the citation corresponds to the resource’s last update version according to its update frequency. CI_Date content includes a date and dateType. Date for USGIN profile uses xs:date data type, defined thus “date uses the date/timeSevenPropertyModel, with hour, minute, and second  required to be absent.  timezoneOffset• remains optional” (http://www.w3.org/TR/xmlschema11-2). -->
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<!-- Requires an extended ISO 8601 formatted combined UTC date and time string (2001-12-17T09:30:47) -->
+								<gco:DateTime>2009-11-22T23:35:22</gco:DateTime>
+							</gmd:date>
+							<gmd:dateType>
+								<!-- CI_DateTypeCode names: {creation, publication, revision} _ NAP expands with {notAvailable, inForce, adopted, deprecated, superseded}.-->
+								<!-- NAP Example -->
+								<!--
+								<gmd:CI_DateTypeCode 
+									codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_87" 
+									codeListValue="RI_368">revision</gmd:CI_DateTypeCode>
+									-->
+								<!-- ISO Example -->
+								<gmd:CI_DateTypeCode 
+									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" 
+									codeListValue="revision">revision</gmd:CI_DateTypeCode>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<!-- (C-O) Unique resource identifier  - For USGIN,  because the Citation is for the service, this identifier should be identical to MD_Metadta/dataSetURI, and is therefore optional. For USGIN purposes, this element content value is only an identifier for the citation; it is not a URL for accessing the service. The USGIN profile requires the use of MD_Identifier element to identify resources. RS_Identifier may substitute for MD_Identifier in the ISO19139 schema, but the USGIN profile requires use of MD_Identifer. If additional codespace and version content is associated with the identifier, it should be encoded as MD_Identifier/authority/CI_Citation/alternateTitle and MD_Identifier/authority/CI_Citation/edition  -->
+					<!--
+					<gmd:identifier>
+						<gmd:RS_Identifier>
+							<gmd:code>
+								<gco:CharacterString>000000000000000000000000000000000000000</gco:CharacterString>
+							</gmd:code>
+						</gmd:RS_Identifier>
+					</gmd:identifier>				
+					-->
+					<!-- (M-M) Resource responsible party - The citation attribute provides information for citing the described resource. Citation is defined by Webster as "an act of quoting". The precise semantics of what an identification/citation is supposed to be are not very well articulated in ISO19115. For USGIN purposes, this should be viewed as information to identify the intellectual origin (or property) of the content in the described resource, along the lines of a citation in a scientific journal. Required content for a CI_Citation element are title, date, and ‘responsibleParty’.  -->
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty id="R264537">
+							<!-- (M-M) (individualName + organisationName + positionName) > 0 -->
+							<!--
+							<gmd:individualName/>
+							-->
+							<gmd:organisationName>
+								<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:positionName>
+								<gco:CharacterString>GIS Manager</gco:CharacterString>
+							</gmd:positionName>
+							<!-- (O-C) Contact Information - (phone + deliveryPoint + electronicMailAddress ) > 0. Best practice is to include at least an e-mail address -->
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>webServices@azgs.az.gov</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<!-- (M-M) ISO 19139 Mandatory: contact role - Guidance on use of role codes would be helpful for consistency, but has not been developed as yet. -->
+							<gmd:role>
+								<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}.  -->
+								<!-- NAP example -->
+								<!--
+								<gmd:CI_RoleCode 
+									codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+									codeListValue="RI_408">resourceProvider</gmd:CI_RoleCode>
+								-->
+								<!-- ISO example -->
+								<gmd:CI_RoleCode 
+									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+									codeListValue="resourceProvider">resource provider</gmd:CI_RoleCode>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+					<!-- (O-O) Resource Presentation Form - The form in which the service is available, which in the case of a service is only through the service implementation described by the metadata record, so the information here is not generally very useful. Note that the citation is to the original source of intellectual content in the described resource should be in MD_DataIdentification/citation/CI_Citation that describes the datasets operated on by the service. -->
+					<!--
+					<gmd:presentationForm gco:nilReason="not applicable"/>
+					-->
+					<!-- (O-O) Resource series - Information about the series or collection of which the cited service is a part. NAP rule: (name + issueIdentification) > 0. At this point there is not much precedent for aggregating services into a formal series, so in general this element is probably not applicable to services. -->
+					<!--
+					<gmd:series/>
+					-->
+					<!-- (O-O) Resource other citation details -->
+					<!--
+					<gmd:otherCitationDetails/>
+					-->
+					<!-- (O-C) Resource collective title - At this point there is not much precedent for aggregating services into a collections, so in general this element is probably not applicable to services. -->
+					<!--
+					<gmd:collectiveTitle/>
+					-->
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<!-- (M-M) Resource Abstract - A free text summary of the content, significance, purpose, scope, etc. of the resource. Exactly one value. -->
+			<gmd:abstract>
+				<gco:CharacterString>A collection of Web Map Service (WMS) layers created and maintained by the Arizona Geological Survey.</gco:CharacterString>
+			</gmd:abstract>
+			<!-- (O-O) Resource purpose - Summary of the intentions for which the service was developed, including objectives for creating the service and use cases it is designed to support.  -->
+			<gmd:purpose>
+				<gco:CharacterString>To provide geologic data for the state of Arizona at 1:1,000,000 scale online and free-of-charge.</gco:CharacterString>
+			</gmd:purpose>
+			<!-- (M-M) Resource Status -  -->
+			<gmd:status>
+				<!-- MD_ProgressCode names: {completed, historicalArchive, obsolete, onGoing, planned, required, underDevelopment} - NAP expands with {proposed}. Obsolete is synonymous with deprecated. -->
+				<!-- NAP Example -->
+				<!--
+				<gmd:MD_ProgressCode 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_106" 
+					codeListValue="RI_593">completed</gmd:MD_ProgressCode>
+				-->
+				<!-- ISO Example -->
+				<gmd:MD_ProgressCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" 
+					codeListValue="completed">completed</gmd:MD_ProgressCode>
+			</gmd:status>
+			<!-- (O-C) Resource service point of contact (access contact) - CI_ResponsibleParty element here would contain information for point of contact to access the resource. This information is mandatory for physical resources such as core, cuttings, samples, manuscripts. -->
+			<gmd:pointOfContact>
+				<!-- CI_Responsible party has an id in order to allow reuse of this element later in the document by an internal href; see distributionInfo/../distributor near end of document -->
+				<gmd:CI_ResponsibleParty>
+					<!-- (M-M) (individualName + organisationName + positionName) > 0 -->
+					<gmd:individualName>
+						<gco:CharacterString>Ryan Clark</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:positionName>
+						<gco:CharacterString>GIS Manager</gco:CharacterString>
+					</gmd:positionName>
+					<!-- (O-C) Contact Information - If a resource point of contact is required then (phone + deliveryPoint + electronicMailAddress) > 0. Best practice is to include at least an email address. -->
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>520-770-3500</gco:CharacterString>
+									</gmd:voice>
+									<gmd:facsimile>
+										<gco:CharacterString>520-770-3505</gco:CharacterString>
+									</gmd:facsimile>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:deliveryPoint>
+										<gco:CharacterString>416 W. Congress St. Suite 100</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>Tucson</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>Arizona</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>85701</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>USA</gco:CharacterString>
+									</gmd:country>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>ryan.clark@azgs.az.gov</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+							<!--(O-O)  "Information about Internet hosted resources: availability; URL; protocol used; resource name; resource description, and resource function." NAP -->
+							<gmd:onlineResource>
+								<gmd:CI_OnlineResource>
+									<gmd:linkage>
+										<gmd:URL>http://75.101.143.247:8080/gsvr/wms</gmd:URL>
+									</gmd:linkage>
+									<gmd:protocol>
+										<gco:CharacterString>http</gco:CharacterString>
+									</gmd:protocol>
+								</gmd:CI_OnlineResource>
+							</gmd:onlineResource>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<!-- (M-M) ISO 19139 Mandatory: contact role - Guidance on use of role codes would be helpful for consistency, but has not been developed as yet. -->
+					<gmd:role>
+						<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}.  -->
+						<!-- NAP example -->
+						<!--
+						<gmd:CI_RoleCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+							codeListValue="RI_414">pointOfContact</gmd:CI_RoleCode>
+						-->
+						<!-- ISO example -->
+						<gmd:CI_RoleCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+							codeListValue="pointOfContact">point of contact</gmd:CI_RoleCode>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<!-- (O-O) Resource Maintenance - This element provides information about the maintenance schedule or history of the service described by the metadata record. For a service, only one MD_MaintenanceInformation elements may be included; for which the MD_ScopeDescription napMD_ScopeCode will be ‘service’. If MD_MaintenanceInformation is present, then maintenanceAndUpdateFrequency is mandatory.  -->
+			<gmd:resourceMaintenance>
+				<gmd:MD_MaintenanceInformation>
+					<gmd:maintenanceAndUpdateFrequency>
+						<!-- MD_MaintenanceFrequencyCode names: {continual, daily, weekly, fortnightly, monthly, quarterly, biannually, annually, asNeeded, irregular, not-Planned, unknown} - NAP expands with {semimonthly}. -->
+						<!-- NAP Example -->
+						<!--
+						<gmd:MD_MaintenanceFrequencyCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_102" 
+							codeListValue="RI_540">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+						-->
+						<!-- ISO Example -->
+						<gmd:MD_MaintenanceFrequencyCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" 
+							codeListValue="asNeeded">as needed</gmd:MD_MaintenanceFrequencyCode>
+					</gmd:maintenanceAndUpdateFrequency>
+				</gmd:MD_MaintenanceInformation>
+			</gmd:resourceMaintenance>
+			<!-- (O-O) Graphic overview of resource - Highly recommended to include a small image visual representation of the resource provided by a map or image service. For geographic feature or data services, a graphic overview might show the geographic distribution of available data.  If MD_BrowseGraphic is included, MD_BrowseGraphic/filename character string is mandatory. USGIN Recommended practice is to provide a complete URL as a gco:characterString value for the filename property.  -->
+			<!--
+			<gmd:graphicOverview/>
+			-->
+			<!-- (O-X) Resource Format - This element is not used by USGIN; this information is encoded in MD_Metadata/distributionInfo/MD_Distribution/ in USGIN metadata. -->
+			<!--
+			<gmd:resourceFormat>
+			-->
+			<!-- (O-O) Resource keywords - Best Practice for USGIN profile metadata is to supply keywords to facilitate the discovery of metadata records relevant to the user. USGIN requires that MD_Keyword/keyword contain a CharacterString. USGIN best practice is to include keywords in English -->
+			<!-- Theme keywords -->
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>WMS</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>GEOSERVER</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>AZGS</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>GEOLOGY</gco:CharacterString>
+					</gmd:keyword>
+					<!-- Keyword Type - allowed values from MD_KeywordTypeCode names: {discipline, place, stratum, temporal, theme} - NAP expands with {product, subTopicCategory}. -->
+					<gmd:type>
+						<!-- NAP Example -->
+						<!--
+						<gmd:MD_KeywordTypeCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_101" 
+							codeListValue="RI_528">theme</gmd:MD_KeywordTypeCode>
+						-->
+						<!-- ISO Example -->
+						<gmd:MD_KeywordTypeCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" 
+							codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>	
+			<!-- Temporal keywords -->
+			<!-- 
+			<gmd:descriptiveKeywords/>
+			-->
+			<!-- Place keywords -->
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>ARIZONA</gco:CharacterString>
+					</gmd:keyword>
+					<!-- Keyword Type - allowed values from MD_KeywordTypeCode names: {discipline, place, stratum, temporal, theme} - NAP expands with {product, subTopicCategory}. -->
+					<gmd:type>
+						<!-- NAP Example -->
+						<!--
+						<gmd:MD_KeywordTypeCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_101" 
+							codeListValue="RI_525">place</gmd:MD_KeywordTypeCode>
+						-->
+						<!-- ISO Example -->
+						<gmd:MD_KeywordTypeCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" 
+							codeListValue="place">place</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<!-- (O-X) Resource specific usage - NAP excludes this property in INCITS 453, figure 64 p.175, but it is schema valid under http://schemas.opengis.net/iso/19139/20060504/serviceMetadata.xsd, which is the service metadata schema imported by apiso.xsd for the OGC CSW profile for ISO19115/19 metadata. Property not USED by USGIN. -->
+			<!--
+			<gmd:resourceSpecificUsage/>
+			-->
+			<!-- (O-O) Condition applying to access and use of resource - Restrictions on the access and use of a service. Follow NAP for specification of resourceConstraints. This attribute provides information for access control to the described service. In some situations, the metadataConstraints may allow a user to learn of the existence of a resource that they may not actually be able to access without further clearance. Follow NAP for specification of resourceConstraints.  -->
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Read only</gco:CharacterString>
+					</gmd:useLimitation>
+					<gmd:accessConstraints>
+							
+						<!-- MD_RestrictionCode names: {copyright, patent, patentPending, trademark, license, intellectualPropertyRights, restricted, otherRestrictions} - NAP expands with {licenseUnrestricted, licenseEndUser, licenseDistributor, privacy, statutory, confidential, sensitivity}. -->
+						<!-- NAP Example -->
+						<!--
+						<gmd:MD_RestrictionCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_107"
+							codeListValue="RI_602">copyright</gmd:MD_RestrictionCode>
+						-->
+						<!-- ISO Example -->
+						<gmd:MD_RestrictionCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" 
+							codeListValue="copyright">copyright</gmd:MD_RestrictionCode>
+					</gmd:accessConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>NONE</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<!-- (O-X) Aggregation information - The citation for the aggregate service or the name of the aggregate service, the type of aggregate service, and optionally the activity which produced the service. The citation for or name of an aggregate dataset, the type of aggregate dataset, and optionally the activity which produced the dataset. For USGIN profile, this property, rather than MD_Metadata/parentIdentifier, should be used to indicate relationships between described resources. -->
+			<!--
+			<gmd:aggregationInfo/>
+			-->
+			<!-- (M-M) Service type - Choose a service type name from a registry of services. USGIN mandates use of a LocalName value from the service type listing in the ServiceType section of the USGIN ISO19139 profile document, with the codespace http://resources.usgin.org/registry/ serviceType201001  -->
+			<srv:serviceType>
+				<!-- Valid values for OGC services would be then {<WMS, WFS, WVS, CSW, …}  -->
+				<gco:LocalName codeSpace="http://resources.usgin.org/registry/serviceType201001">WMS</gco:LocalName>					
+			</srv:serviceType>
+			<!-- (O-C) Resource service type version - Multiple serviceTypeVersion tags may not be implemented in applications - USGIN recommends a reverse chronological order for supported versions. Constraint: if various versions are available, mandatory to list versions that are supported. Default is oldest version of service. -->
+			<srv:serviceTypeVersion>
+				<gco:CharacterString>1.3.0</gco:CharacterString>
+			</srv:serviceTypeVersion>
+			<srv:serviceTypeVersion>
+				<gco:CharacterString>1.1.3</gco:CharacterString>
+			</srv:serviceTypeVersion>
+			<srv:serviceTypeVersion>
+				<gco:CharacterString>1.1.1</gco:CharacterString>
+			</srv:serviceTypeVersion>
+			<!-- (O-O) Resource service access properties - Information on the availability of the service which includes attributes from Standard Order Process. Applicable sub elements for service are: fees, and available date and time. -->
+			<!--
+			<srv:accessProperties/>
+			-->
+			<!-- (O-X) Resource service restrictions - Not used by USGIN; use resourceConstraints as per NAP. -->
+			<!--
+			<srv:restrictions/>
+			-->
+			<!-- (O-X) Keywords - Not used by USGIN; use descriptiveKeywords as per NAP -->
+			<!--
+			<srv:keywords/>
+			-->
+			
+			<!-- (C-C) Service Extent - Defines the spatial (horizontal and vertical) and temporal region to which the content of the resource applies. For USGIN, the spatial extent is a rectangle that bounds the geographic extent to which resource content applies. Best Practice for USGIN is to include an extent for any resource with content related to some geographic or temporal location. For geoscience resources, the temporal extent may be expressed using time ordinal eras from a geologic time scale if the resource is related to some particular geologic time. USGIN specifies count(description + geographicElement + temporalElement) >0  -->
+			<srv:extent>
+				<gmd:EX_Extent>
+					<!-- (C-C) Resource Content extent description - Free text that describes the spatial and temporal extent of the dataset. USGIN specifies that description is mandatory if a geographicElement or temporalElement is not provided. Note that if geographic place names are used to express the geographic extent, USGIN profile specifies that these should be encoded using keyword with keyword type code = ‘place.’ Geographic names may be duplicated in the EX_Extent/description. -->
+					<!--
+					<gmd:description/>
+					-->
+					<!-- (O-C) Resource content extent bounding box -USGIN profile requires that if an EX_Extent/geographicElement is supplied, it include a geographic bounding box with bounding latitude and longitude expressed using WGS 84 decimal degrees.
+The corner coordinates for the geographic bounding box must not coincide in one point, because this may result in fatal errors with some CSW implementations. Point locations must thus be represented as tiny rectangles. USGIN recommended practice is to place the actual point location in the lower left corner of the rectangle. -->
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>-114.815</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>-108.984</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>31.25</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>37.004</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+					<!-- (C-X) Resource content extent geographic description - Not used by USGIN profile, use keyword with type code = ‘place’ (with thesaurus if necessary). -->
+					<!--					
+					<gmd:geographicElement>
+						<gmd:EX_GeographicDescription/>
+					</gmd:geographicElement>
+					-->
+					<!-- (C-X) Resource content extent bounding polygon - To improve interoperability, USGIN mandates use of Geographic Bounding Box; bounding polygons may be present, but may be ignored by harvesters. -->
+					<!--
+					<gmd:geographicElement>
+						<gmd:EX_BoundingPolygon/>
+					</gmd:geographicElement>
+					-->
+					<!-- (O-O) Resource temporal extent  -->
+					<!--
+					<gmd:extent>
+						<gmd:EX_Extent>
+							<gmd:temporalElement>
+								<gmd:EX_TemporalExtent>
+									<gmd:extent>
+										--><!-- Default ISO time frame example --><!--
+										<gml:TimePeriod gml:id="IdModern">
+											<gml:name>Y2KX</gml:name>
+											--><!-- USGIN requires the beginPosition and endPosition's frame property to be defined. The default value is #ISO-8601. --><!--
+											<gml:beginPosition frame="#ISO-8601">2010-01-00T00:00:00</gml:beginPosition>
+											<gml:endPosition frame="#ISO-8601">2010-12-31T24:00:00</gml:endPosition>
+										</gml:TimePeriod>
+										--><!-- Geologic time frame example --><!--
+										<gml:TimePeriod gml:id="IdJurassic">
+											<gml:name>Jurassic</gml:name>
+											--><!-- USGIN requires the beginPosition and endPosition's frame property to be defined. The default value is #ISO-8601. --><!--
+											<gml:beginPosition frame="urn:cgi:trs:CGI:StandardGeologicTimeMa">203</gml:beginPosition>
+											<gml:endPosition frame="urn:cgi:trs:CGI:StandardGeologicTimeMa ">135</gml:endPosition>
+										</gml:TimePeriod>
+									</gmd:extent>
+								</gmd:EX_TemporalExtent>
+							</gmd:temporalElement>
+						</gmd:EX_Extent>
+					</gmd:extent>
+					-->
+					<!-- (O-X) Resource spatio-temporal extent - Not used. Although use of EX_SpatialTemporalExtent is allowed by ISO19139 and NAP, USGIN mandates encoding space time location with EX_TemporalExtent and EX_GeographicBoundingBox. -->
+					<!--
+					<gmd:extent>
+						<gmd:EX_Extent>
+							<gmd:temporalElement>
+								<gmd:EX_SpatialTemporalExtent/>
+							</gmd:temporalElement>
+						</gmd:EX_Extent>
+					</gmd:extent>
+					-->
+					<!-- (O-O) Resource service vertical extent  -->
+					<!--
+					<gmd:verticalElement>
+						<gmd:EX_VerticalExtent>
+							<gmd:minimumValue>
+								<gco:Real>-100</gco:Real>
+							</gmd:minimumValue>
+							<gmd:maximumValue>
+								<gco:Real>200</gco:Real>
+							</gmd:maximumValue>
+							--><!-- Use EPSG register of geodetic parameters such as at http://www.epsg-registry.org/. The default VerticalCRS is World mean sea level (MSL): urn:ogc:def:crs:EPSG::5714  --><!--
+							<gmd:verticalCRS xlink:href="urn:ogc:def:crs:EPSG::5714 "/>
+						</gmd:EX_VerticalExtent>
+					</gmd:verticalElement>
+					-->
+				</gmd:EX_Extent>
+			</srv:extent>
+			<!-- (O-O) Coupled Resources - This element correlates operations (identified by operationName) with datasets (identified by identifier). For logical consistency SV_coupledResource/identifier values should be equal to MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code for a dataset that is the target of a SV_ServiceIdentification/operatesOn element (either in an inline MD_DataIdentification/citation../code element, or a @uuidref attribute). This element is necessary to implement the many-to-many relationship between data sources and operations in a single service. --> 
+			<!-- NOTE: This is an example for TIGHTLY coupled resources with EXPLICIT links. This means that the example resource service's WMS layers are described in existing and separate metadata records. --> 
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<!-- (M-M) Coupled resource operation name - Name of the service operation: GetMap, GetFeature, etc. -->
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<!-- (M-M) Coupled Resource identifier  - Identifier of a given tightly coupled dataset. Equal to MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code for a dataset that is the target of a SV_ServiceIdentification/operatesOn element (either in an inline MD_DataIdentification/citation../code element, or a @uuidref attribute).  -->
+					<srv:identifier>
+						<gco:CharacterString>8215ed91-6c92-4ae9-b094-8b58ddd5e7e0</gco:CharacterString>
+					</srv:identifier>
+					<!-- (X-O) Coupled Resource scoped name - OGC 07-045 application profile for ISO metadata using CSW 2.0.2 extends SV_CoupledResource with a ScopedName, defined as a scoped identifier of the resource in the context of the given service instance (e.g. layer name or featureTypeName). This is necessary for users to generate service requests (like GetMap or GetFeature) based on ISO service metadata. Note that if multiple WMS layers are related to a single dataset, separate coupledResource elements are required for each layer because the cardinality of ScopedName here is 0 or 1.-->
+					<gco:ScopedName>azgs:trace_nonmetals_earthchem</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>55932c11-67d6-4414-8a5f-a45f7dc3ecf6</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>azgs:trace_metals_earthchem</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>8504f947-39d6-4c1f-a4fa-672534f94856</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>azgs:trace_alk_alkearth_earthchem</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>4dbd380c-7ba4-49d6-b34c-7f9415dde6f0</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>azgs:ree_earthchem</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>a3120268-1fb4-496a-84cc-c3a02dd0be16</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>ncgmp:mapunitpolys</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>39d94525-b1d6-494f-a739-357088e5a2e9</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>azgs:earthfissures</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<srv:coupledResource>
+				<srv:SV_CoupledResource>
+					<srv:operationName>
+						<gco:CharacterString>GetMap</gco:CharacterString>
+					</srv:operationName>
+					<srv:identifier>
+						<gco:CharacterString>13ce1e84-c887-4fd8-b888-8d021b1fa4c2</gco:CharacterString>
+					</srv:identifier>
+					<gco:ScopedName>azgs:azgeochron</gco:ScopedName>
+				</srv:SV_CoupledResource>
+			</srv:coupledResource>
+			<!-- (M-M) Service coupling type - Type of coupling between service and associated data (if exists) - "Qualitative information on the tightness with which the service and the associated data are coupled." NAP.  -->
+			<!-- According to ISO: -->
+			<!--	1) loose - service instance is loosely coupled with a data instance, i.e. no MD_DataIdentification class has to be described (ISO 19119). -->
+			<!--	2) mixed - service instance is mixed coupled with a data instance, i.e. MD_DataIdentification describes the associated data instance and additionally the service instance might work with other external data instances (ISO 19119 / ISO 19115). -->
+			<!--	3) tight - service instance is tightly coupled with a data instance, i.e. MD_DataIdentification class MUST be described. (ISO 19119 / ISO 19115) -->
+			<!-- According to OGC: -->
+			<!--	1) loose - A service instance that is not associated with a specific dataset or dataset collection. Loosely coupled services may have an association with data types through the service type definition. Dataset metadata need not be provided in the service metadata. -->
+			<!--	2) mixed - A service that is associated with a specific dataset or dataset collection. Service metadata shall describe both the service and the geographic dataset, the latter being defined in accordance with ISO 19115. But this service instance can also be used with external data (i.e. data that is not described by the operatesOn association). -->
+			<!--	3) tight - An information resource that is hosted on a specific set of hardware and accessible over a network. -->
+			<srv:couplingType>
+				<!-- SV_CouplingType names: {loose, mixed, tight} -->
+				<!-- NAP Example -->
+				<!--
+				<srv:SV_CouplingType 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_114" 
+					codeListValue="RI_685">tight</srv:SV_CouplingType>
+				-->
+				<!-- ISO Example -->
+				<srv:SV_CouplingType 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#SV_CouplingType" 
+					codeListValue="tight">tight</srv:SV_CouplingType>
+			</srv:couplingType>
+			<!--***-->
+			<!-- (M-M) Service operation - "Operations performed by the service" NAP. Each SV_OperationMetadata element describes the signature of one and only one method provided by the service. -->
+			<!-- See WMS GetCapabilities for operation metadata -->
+			<srv:containsOperations gco:nilReason="missing"/>
+			<!-- (O-C) Service operates on - "Provides information on the datasets that the service operates on" ISO 19119. With tightly coupled references, operatesOn must  include a map or feature layer's valid MD_DataIdentification element inline or a @uuidref attribute value that explicitly links to an existing dataset metadata record that describes the same layer. Mandatory if linkage to datasets on which the service operates are available. The value of SV_ServiceIdentification/operatesOn@uuidref or SV_ServiceIdentification/operatesOn/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code must correspond to one of the coupledResource/MD_CoupledResource/identifier values. If the metadata record for the coupled dataset is a separate gmd:MD_Metadata record, the service described in the service metadata record should be identified as a distribution for the dataset. -->
+			<!-- NOTE:  In this explicitly linked reference example, the uuidref property must point to an existing (already loaded) CSW metadata record! -->
+			<srv:operatesOn 
+				uuidref="13ce1e84-c887-4fd8-b888-8d021b1fa4c2" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8717" 
+				xlink:title="azgs:azgeochron"/>
+			<srv:operatesOn 
+				uuidref="39d94525-b1d6-494f-a739-357088e5a2e9" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8718" 
+				xlink:title="azgs:earthfissures"/>
+			<srv:operatesOn 
+				uuidref="a3120268-1fb4-496a-84cc-c3a02dd0be16" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8719" 
+				xlink:title="ncgmp:mapunitpolys"/>
+			<srv:operatesOn 
+				uuidref="4dbd380c-7ba4-49d6-b34c-7f9415dde6f0" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8720" 
+				xlink:title="azgs:ree_earthchem"/>
+			<srv:operatesOn 
+				uuidref="8504f947-39d6-4c1f-a4fa-672534f94856" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8721" 
+				xlink:title="azgs:trace_alk_alkearth_earthchem"/>
+			<srv:operatesOn 
+				uuidref="55932c11-67d6-4414-8a5f-a45f7dc3ecf6" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8722" 
+				xlink:title="azgs:trace_metals_earthchem"/>
+			<srv:operatesOn 
+				uuidref="8215ed91-6c92-4ae9-b094-8b58ddd5e7e0" 
+				xlink:href="http://resources.azgs.org/geonetwork/srv/en/metadata.show?id=8723" 
+				xlink:title="azgs:trace_nonmetals_earthchem"/>
+		</srv:SV_ServiceIdentification>
+	</gmd:identificationInfo>
+	<!--*******************-->
+	<!-- (O-O) Content information - Characteristics describing the feature cataloguecatalog, coverage, or image data. USGIN currently makes no recommendation for use of contentInfo; follow NAP recommendations (see INCITS 453). -->
+		<!--
+		<gmd:contentInfo gco:nilReason="missing"/>
+		-->
+	<!-- (O-O) Resource distribution information - This element provides information to inform users how to obtain or access the described resource.  For service metadata, the only distribution is the interface offered by the described service. The distributionFormat is nil because the format depends on the operation and request. TransferOptions is used to provide the URL’s for accessing the service and a serviceDescription resource (WSDL, getCapabilities, web page..). Distributor is used to identify the agent that is responsible for hosting the service. -->
+	<gmd:distributionInfo>
+		<gmd:MD_Distribution>
+			<!-- (O-O)  Resource distribution format - Information on the format or physical manifestation of the resource. If the resource is a physical resource, like a book, rock sample, paper document, the distributionFormat/MD_Format/name is mandatory, and must be from the USGIN distribution format codelist. In the case of a service, the format information is operation and request dependent.-->
+			<!--
+			<gmd:distributionFormat gco:nilReason="missing"/>
+			-->
+			<!-- (O-C) Resource distributor information - For a service, the distributor element identifies the agent that is responsible for hosting the service, probably the same as the CI_ResponsibleParty for the service identification citation. -->
+			<!-- in this example, the distributor is the same as the metadata point of contact, so the CI_Responsible party is included by reference to the element earlier in the document -->
+			<gmd:distributor>
+				<gmd:MD_Distributor>
+					<gmd:distributorContact xlink:href="#R264537"/>
+				</gmd:MD_Distributor>
+			</gmd:distributor>
+			<!-- (C-C) Resource distribution transfer options - MD_DigitalTransferOptions provides information on digital distribution of resource. See USGIN Profile ‘Use of MD_Distribution and MD_Distributor’ for instructions on use of this element. Details on encoding for MD_DigitalTransferOptions are above in the distributorTransferOptions elements description.  -->
+			<gmd:transferOptions>
+				<gmd:MD_DigitalTransferOptions>
+					<!-- Two online elements are included, one for the serviceDescription and one for the baseURL, which in this case is the full URL for the OGC getCapabilities document -->
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<!-- (M-M) Resource distributor on-line distribution linkage - Digital transfer options are “technical means and media by which a dataset is obtained from the distributor." NAP requires CI_OnlineResource/linkage and CI_OnlineResource/protocol in CI_OnlineResource. -->
+							<gmd:linkage>
+								<!-- This linkage element contains the complete URL to access the getCapabilities document directly. If the service is described by a WSDL document, this would be a URL for the WSDL description of service operation. CI_Online-Resource requires a Linkage element that is a gmd:URL. -->
+								<gmd:URL>http://75.101.143.247:8080/gsvr/wms?SERVICE=WMS&amp; http://75.101.143.247:8080/gsvr/wms?SERVICE=WMS&amp;</gmd:URL>
+							</gmd:linkage>
+							<!-- The protocol element defines a valid internet protocol used to access the resource. NAP recommended best practice is that the protocol should be taken from an official controlled list such as the Official Internet Protocol Standards published on the Web at http://www.rfc-editor.org/rfcxx00.html or the Internet Assigned Numbers Authority (IANA) at http://www.iana.org/numbers.html.  ‘ftp’ or ‘http’ are common values. -->
+							<gmd:protocol>
+								<gco:CharacterString>http</gco:CharacterString>
+							</gmd:protocol>
+							<!-- Linkage names for service URL’s are from "Linkage name conventions" section in the USGIN ISO19139 profile document.  -->
+							<gmd:name>
+								<gco:CharacterString>serviceDescription</gco:CharacterString>
+							</gmd:name>
+							<!-- Service Description -->
+							<gmd:description>
+								<gco:CharacterString>Full URL to request the OGC getCapabilities document. This is the mechanism used to acquire detailed operation description for USGIN metadata.</gco:CharacterString>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<!-- (M-M) Resource distributor on-line distribution linkage - Digital transfer options are “"technical means and media by which a dataset is obtained from the distributor.”" NAP requires CI_OnlineResource/linkage and CI_OnlineResource/protocol in CI_OnlineResource. -->
+							<gmd:linkage>
+								<!-- This linkage element contains the base URL to compose requests to the service. CI_Online-Resource requires a Linkage element that is a gmd:URL. -->
+								<gmd:URL>http://75.101.143.247:8080/gsvr/wms?</gmd:URL>
+							</gmd:linkage>
+							<!-- The protocol element defines a valid internet protocol used to access the resource. NAP recommended best practice is that the protocol should be taken from an official controlled list such as the Official Internet Protocol Standards published on the Web at http://www.rfc-editor.org/rfcxx00.html or the Internet Assigned Numbers Authority (IANA) at http://www.iana.org/numbers.html.  ‘ftp’ or ‘http’ are common values. -->
+							<gmd:protocol>
+								<gco:CharacterString>http</gco:CharacterString>
+							</gmd:protocol>
+<!-- Linkage names for service URL’s are from "Linkage name conventions" section in the USGIN ISO19139 profile document  -->
+							<gmd:name>
+								<gco:CharacterString>baseURL</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gco:CharacterString>Base URL for service access; append standard WMS request parameters to compose query.</gco:CharacterString>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+				</gmd:MD_DigitalTransferOptions>
+			</gmd:transferOptions>
+		</gmd:MD_Distribution>
+	</gmd:distributionInfo>
+	<!-- (C-C) Data quality Information - NAP requires either dataQualityInfo/DQ_DataQuality/report or dataQualityInfo/DQ_DataQuality/lineage if dataQualityInfo/DQ_DataQuality/scope/DQ_Scope/level = 'dataset'.  -->
+	<!--
+	<gmd:dataQualityInfo/>
+	-->
+	<!-- (O-O) Portrayal catalog information - A portrayal cataloguecatalog is a collection of defined symbols used to depict, to humans, features on a map. No documentation in ISO 19115 about how this is supposed to work. ISO 19117 defines the structure of a Portrayal Catalogue. No USGIN recommended practices here yet. -->
+	<!--
+	<gmd:portrayalCatalogueInfo/>
+	-->
+	<!-- (O-O) Metadata constraint information - This element specifies use constraints for access to the metadata record.  -->
+	<!--
+	<gmd:metadataConstraints/>
+	-->
+	<!-- (O-O) Application schema information - Information about the conceptual schema of the dataset. This would be populated with a citation to a schema, or may have an inline binary file representing the schema. No USGIN provision for usage of this element. -->
+	<!--
+	<gmd:applicationSchemaInfo/>
+	-->
+	<!-- (O-O) Metadata maintenance information - This element provides information about the maintenance schedule or history of the metadata record.  -->
+	<!--
+	<gmd:metadataMaintenance/>
+	-->
+	<!-- (X-X) Series information - Not used by USGIN. -->
+	<!-- 
+	<gmd:series/>
+	-->
+	<!-- (X-X) Described resource - Not used by USGIN. -->
+	<!--
+	<gmd:describes/>
+	-->
+	<!-- (X-X) Property type description - Not used by USGIN. -->
+	<!--
+	<gmd:propertyType/>
+	-->
+	<!-- (X-X) Feature type description - Not used by USGIN -->
+	<!--
+	<gmd:featureType/>
+	-->
+	<!-- (X-X) Feature attributes - Not used by USGIN -->
+	<!--
+	<gmd:featureAttribute/>
+	-->
+</gmd:MD_Metadata>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--*************************************************************************************************
+*** Minimum example of a ISO 19139 Geospatial Dataset Metadata 
+*** based on the USGIN v1.1 Profile 
+*** by USGIN Standards and Protocols Drafting Team
+*** U.S. Geoscience Information System (USGIN) - http://lab.usgin.org
+*** Contributors: Wolfgang Grunberg, Stephen M Richard
+*** 01/20/2010
+*** 
+*** DISCLAIMER: this is not an authoritative metadata example but an aide to get started. 
+*** Scope notes are mostly from NAP or ISO documentation; refer to 
+*** the USGIN profile document for more specific and reliable guidelines.
+***
+*** Validated against http://www.isotc211.org/2005/gmd (ISO 19115, CSW 2.0.2 AP ISO 1.0).
+*** Follows the USGIN ISO 19139 Dataset Metadata Profile v1.1. 
+*** a derivative of the North American Profile (NAP) 
+***
+*** NOTES:
+*** - Codelists: 
+*** Most ISO metadata profiles and applications use ISO codelists or codelists that use ISO's codelist names. NAP does not use ISO codelist names. USGIN recommends using ISO over NAP codelists to ensure interoperability. Remember, the codeList attribute points to a Uniform Resource Identifier (URI) which defines an item's identity. It can be a URN or a URL.
+*** - napm schema extension: 
+*** http://www.cits.rncan.gc.ca/html/brodeurj/.protege/.napMetadata/napMetadataWebsite/napMetadataTools/napXsd/napm is the namespace for NAP extensions in xmlns:napm. Its schema is located at http://www.cits.rncan.gc.ca/html/brodeurj/.protege/.napMetadata/tools/napXsd/napm/napm.xsd. However, that schema does not resolve properly because it also refernces a local copy of gmd. USGIN does not follow this NAP requirement because it constitutes a barier to interoperability.
+*** - Language code: 
+*** NAP demands <ISO639-2/T three letter language code - lower case><;><blank space><ISO3166-1 three letter country code - upper case>. However, NAP's requirement is not interoperable and USGIN prefers ISO's <ISO639-2/T three letter language code - lower case> formatting.
+***
+*** KEY: (NAP-USGIN) - M/C/O/X (Mandatory, Conditional, Optional, Not Used) 
+***
+**********************************************************************************************-->
+
+<!-- USGIN ISO 19139 geospatial dataset metadata record -->
+<gmd:MD_Metadata 
+	xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+	xmlns:gco="http://www.isotc211.org/2005/gco" 
+	xmlns:gml="http://www.opengis.net/gml" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+	<!-- (M-M) Metadata file identifier - A unique File Identifier (GUID) - USGIN recommends using a valid Universally Unique Identifier (UUID) -->
+	<gmd:fileIdentifier>
+		<gco:CharacterString>08fb00c8-0882-4bf7-b07f-fd37050c5efc</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<!-- (M-M) Metadata language - NAP demands <ISO639-2/T three letter language code - lower case><;><blank space><ISO3166-1 three letter country code - upper case>. However, NAP's requirement is not interoperable and USGIN prefers ISO's <ISO639-2/T three letter language code - lower case> formatting. -->
+	<!-- NAP Example -->
+	<!--
+	<gmd:language>
+		<gco:CharacterString>eng; USA</gco:CharacterString>
+	</gmd:language>
+	-->
+	<!-- ISO Example -->
+	<gmd:language>
+		<gco:CharacterString>eng</gco:CharacterString>
+	</gmd:language>
+	<!-- (M-M) Metadata character set  - NAP specifies default is "utf8", codelist = napMD_CharacterSetCode. USGIN requires that a character set code is defined to facilitate CSW servers (deegree, GeoNetwork, etc.).  -->
+	<gmd:characterSet>
+		<!-- MD_CharacterSetCode names: {ucs2, ucs4, utf7, utf8, utf16, 8859part1, 8859part2, 8859part3, 8859part4, 8859part5, 8859part6, 8859part7, 8859part8, 8859part9, 8859part10, 8859part11, 8859part13, 8859part14, 8859part15, 8859part16, jis, shiftJIS, eucJP, usAscii, ebcdic, eucKR, big5, GB2312} -->
+		<!-- NAP example -->
+		<!--
+		<gmd:MD_CharacterSetCode 
+			codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_95" 
+			codeListValue="RI_458">utf8</gmd:MD_CharacterSetCode>
+		-->
+		<!-- ISO example -->
+		<gmd:MD_CharacterSetCode 
+			codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" 
+			codeListValue="utf8">UTF-8</gmd:MD_CharacterSetCode>
+	</gmd:characterSet>
+	<!-- (M-M) Resource type - Define if this record is a: dataset (default), service, feature, software, etc. -->
+	<gmd:hierarchyLevel>
+		<!-- MD_ScopeCode code names: {attribute, attributeType, collectionHardware, collectionSession, dataset, series, nonGeographicDataset, dimensionGroup, feature, featureType, propertyType, fieldSession, software, service, model, tile}. -->
+		<!-- NAP example -->
+		<!--
+		<gmd:MD_ScopeCode 
+			codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_108" 
+			codeListValue="RI_622">dataset</gmd:MD_ScopeCode>
+		-->
+		<!-- ISO example -->
+		<gmd:MD_ScopeCode 
+			codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" 
+			codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+	</gmd:hierarchyLevel>
+	<!-- (O-M) Resource hierarchy level name - ISO 19115 assumes that the metadata hierarchy level name defaults to “dataset” if it is not documented. NAP does not use it, recognizing that it is redundant. USGIN makes this property mandatory to identify the USGIN resource type (see USGIN Profile, "Resources of Interest"). Default USGIN hierarchyLevelName.CharacterString is “Dataset.” Encode hierarchy by including hierarchyLevelName elements for all broader resource categories. E.g. default should also include a hierarchyLevelName=”Collection” element. For services USGIN hierarchyLevelName.CharacterString is “Service”. As use cases develop that provide rationale for definition of sub-categories of service, the resource category list will be expanded. -->
+	<gmd:hierarchyLevelName>
+		<gco:CharacterString>Dataset</gco:CharacterString>
+	</gmd:hierarchyLevelName>
+	<!-- (M-M) Metadata point of contact - Point of contact for the metadata record, e.g. for users to report errors, updates to metadata, etc. -->
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<!-- (M-M) (individualName + organisationName + positionName) > 0 -->
+			<!--
+			<gmd:individualName>
+				<gco:CharacterString>Stephen Richard</gco:CharacterString>
+			</gmd:individualName>
+			-->
+			<gmd:organisationName>
+				<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+			</gmd:organisationName>
+			<!--
+			<gmd:positionName>
+				<gco:CharacterString>Metadata Czar</gco:CharacterString>
+			</gmd:positionName>
+			-->
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<!-- Phone -->
+					<!--
+					<gmd:phone>
+						<gmd:CI_Telephone>
+							<gmd:voice>
+								<gco:CharacterString>520.770.3500</gco:CharacterString>
+							</gmd:voice>
+							<gmd:facsimile>
+								<gco:CharacterString>520.770.3505</gco:CharacterString>
+							</gmd:facsimile>
+						</gmd:CI_Telephone>
+					</gmd:phone>
+					-->
+					<!-- Address -->
+					<gmd:address>
+						<gmd:CI_Address>
+							<!--
+							<gmd:deliveryPoint>
+								<gco:CharacterString>416 W. Congress St., Suite 100</gco:CharacterString>
+							</gmd:deliveryPoint>
+							<gmd:city>
+								<gco:CharacterString>Tucson</gco:CharacterString>
+							</gmd:city>
+							<gmd:administrativeArea>
+								<gco:CharacterString>Arizona</gco:CharacterString>
+							</gmd:administrativeArea>
+							<gmd:postalCode>
+								<gco:CharacterString>85701-1381</gco:CharacterString>
+							</gmd:postalCode>
+							<gmd:country>
+								<gco:CharacterString>USA</gco:CharacterString>
+							</gmd:country>
+							-->
+							<!-- (O-M) Metadata point of contact e-mail address - mandatory in USGIN  -->
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>metadata@azgs.az.gov</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<!-- (M-M) ISO 19139 Mandatory: contact role -->
+			<gmd:role>
+				<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}. -->
+				<!-- NAP example -->
+				<!--
+				<gmd:CI_RoleCode 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+					codeListValue="RI_414">pointOfContact</gmd:CI_RoleCode>
+				-->
+				<!-- ISO example -->
+				<gmd:CI_RoleCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+					codeListValue="pointOfContact">point of contact</gmd:CI_RoleCode>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<!-- (M-M) Metadata date stamp - USGIN profile requires use of dateStamp/gco:DateTime (Note this contrasts with INSPIRE mandate to use dateStamp/gco:Date). This is the date and time when the metadata record was created or updated (following NAP). -->
+	<gmd:dateStamp>
+		<!-- Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00) -->
+		<gco:DateTime>2010-01-14T10:00:00</gco:DateTime>
+	</gmd:dateStamp>
+	<!-- (M-M) metadata standard - NAP specifies "NAP - Metadata". USGIN profile conformant metadata is indicated by using “ISO-NAP-USGIN" -->
+	<gmd:metadataStandardName>
+		<gco:CharacterString>ISO-USGIN</gco:CharacterString>
+	</gmd:metadataStandardName>
+	<!-- (O-M) USGIN profile version -->
+	<gmd:metadataStandardVersion>
+		<gco:CharacterString>1.2</gco:CharacterString>
+	</gmd:metadataStandardVersion>
+	<!-- **************** -->
+	<!-- (M-M) Resource identification information - At least one of MD_DataIdentification (dataset, dataset series) or SV_ServiceIdentification (service) is required.  -->
+	<gmd:identificationInfo>
+		<!-- Resource Dataset or Dataset Series Identification --> 
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<!-- (M-M) Resource citation - For USGIN purposes, this should be viewed as information to identify the intellectual origin of the content in the described resource, along the lines of a citation in a scientific journal. Required content for a CI_Citation element are title, date, and responsibleParty -->
+				<gmd:CI_Citation>
+					<!-- (M-M) Resource title - USGIN recommends using titles that inform the human reader about the dataset’s content as well as its context. -->
+					<gmd:title>
+						<gco:CharacterString>USGIN minimum metadata example XML file. Note that this example includes conditional minimum elements that may or may not apply to a specific resource and its metadata.</gco:CharacterString>
+					</gmd:title>
+					<!-- (M-M) Resource reference date - Best practice is to include at least the date of publication or creation of the resource. The date of the resource reported in the citation corresponds to the resource’s last update version according to its update frequency. CI_Date content includes a date and dateType. Date for USGIN profile uses xs:date data type, defined thus “date uses the date/timeSevenPropertyModel, with hour, minute, and second  required to be absent.  timezoneOffset• remains optional” (http://www.w3.org/TR/xmlschema11-2). -->
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<!-- Requires an extended ISO 8601 formatted combined UTC date and time string (2001-12-17T09:30:47) -->
+								<gco:DateTime>2010-01-14T09:30:47</gco:DateTime>
+							</gmd:date>
+							<gmd:dateType>
+								<!-- CI_DateTypeCode names: {creation, publication, revision} - NAP expands with {notAvailable, inForce, adopted, deprecated, superseded}. -->
+								<!-- NAP example -->
+								<!--
+								<gmd:CI_DateTypeCode 
+									codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_87" 
+									codeListValue="RI_367">publication</gmd:CI_DateTypeCode>
+									-->
+									<!-- ISO example -->
+								<gmd:CI_DateTypeCode 
+									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" 
+									codeListValue="publication">publication</gmd:CI_DateTypeCode>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<!-- (C-C) Unique resource identifier  - NAP makes MD_Identifier mandatory for dataset and dataset series. 
+						For USGIN purposes, this element content value should be only considered an identifier for the citation, without any assumption that it will use http protocol. The identifier may be resolvable to a URL, if a protocol prefix specifies an identifier scheme that is resolvable (e.g. http, urn…), but this is not necessary for a valid document, and should not be assumed when processing metadata documents. 
+						For USGIN, IF the Citation has an identifier that is different from the identifier for the described resource (MD_Metadata/dataSetURI), it must be included here. RS_Identifier may substitute for MD_Identifier in the ISO19139 schema, but the USGIN profile requires use of MD_Identifer. If additional codespace and version content is associated with the identifier, it should be encoded as MD_Identifier/authority/ CI_Citation/ alternateTitle and MD_Identifier/ authority/ CI_Citation/ edition  -->
+					<gmd:identifier>
+						<gmd:MD_Identifier>
+							<gmd:code>
+								<!-- 13 digit ISBN example -->
+								<gco:CharacterString>isbn:000-0-000-00000-0</gco:CharacterString>
+							</gmd:code>
+						</gmd:MD_Identifier>
+					</gmd:identifier>
+					<!-- (M-M) Resource responsible party - The citation attribute provides information for citing the described resource. Citation is defined by Webster as "an act of quoting". The precise semantics of what an identification/citation is supposed to be are not very well articulated in ISO19115. For USGIN purposes, this should be viewed as information to identify the intellectual origin (or property) of the content in the described resource, along the lines of a citation in a scientific journal. Required content for a CI_Citation element are title, date, and ‘responsibleParty’.  -->
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty>
+							<!-- (C-C) (individualName + organisationName + positionName) > 0 -->
+							<!--
+							<gmd:individualName>
+								<gco:CharacterString>Wolfgang Grunberg</gco:CharacterString>
+							</gmd:individualName>
+							-->
+							<gmd:organisationName>
+								<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+							</gmd:organisationName>
+							<!--
+							<gmd:positionName>
+								<gco:CharacterString>IT Specialist</gco:CharacterString>
+							</gmd:positionName>
+							-->
+							<!-- (O-C) Contact Information - (phone + deliveryPoint + electronicMailAddress ) > 0 -->
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:phone>
+										<gmd:CI_Telephone>
+											<gmd:voice>
+												<gco:CharacterString>520-770-3500</gco:CharacterString>
+											</gmd:voice>
+											<gmd:facsimile>
+												<gco:CharacterString>520-770-3505</gco:CharacterString>
+											</gmd:facsimile>
+										</gmd:CI_Telephone>
+									</gmd:phone>
+									<!--
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:deliveryPoint>
+												<gco:CharacterString>416 W. Congress St., Suite 100</gco:CharacterString>
+											</gmd:deliveryPoint>
+											<gmd:city>
+												<gco:CharacterString>Tucson</gco:CharacterString>
+											</gmd:city>
+											<gmd:administrativeArea>
+												<gco:CharacterString>Arizona</gco:CharacterString>
+											</gmd:administrativeArea>
+											<gmd:postalCode>
+												<gco:CharacterString>85701</gco:CharacterString>
+											</gmd:postalCode>
+											<gmd:country>
+												<gco:CharacterString>USA</gco:CharacterString>
+											</gmd:country>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>metadata@azgs.az.go</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+									-->
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<!-- (M-M) ISO 19139 Mandatory: contact role - Guidance on use of role codes would be helpful for consistency, but has not been developed as yet.. -->
+							<gmd:role>
+								<!-- CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}. -->
+								<!-- NAP example -->
+								<!--
+								<gmd:CI_RoleCode 
+									codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+									codeListValue="RI_414">pointOfContact</gmd:CI_RoleCode>
+									-->
+								<!-- ISO example -->
+								<gmd:CI_RoleCode 
+									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+									codeListValue="pointOfContact">point of contact</gmd:CI_RoleCode>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<!-- (M-M) Resource Abstract - A free text summary of the content, significance, purpose, scope, etc. of the resource. Exactly one value. -->
+			<gmd:abstract>
+				<gco:CharacterString>Example for the minimum required elements in a USGIN dataset metadata record.</gco:CharacterString>
+			</gmd:abstract>
+			<!-- (M-M) Resource Status -  -->
+			<gmd:status>
+				<!-- Value is from MD_ProgressCode names: {completed, historicalArchive, obsolete, onGoing, planned, required, underDevelopment} - NAP expands with {proposed}. Obsolete is synonymous with deprecated. -->
+				<!-- NAP example -->
+				<!--
+				<gmd:MD_ProgressCode 
+					codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_106" 
+					codeListValue="RI_593">completed</gmd:MD_ProgressCode>
+				-->
+				<!-- ISO Example -->
+				<gmd:MD_ProgressCode 
+					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" 
+					codeListValue="completed">completed</gmd:MD_ProgressCode>
+			</gmd:status>
+			<!-- (O-C) Resource point of contact (access contact) - CI_ResponsibleParty element here would contain information for point of contact to access the resource. This information is mandatory for physical resources such as core, cuttings, samples, manuscripts. -->
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<!-- (M-M) (individualName + organisationName + positionName) > 0 -->
+					<!--
+					<gmd:individualName>
+						<gco:CharacterString>Steve Rauzi</gco:CharacterString>
+					</gmd:individualName>
+					-->
+					<gmd:organisationName>
+						<gco:CharacterString>Arizona Geological Survey</gco:CharacterString>
+					</gmd:organisationName>
+					<!--
+					<gmd:positionName>
+						<gco:CharacterString>Oil and Gas Administrator</gco:CharacterString>
+					</gmd:positionName>
+					-->
+					<!-- (O-C) Contact Information - If a resource point of contact is required then (phone + deliveryPoint + electronicMailAddress) > 0 -->
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<!--
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>520-770-3500</gco:CharacterString>
+									</gmd:voice>
+									<gmd:facsimile>
+										<gco:CharacterString>520-770-3505</gco:CharacterString>
+									</gmd:facsimile>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							-->
+							<gmd:address>
+								<gmd:CI_Address>
+									<!--
+									<gmd:deliveryPoint>
+										<gco:CharacterString>416 W. Congress St., Suite 100</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>Tucson</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>Arizona</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>85701</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>USA</gco:CharacterString>
+									</gmd:country>
+									-->
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>Steve.rauzi@azgs.az.go</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<!-- (M-M) ISO 19139 Mandatory: contact role - Guidance on use of role codes would be helpful for consistency, but has not been developed as yet. -->
+					<gmd:role>
+						<!-- The CI_ResponsibleParty/role/CI_RoleCode is from CI_RoleCode names: {resourceProvider, custodian, owner, user, distributor, originator, pointOfContact, principalInvestigator, processor, publisher, author} - NAP expands with {collaborator, editor, mediator, rightsHolder}. -->
+						<!-- NAP example -->
+						<!--
+						<gmd:CI_RoleCode 
+							codeList="http://www.fgdc.gov/nap/metadata/register/codelists.html#IC_90" 
+							codeListValue="RI_414">pointOfContact</gmd:CI_RoleCode>
+						-->
+						<!-- ISO example -->
+						<gmd:CI_RoleCode 
+							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" 
+							codeListValue="pointOfContact">point of contact</gmd:CI_RoleCode>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<!-- (M-M) Resource language - Multiple instances of this element indicate that the linguistic content of the resource is available in multiple languages -->
+			<gmd:language>
+				<!-- ISO 639-2/T three-letter language code in lowercase (http://www.loc.gov/standards/iso639-2/). -->
+				<gco:CharacterString>eng</gco:CharacterString>
+			</gmd:language>
+			<!-- (C-C) Topic category - NAP specifies that topicCategory code shall be provided when hierarchyLevel is set to "dataset" or “dataset series”. Most USGIN resources will have topicCategory=”geoscientificInformation”, which is the default value for this profile.  More specific topic categorization should be done using keywords. NAP declares not applicable to services. -->
+			<gmd:topicCategory>
+			<!-- MD_TopicCategoryCode names: {farming, biota, boundaries, climatologyMeterologyAtmosphere, economy, elevation, environment, geoscientificInformation, health, imageryBaseMapsEarthCover, intelligenceMilitary, inlandWater, location, oceans, planningCadastre, society, structure, transportation, utilitiesCommunication} -->
+				<gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<!-- (C-C) Resource content extent - Defines the spatial (horizontal and vertical) and temporal region to which the content of the resource applies. For USGIN, the spatial extent is a rectangle that bounds the geographic extent to which resource content applies. NAP specifies required when hierarchyLevel is set to ‘dataset’. USGIN specifies (description + geographicElement + temporalElement) > 0. -->
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<!-- (C-C) Resource Content extent description - Free text that describes the spatial and temporal extent of the dataset. USGIN specifies that description is mandatory if a geographicElement or temporalElement is not provided. Note that if geographic place names are used to express the geographic extent, USGIN profile specifies that these should be encoded using keyword with keyword type code = ‘place.’ Geographic names may be duplicated in the EX_Extent/description. -->
+					<!--
+					<gmd:description>
+						<gco:CharacterString>Some spatio-temporal description.</gco:CharacterString>
+					</gmd:description>
+					-->
+					<!-- (O-C) Resource content extent bounding box -USGIN profile requires that if an EX_Extent/geographicElement is supplied, it include a geographic bounding box with bounding latitude and longitude expressed using WGS 84 decimal degrees. The corner coordinates for the geographic bounding box must not coincide in one point, because this may result in fatal errors with some CSW implementations. Point locations must thus be represented as tiny rectangles. USGIN recommended practice is to place the actual point location in the lower left corner of the rectangle. -->
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:extentTypeCode>
+								<gco:Boolean>1</gco:Boolean>
+							</gmd:extentTypeCode>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>-109.911001</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>-109.910999</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>34.772899</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>34.772901</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<!-- (O-O) Resource temporal extent -  -->
+			<!--
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								--><!-- Default ISO time frame example --><!--
+								<gml:TimePeriod gml:id="IdModern">
+									<gml:name>Y2KX</gml:name>
+									--><!-- USGIN requires the beginPosition and endPosition's frame property to be defined. The default value is #ISO-8601. --><!--
+									<gml:beginPosition frame="#ISO-8601">2010-01-00T00:00:00</gml:beginPosition>
+									<gml:endPosition frame="#ISO-8601">2010-12-31T24:00:00</gml:endPosition>
+								</gml:TimePeriod>
+								--><!-- Geologic time frame example --><!--
+								<gml:TimePeriod gml:id="IdJurassic">
+									<gml:name>Jurassic</gml:name>
+									--><!-- USGIN requires the beginPosition and endPosition's frame property to be defined. The default value is #ISO-8601. --><!--
+									<gml:beginPosition frame="urn:cgi:trs:CGI:StandardGeologicTimeMa">203</gml:beginPosition>
+									<gml:endPosition frame="urn:cgi:trs:CGI:StandardGeologicTimeMa ">135</gml:endPosition>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			-->
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<!-- **************** -->
+</gmd:MD_Metadata>
