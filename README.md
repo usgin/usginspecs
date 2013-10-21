@@ -22,7 +22,7 @@ MetadataAsHypermediaApp.docx and MachineActionableLinksSummary.docx are about st
 
 USGIN services information and announcements feed.docx  outlines content for an RSS feed that users would subscribe to for announcements and information about network service operations (down time, service sunsetting, new services…)
 
-USGIN_ISO_Metadata.doc is the full-on profile for ISO metadata; not for the faint of heart; a revision and updata of the current version in repository
+USGIN_ISO_Metadata.doc is the full-on profile for ISO metadata; not for the faint of heart; the GitHub version here is the current trunk and is being updated from version 1.1.3.
 
 
 Enjoy!
