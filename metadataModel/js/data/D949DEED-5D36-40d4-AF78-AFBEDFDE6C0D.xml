@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0:1", "", "Metadata", "EARoot/EA1.htm", "175.png", "114", "0", "", "Logical diagram0","{CD7A2678-7DBF-4b71-8A6A-DB5A79AE9130}");
+tocTab[tocTab.length] = new Array("0:2", "", "LinkedResource", "EARoot/EA3.htm", "5.png", "1257", "0", "", "Class0","{429728E1-7DC5-463c-83C2-587AD8E74825}");
+tocTab[tocTab.length] = new Array("0:3", "", "«Union» Extent", "EARoot/EA5.htm", "5.png", "1202", "0", "", "Class0","{71D49A49-F936-49eb-83BF-619A5A0FE17E}");
+tocTab[tocTab.length] = new Array("0:4", "", "Keyword", "EARoot/EA6.htm", "5.png", "1203", "0", "", "Class0","{F86C2CFB-4C25-40d9-B434-5568742EC9CA}");
+tocTab[tocTab.length] = new Array("0:5", "", "Metadata", "EARoot/EA7.htm", "5.png", "1204", "0", "", "Class0","{88F98509-48FB-45f2-B9EF-A473AEFAEEA3}");
+tocTab[tocTab.length] = new Array("0:6", "", "RecommendedMetadata", "EARoot/EA8.htm", "5.png", "1205", "0", "", "Class0","{636F5CD3-BD0F-456e-A318-39F1795633E8}");
+tocTab[tocTab.length] = new Array("0:7", "", "ResponsibleParty", "EARoot/EA9.htm", "5.png", "1206", "0", "", "Class0","{E41CBC72-AA22-46bf-B2B1-C5CF1C693652}");
+tocTab[tocTab.length] = new Array("0:8", "", "temporalExtent", "EARoot/EA10.htm", "5.png", "1208", "0", "", "Class0","{A217EE55-34F8-42ee-A325-EE4DC69E3C4F}");
+tocTab[tocTab.length] = new Array("0:9", "", "WebLink", "EARoot/EA11.htm", "5.png", "1207", "0", "", "Class0","{C28DE4A3-F6F8-4c9b-B18A-1653C56FA651}");
