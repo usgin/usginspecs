@@ -18,7 +18,7 @@ USGIN information exchanges.docx is intended to describe the information exchang
 
 DefineNewInformationExchange.docx is to provide guidance on the process for setting up a new information exchange
 
-MetadataAsHypermediaApp.docx and MachineActionableLinksSummary.docx are about standardization for links to data and other information resources to take full advantage of Web architecture
+ContentModelForLinks.docx and MachineActionableLinksSummary.docx are about standardization for links to data and other information resources to take full advantage of Web architecture
 
 USGIN services information and announcements feed.docx  outlines content for an RSS feed that users would subscribe to for announcements and information about network service operations (down time, service sunsetting, new services…)
 
