@@ -1,0 +1,2785 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Simple Metadata Recommendations for Geoscience Resources</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:ArialMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.3in;
+	text-indent:-.3in;
+	page-break-before:always;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h2
+	{mso-style-name:"Heading 2\,H2";
+	mso-style-link:"Heading 2 Char\,H2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h3
+	{mso-style-name:"Heading 3\,H3";
+	mso-style-link:"Heading 3 Char\,H3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:63.0pt;
+	text-indent:-.5in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h4
+	{mso-style-name:"Heading 4\,H4";
+	mso-style-link:"Heading 4 Char\,H4 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.6in;
+	text-indent:-.6in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.7in;
+	text-indent:-.7in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.8in;
+	text-indent:-.8in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.9in;
+	text-indent:-.9in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	text-indent:-1.0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:1.1in;
+	text-indent:-1.1in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:12.0pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:24.0pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	font-size:9.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:48.0pt;
+	font-size:9.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:60.0pt;
+	font-size:9.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char1";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.MsoCommentReference
+	{font-family:"Times New Roman","serif";}
+span.MsoLineNumber
+	{font-family:"Times New Roman","serif";}
+span.MsoPageNumber
+	{font-family:"Times New Roman","serif";}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:24.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char1";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:5.0pt;
+	font-size:10.5pt;
+	font-family:"Century","serif";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{mso-style-link:"Note Heading Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+a:link, span.MsoHyperlink
+	{font-family:"Times New Roman","serif";
+	color:#0000EE;
+	text-decoration:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:"Times New Roman","serif";
+	color:purple;
+	text-decoration:underline;}
+strong
+	{font-family:"Times New Roman","serif";}
+em
+	{font-family:"Times New Roman","serif";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial Unicode MS","serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial Unicode MS","serif";}
+tt
+	{font-family:"Arial Unicode MS","serif";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char1";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char\,H2 Char";
+	mso-style-link:"Heading 2\,H2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char\,H3 Char";
+	mso-style-link:"Heading 3\,H3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char\,H4 Char";
+	mso-style-link:"Heading 4\,H4";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";}
+p.Titlepageinfo, li.Titlepageinfo, div.Titlepageinfo
+	{mso-style-name:"Title page info";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.Titlepageinfodescription, li.Titlepageinfodescription, div.Titlepageinfodescription
+	{mso-style-name:"Title page info description";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.TitlepageinfodescriptionCxSpFirst, li.TitlepageinfodescriptionCxSpFirst, div.TitlepageinfodescriptionCxSpFirst
+	{mso-style-name:"Title page info descriptionCxSpFirst";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.TitlepageinfodescriptionCxSpMiddle, li.TitlepageinfodescriptionCxSpMiddle, div.TitlepageinfodescriptionCxSpMiddle
+	{mso-style-name:"Title page info descriptionCxSpMiddle";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.TitlepageinfodescriptionCxSpLast, li.TitlepageinfodescriptionCxSpLast, div.TitlepageinfodescriptionCxSpLast
+	{mso-style-name:"Title page info descriptionCxSpLast";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Contributor, li.Contributor, div.Contributor
+	{mso-style-name:Contributor;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ContributorCxSpFirst, li.ContributorCxSpFirst, div.ContributorCxSpFirst
+	{mso-style-name:ContributorCxSpFirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ContributorCxSpMiddle, li.ContributorCxSpMiddle, div.ContributorCxSpMiddle
+	{mso-style-name:ContributorCxSpMiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ContributorCxSpLast, li.ContributorCxSpLast, div.ContributorCxSpLast
+	{mso-style-name:ContributorCxSpLast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Legalnotice, li.Legalnotice, div.Legalnotice
+	{mso-style-name:"Legal notice";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.LegalnoticeCxSpFirst, li.LegalnoticeCxSpFirst, div.LegalnoticeCxSpFirst
+	{mso-style-name:"Legal noticeCxSpFirst";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.LegalnoticeCxSpMiddle, li.LegalnoticeCxSpMiddle, div.LegalnoticeCxSpMiddle
+	{mso-style-name:"Legal noticeCxSpMiddle";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.LegalnoticeCxSpLast, li.LegalnoticeCxSpLast, div.LegalnoticeCxSpLast
+	{mso-style-name:"Legal noticeCxSpLast";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.Datatype
+	{mso-style-name:Datatype;
+	font-family:"Courier New";}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:0in;
+	margin-right:.3in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	background:#D9D9D9;
+	border:none;
+	padding:0in;
+	font-size:9.0pt;
+	font-family:"Courier New";}
+p.AppendixHeading2, li.AppendixHeading2, div.AppendixHeading2
+	{mso-style-name:AppendixHeading2;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Element
+	{mso-style-name:Element;
+	font-family:"Courier New";}
+span.Attribute
+	{mso-style-name:Attribute;
+	font-family:"Courier New";}
+span.Keyword
+	{mso-style-name:Keyword;
+	font-family:"Courier New";}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.NoteHeadingChar
+	{mso-style-name:"Note Heading Char";
+	mso-style-link:"Note Heading";
+	font-family:"Arial","sans-serif";}
+p.Note, li.Note, div.Note
+	{mso-style-name:Note;
+	margin-top:6.0pt;
+	margin-right:.5in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Definitionterm, li.Definitionterm, div.Definitionterm
+	{mso-style-name:"Definition term";
+	margin-top:4.0pt;
+	margin-right:2.0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.Definition, li.Definition, div.Definition
+	{mso-style-name:Definition;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Ref, li.Ref, div.Ref
+	{mso-style-name:Ref;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:35.0pt;
+	text-indent:-17.0pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Arial","sans-serif";}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	font-family:"Arial","sans-serif";}
+p.AppendixHeading1, li.AppendixHeading1, div.AppendixHeading1
+	{mso-style-name:AppendixHeading1;
+	margin-right:0in;
+	margin-left:.5in;
+	text-indent:-.25in;
+	page-break-before:always;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Refterm
+	{mso-style-name:"Ref term";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.Example, li.Example, div.Example
+	{mso-style-name:Example;
+	margin-top:0in;
+	margin-right:.3in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	background:#E6E6E6;
+	font-size:9.0pt;
+	font-family:"Courier New";}
+span.codelist
+	{mso-style-name:codelist;
+	font-family:"Courier New";}
+p.Codesmall, li.Codesmall, div.Codesmall
+	{mso-style-name:"Code small";
+	margin-top:0in;
+	margin-right:.3in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	background:#E6E6E6;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+p.Examplesmall, li.Examplesmall, div.Examplesmall
+	{mso-style-name:"Example small";
+	margin-top:0in;
+	margin-right:.3in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	background:#E6E6E6;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+span.Variable
+	{mso-style-name:Variable;
+	font-family:"Times New Roman","serif";
+	font-style:italic;}
+span.BodyTextChar1
+	{mso-style-name:"Body Text Char1";
+	mso-style-link:"Body Text";
+	font-family:"Century","serif";}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	font-family:"Arial","sans-serif";}
+p.RelatedWork, li.RelatedWork, div.RelatedWork
+	{mso-style-name:"Related Work";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.RelatedWorkCxSpFirst, li.RelatedWorkCxSpFirst, div.RelatedWorkCxSpFirst
+	{mso-style-name:"Related WorkCxSpFirst";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.RelatedWorkCxSpMiddle, li.RelatedWorkCxSpMiddle, div.RelatedWorkCxSpMiddle
+	{mso-style-name:"Related WorkCxSpMiddle";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.RelatedWorkCxSpLast, li.RelatedWorkCxSpLast, div.RelatedWorkCxSpLast
+	{mso-style-name:"Related WorkCxSpLast";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Abstract, li.Abstract, div.Abstract
+	{mso-style-name:Abstract;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:.5in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Notices, li.Notices, div.Notices
+	{mso-style-name:Notices;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	page-break-before:always;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.TextBody, li.TextBody, div.TextBody
+	{mso-style-name:"Text Body";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.AppendixHeading3, li.AppendixHeading3, div.AppendixHeading3
+	{mso-style-name:AppendixHeading3;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+p.OutlinedNumberd, li.OutlinedNumberd, div.OutlinedNumberd
+	{mso-style-name:"Outlined Numberd";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family:Courier;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Times New Roman","serif";}
+span.CommentTextChar1
+	{mso-style-name:"Comment Text Char1";
+	mso-style-link:"Comment Text";
+	font-family:"Arial","sans-serif";}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	font-family:"Arial","sans-serif";}
+span.CommentSubjectChar1
+	{mso-style-name:"Comment Subject Char1";
+	mso-style-link:"Comment Subject";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.ElementxPath
+	{mso-style-name:"Element\/xPath";
+	font-family:Consolas;
+	background:#E5E5E5;}
+p.Tableentry, li.Tableentry, div.Tableentry
+	{mso-style-name:"Table entry";
+	mso-style-link:"Table entry Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.Tableheading, li.Tableheading, div.Tableheading
+	{mso-style-name:"Table heading";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.arrow
+	{mso-style-name:arrow;
+	font-family:"Times New Roman","serif";}
+p.XMLExample, li.XMLExample, div.XMLExample
+	{mso-style-name:"XML Example";
+	mso-style-link:"XML Example Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+p.XMLExampleCxSpFirst, li.XMLExampleCxSpFirst, div.XMLExampleCxSpFirst
+	{mso-style-name:"XML ExampleCxSpFirst";
+	mso-style-link:"XML Example Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+p.XMLExampleCxSpMiddle, li.XMLExampleCxSpMiddle, div.XMLExampleCxSpMiddle
+	{mso-style-name:"XML ExampleCxSpMiddle";
+	mso-style-link:"XML Example Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+p.XMLExampleCxSpLast, li.XMLExampleCxSpLast, div.XMLExampleCxSpLast
+	{mso-style-name:"XML ExampleCxSpLast";
+	mso-style-link:"XML Example Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+span.TableentryChar
+	{mso-style-name:"Table entry Char";
+	mso-style-link:"Table entry";
+	font-family:"Arial","sans-serif";}
+p.xmlElement, li.xmlElement, div.xmlElement
+	{mso-style-name:xmlElement;
+	mso-style-link:"xmlElement Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"ArialMT","sans-serif";
+	color:#810000;}
+span.xmlElementChar
+	{mso-style-name:"xmlElement Char";
+	mso-style-link:xmlElement;
+	font-family:"ArialMT","sans-serif";
+	color:#810000;}
+p.xmlAttribute, li.xmlAttribute, div.xmlAttribute
+	{mso-style-name:xmlAttribute;
+	mso-style-link:"xmlAttribute Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"ArialMT","sans-serif";}
+span.xmlAttributeChar
+	{mso-style-name:"xmlAttribute Char";
+	mso-style-link:xmlAttribute;
+	font-family:"ArialMT","sans-serif";}
+span.table0020entrychar
+	{mso-style-name:table_0020entry__char;}
+span.element002fxpathchar
+	{mso-style-name:element_002fxpath__char;}
+span.XMLExampleChar
+	{mso-style-name:"XML Example Char";
+	mso-style-link:"XML Example";
+	font-family:"Courier New";}
+span.ns1
+	{mso-style-name:ns1;
+	color:red;}
+span.m1
+	{mso-style-name:m1;
+	color:blue;}
+p.ColorfulList-Accent11, li.ColorfulList-Accent11, div.ColorfulList-Accent11
+	{mso-style-name:"Colorful List - Accent 11";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ColorfulList-Accent11CxSpFirst, li.ColorfulList-Accent11CxSpFirst, div.ColorfulList-Accent11CxSpFirst
+	{mso-style-name:"Colorful List - Accent 11CxSpFirst";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ColorfulList-Accent11CxSpMiddle, li.ColorfulList-Accent11CxSpMiddle, div.ColorfulList-Accent11CxSpMiddle
+	{mso-style-name:"Colorful List - Accent 11CxSpMiddle";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.ColorfulList-Accent11CxSpLast, li.ColorfulList-Accent11CxSpLast, div.ColorfulList-Accent11CxSpLast
+	{mso-style-name:"Colorful List - Accent 11CxSpLast";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+span.RequiredField
+	{mso-style-name:"Required Field";
+	color:#7A0000;
+	font-weight:bold;
+	text-decoration:underline;}
+span.Required
+	{mso-style-name:Required;
+	color:#7A0000;
+	font-weight:bold;
+	text-decoration:underline;}
+span.ConditionalField
+	{mso-style-name:"Conditional Field";
+	font-weight:bold;
+	text-decoration:underline;}
+span.Cardinality
+	{mso-style-name:Cardinality;
+	font-family:"Calibri","sans-serif";
+	color:#7F7F7F;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in .5in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in .5in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0000EE" vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoHeader>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=769
+ style='width:461.1pt;margin-left:-3.75pt;border-collapse:collapse'>
+ <tr>
+  <td width=177 valign=top style='width:106.25pt;padding:3.5pt 3.5pt 3.5pt 3.5pt'>
+  <p class=MsoNormal><img width=144 height=144 id="Picture 5"
+  src="MetadataRecommendationsGeoscienceResources_v1.2_files/image001.gif"></p>
+  </td>
+  <td width=591 valign=top style='width:354.85pt;padding:3.5pt 3.5pt 3.5pt 3.5pt'>
+  <div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+  <p class=MsoTitle>USGIN <br>
+  U.S. Geoscience <br>
+  Information Network</p>
+  </div>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=MsoTitle>Simple Metadata Recommendations for Geoscience Resources</p>
+
+</div>
+
+<p class=Titlepageinfo>Title: </p>
+
+<p class=Titlepageinfodescription>Simple Metadata Recommendations for
+Geosciences Resources</p>
+
+<p class=Titlepageinfo>Latest released version:</p>
+
+<p class=Titlepageinfodescription>1.2</p>
+
+<p class=Titlepageinfo>Creator:</p>
+
+<p class=Titlepageinfodescription>USGIN Specifications Drafting Team </p>
+
+<p class=Titlepageinfo>Editors:</p>
+
+<p class=Titlepageinfodescription>Stephen M. Richard, Wolfgang Grunberg</p>
+
+<p class=Titlepageinfo>Creation date:</p>
+
+<p class=Titlepageinfodescription>2010-03-10</p>
+
+<p class=Titlepageinfo>Last revision date:</p>
+
+<p class=Titlepageinfodescription>7/29/2013 3:37 PM</p>
+
+<p class=Titlepageinfo>Document Status:</p>
+
+<p class=Titlepageinfodescription>v.1.2 reflects current practice in use by
+USGIN for the National Geothermal data system. </p>
+
+<p class=Titlepageinfo>Publisher:</p>
+
+<p class=Titlepageinfodescription>Arizona Geological Survey</p>
+
+<p class=Titlepageinfo>Description:</p>
+
+<p class=Titlepageinfodescription>This document provides guidance on the
+metadata content required to meet the use requirements for USGIN metadata. The
+intention is to reduce the daunting complexity of the ISO metadata
+specifications to a manageable level to promote development of interoperable
+metadata records for a federated resource catalog system.</p>
+
+<p class=Titlepageinfo>Contributor:</p>
+
+<p class=Contributor>See acknowledgements</p>
+
+<p class=Titlepageinfo>Document Identifier:</p>
+
+<p class=Titlepageinfodescription>gin2013-001.1.2</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=Notices>Notices</p>
+
+</div>
+
+<p class=MsoNormal>Neither the USGIN project, nor any of the participating
+agencies, take any position regarding the validity or scope of any intellectual
+property or other rights that might be claimed to pertain to the implementation
+or use of the technology described in this document or the extent to which any
+license under such rights might or might not be available; neither do they
+represent that there has been any effort to identify any such rights. </p>
+
+<p class=MsoNormal>This document and the information contained herein is
+provided on an &quot;AS IS&quot; basis and USGIN DISCLAIMS ALL WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
+THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES
+OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=Notices>Revision History</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=857
+ style='width:514.2pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt'>
+   <p class=MsoNormal align=center style='text-align:center'><b>Version</b></p>
+   </td>
+   <td width=90 valign=top style='width:.75in;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=MsoNormal align=center style='text-align:center'><b>Date</b></p>
+   </td>
+   <td width=510 valign=top style='width:4.25in;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=MsoNormal align=center style='text-align:center'><b>Comments </b></p>
+   </td>
+   <td width=173 valign=top style='width:103.8pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=MsoNormal><b>By</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>0.1</span></p>
+  </td>
+  <td width=90 valign=top style='width:.75in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>2010-03-10</span></p>
+  </td>
+  <td width=510 valign=top style='width:4.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Initial draft document</span></p>
+  </td>
+  <td width=173 valign=top style='width:103.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Stephen Richard </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>1.0</span></p>
+  </td>
+  <td width=90 valign=top style='width:.75in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>2010-07-15</span></p>
+  </td>
+  <td width=510 valign=top style='width:4.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Insert field summary
+  developed for AASG Geothermal data production project, with edits. Identify
+  minimum metadata record content and recommended content. Remove ‘minimum’
+  from title.</span></p>
+  </td>
+  <td width=173 valign=top style='width:103.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Stephen Richard</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>1.01</span></p>
+  </td>
+  <td width=90 valign=top style='width:.75in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>2010-07-19</span></p>
+  </td>
+  <td width=510 valign=top style='width:4.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Review, title change, and formatting</span></p>
+  </td>
+  <td width=173 valign=top style='width:103.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Wolfgang Grunberg</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>1.02</span></p>
+  </td>
+  <td width=90 valign=top style='width:.75in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>2010-07-28</span></p>
+  </td>
+  <td width=510 valign=top style='width:4.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Review</span></p>
+  </td>
+  <td width=173 valign=top style='width:103.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Stephen Richard</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:.7in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>1.03</span></p>
+  </td>
+  <td width=90 valign=top style='width:.75in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>2010-07-28</span></p>
+  </td>
+  <td width=510 valign=top style='width:4.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Formatting, PDF preparation</span></p>
+  </td>
+  <td width=173 valign=top style='width:103.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>Wolfgang Grunberg</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=Notices>Acknowledgement</p>
+
+</div>
+
+<p class=TextBody>Many individuals and organizations have contributed to or
+inspired the development of these Guidelines.</p>
+
+<p class=Titlepageinfo>The USGIN Specifications Drafting Team include
+(alphabetically): </p>
+
+<p class=Titlepageinfodescription>Ryan Clark – Arizona Geological Survey (AZGS)<br>
+Wolfgang Grunberg – AZGS<br>
+Stephen M. Richard – AZGS</p>
+
+<p class=Titlepageinfo>The NGDS Development Team include (alphabetically): </p>
+
+<p class=Titlepageinfo style='margin-left:35.0pt'><span style='font-weight:
+normal'>Kim Kurz – Boise State University (BSU)</span></p>
+
+<p class=Titlepageinfo style='margin-left:35.0pt'><span style='font-weight:
+normal'>Christian Loepp -- BSU</span></p>
+
+<p class=Titlepageinfo style='margin-left:35.0pt'><span style='font-weight:
+normal'>Walter Snyder – BSU</span></p>
+
+<p class=Titlepageinfodescription>Jordan Hastings – Nevada Bureau of Mines and
+Geology</p>
+
+<p class=Titlepageinfo style='margin-left:35.0pt'><span style='font-weight:
+normal'>&nbsp;</span></p>
+
+<p class=Titlepageinfo>Funding Provided by (chronologically): </p>
+
+<p class=TitlepageinfodescriptionCxSpFirst style='margin-left:.75in;text-indent:
+-13.5pt'>National Science Foundation under EAR-0753154 to the Arizona
+Geological Survey acting on behalf of the Association of American State
+Geologists; 2009.</p>
+
+<p class=TitlepageinfodescriptionCxSpLast style='margin-left:.75in;text-indent:
+-13.5pt'>US Department of Energy under award DE-EE0001120 to Boise State
+University; 2010.</p>
+
+<p class=Titlepageinfo>Contact Information </p>
+
+<p class=Titlepageinfodescription>Arizona Geological Survey <br>
+416 W. Congress St., Suite 100.<br>
+Tucson, Arizona 85701-1381 <br>
+Phone: 520.770.3500 <br>
+Fax: 520.770.3505</p>
+
+<p class=Titlepageinfo>Email</p>
+
+<p class=Titlepageinfodescription><a href="mailto:metadata@usgin.org">metadata@usgin.org</a></p>
+
+<p class=Titlepageinfo>Online</p>
+
+<p class=Titlepageinfodescription><a href="http://usgin.org/">http://usgin.org</a>
+<br>
+<a href="http://lab.usgin.org/">http://lab.usgin.org</a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=Notices>Table of Contents</p>
+
+</div>
+
+<p class=MsoToc1><a href="#_Toc268092849">1<span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";color:windowtext'>        </span>Introduction<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>6</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092850">1.1 Normative References<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>6</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092851">1.2 Purpose<span style='color:windowtext;
+display:none'>. </span><span
+style='color:windowtext;display:none'>6</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092852">1.3 Terminology<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc268092853">2<span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";color:windowtext'>        </span>Abbreviations<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc268092854">3<span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";color:windowtext'>        </span>Use cases,
+scenarios, requirements<span style='color:windowtext;display:none'>. </span><span style='color:windowtext;display:none'>10</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092855">3.1 Efficient searching<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092856">3.2 Identifiers<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092857">3.3 Query complexity<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092858">3.4 Accessing resources<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092859">3.5 Citation and contact information<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092860">3.6 Fitness for purpose<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092861">3.7 Branding<span style='color:windowtext;
+display:none'>. </span><span
+style='color:windowtext;display:none'>14</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092862">3.8 Access constraints, legal
+limitations<span style='color:windowtext;display:none'>. </span><span style='color:windowtext;display:none'>14</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092863">3.9 Low cost of entry<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>14</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc268092864">4<span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";color:windowtext'>        </span>Content
+specification<span style='color:windowtext;display:none'>. </span><span style='color:windowtext;display:none'>15</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092865">4.1 Minimum content<span
+style='color:windowtext;display:none'> </span><span
+style='color:windowtext;display:none'>15</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092866">4.2 Recommended metadata content<span
+style='color:windowtext;display:none'> </span><span
+style='color:windowtext;display:none'>15</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc268092867">4.2.1 Information that will be
+assumed unless specified otherwise<span style='color:windowtext;display:none'>. </span><span style='color:windowtext;display:none'>17</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc268092868">4.2.2 Resource specific requirements<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>18</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc268092869">4.2.3 Optional but highly recommended<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>18</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092870">4.3 Issues<span style='color:windowtext;
+display:none'>. </span><span
+style='color:windowtext;display:none'>18</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc268092871">5<span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";color:windowtext'>        </span>References<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>19</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc268092872">5.1 Cited literature<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>19</span></a></p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:1.0pt 0in 0in 0in'>
+
+<p class=Notices style='margin-top:24.0pt;page-break-before:auto'>Tables and
+Figures</p>
+
+</div>
+
+<p class=MsoTof><a href="#_Toc268092584">Table 1. Analysis of complex queries<span
+style='color:windowtext;display:none'>. </span><span
+style='color:windowtext;display:none'>11</span></a></p>
+
+<p class=TextBody>&nbsp;</p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:6.0pt 0in 0in 0in'>
+
+<h1><a name="_Toc268092849"></a><a name="_Ref244487330">1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Introduction</a></h1>
+
+</div>
+
+<p class=MsoNormal>A key component of a distributed information network is a
+catalog system, a collection of resources that allow data and service providers
+to register resources, and data consumers to locate and use those resources.
+Currently, many online catalogs are web pages with collections of URLs for services,
+or services are discovered accidently or by word of mouth. The vision is to
+enable a web client (portal) to search across one or more metadata registries without
+having to configure the client individually for each of the registries that
+will be searched. Thus, metadata providers can focus on data development,
+without having to also develop web clients to enable search of that metadata. </p>
+
+<p class=MsoNormal>Production of quality metadata is time consuming, tedious,
+and gets little recognition, but good metadata is an important component to
+build a useful federated information system. Existing metadata standards are
+large complex information schema designed to account for any kind of resource
+description someone might want to create. This complexity makes them hard to
+use. Our goal is to define a minimum content requirement that can be described
+in relatively simple language with common sense explanation of what the purpose
+of the content is. The scoping of the requirements is based on a collection of
+scenarios for how the metadata is intended to be used. </p>
+
+<h2><a name="_Toc268092850"></a><a name="_Toc244419013"></a>1.1 Normative
+References</h2>
+
+<p class=MsoNormal>The following referenced documents are indispensable for the
+application of this document. For dated references, only the edition cited
+applies. For undated references, the latest edition of the referenced document
+(including any amendments) applies. </p>
+
+<p class=MsoNormal><b>USGIN_ISO_Metadata_1.1.3</b> USGIN profile of ISO content
+models (ISO19115 and ISO19119) and encoding (ISO19139). Access at http://lab.usgin.org/node/235.</p>
+
+<p class=MsoNormal><b>ISO 19115</b> designates these two normative references: </p>
+
+<p class=MsoNormal>•           ISO 19115:2005, <i>Geographic information -
+Metadata</i> </p>
+
+<p class=MsoNormal>•           ISO 19115/Cor.1:2006, <i>Geographic information
+– Metadata, Technical Corrigendum</i> </p>
+
+<p class=MsoNormal><b>ISO 19119</b> designates these normative references: </p>
+
+<p class=MsoNormal>•           ISO 19119:2005, <i>Geographic information -
+Services</i> </p>
+
+<p class=MsoNormal>•           ISO 19119:2005/Amd 1:2008, <i>Extensions of the
+service metadata model ISO 19108 designates</i>: </p>
+
+<p class=MsoNormal>•           ISO 19108:2005, <i>Geographic information –
+Temporal Schema</i> </p>
+
+<p class=MsoNormal><b>ISO/TS 19139:2007</b>, Geographic information - Metadata
+– XML Schema Implementation </p>
+
+<p class=MsoNormal><b>ISO 10646-1</b>, Information technology ― Universal
+Multiple-Octet Coded Character Set (UCS) ― Part 1: Architecture and Basic
+Multilingual Plane</p>
+
+<p class=MsoNormal><strong><span style='font-family:"Arial","sans-serif"'>RFC
+2119, </span></strong>Key words for use in RFCs to Indicate Requirement Levels,
+Network Working Group, 1997.</p>
+
+<h2><a name="_Toc268092851">1.2 Purpose</a></h2>
+
+<p class=MsoNormal>This document is intended to provide guidance on the
+metadata content required to meet the use requirements for USGIN metadata. The
+intention is to reduce the daunting complexity of the ISO metadata specifications
+to a manageable level to promote development of interoperable metadata records
+for a federated resource catalog system.  </p>
+
+<h2><a name="_Toc268092852">1.3 Terminology</a></h2>
+
+<p class=MsoNormal>The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;,
+&quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;,
+&quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+document are to be interpreted as described in Internet RFC 2119.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Application profile</b>: a schema that consists of data
+elements drawn from one or more namespaces, combined together by implementers,
+and optimized for a particular local application. (Rachel Heery and Manjula
+Patel, 2000, http://www.ariadne.ac.uk/issue25/app-profiles/)</p>
+
+<p class=MsoNormal><b>Catalog application</b>: Software that implements a
+searchable metadata registry. The application must support the ability to
+register information resources, to search the registered metadata, to support
+the discovery and binding to registered information resources within an
+information community. </p>
+
+<p class=MsoNormal><b>Codelist (also as Code list)</b>: a controlled vocabulary
+that is used to populate values for an xml element. </p>
+
+<p class=MsoNormal><b>Data product specification</b>:  a definition of the data
+schema and value domains for a dataset. The data schema specifies entities
+(features), properties associated with each entity, the data type used to
+specify property values, cardinality for property values, and if applicable,
+other logical constraints that determine data validity. Value domains are
+specified for simple data types—strings or numbers, and may include controlled
+vocabularies for terminology required to specify some properties. </p>
+
+<p class=MsoNormal><b>Dataset series</b>: collection of datasets sharing the
+same product specification (ISO 19115). ISO 19115 does not define product
+specification. For the purposes of USGIN, a product specification defines a
+data schema, any required controlled vocabularies, and recommended practices
+for use of schema (see Data product specification).</p>
+
+<p class=MsoNormal><b>Dataset</b>: an identifiable collection of data
+(ISO19115). USGIN refines this concept to represent a collection of data items
+in which individual data items are identified and accessible. USGIN extends the
+concept of data items to include physical artifacts like books, printed maps
+and diagrams, photographs, and material samples--any identifiable resource of
+interest. DCMI definition is &quot;Data encoded in a defined structure&quot;
+with additional comment &quot;Examples include lists, tables, and databases. A
+dataset may be useful for direct machine processing.&quot;  Metadata for the
+collection is a different type than metadata for individual items in the
+collection (dataset vs. features). Criteria for what unifies the collection are
+variable (topic, area, author...). Data items may represent intellectual
+content -- information content and organization (data schema) -- or may
+represent particular manifestations (formats) of an intellectual artifact.</p>
+
+<p class=MsoNormal><b>Interoperability</b>: &quot;The capability to
+communicate, execute programs, or transfer data among various functional units
+in a manner that requires the user to have little or no knowledge of the unique
+characteristics of those units.&quot; ISO/IEC 2382-01 (SC36 Secretariat, 2003)</p>
+
+<p class=MsoNormal><b>Metadata element</b>: a discrete unit of metadata (ISO
+19115), an attribute of a metadata entity. A metadata element contains some
+content specifying the value of the element; this content may be simple—a number
+or string, or may be another metadata entity.</p>
+
+<p class=MsoNormal><b>Metadata entity</b>: a named set of metadata elements
+describing some aspect of a resource. </p>
+
+<p class=MsoNormal><b>Metadata register</b>: an information store that contains
+a collection of registered metadata records, maintained by a metadata registry.
+(ISO 11179)</p>
+
+<p class=MsoNormal><b>Metadata registry</b>: an information system for
+assignment of unambiguous identifiers to administered metadata records. (ISO
+11179) </p>
+
+<p class=MsoNormal><b>Metadata section</b>: Part of a metadata document
+consisting of a collection of related metadata entities and metadata elements
+(ISO 191115).</p>
+
+<p class=MsoNormal><b>Metadata</b>: data about a resource in some context.
+Generalize from ISO 11179 definition of metadata, which constrains the scope to
+data about data. For USGIN purposes, metadata may describe any resource—including
+electronic, intellectual, and physical artifacts. Metadata represent resource
+characteristics that can be queried and presented for evaluation and further
+processing by both humans and software.</p>
+
+<p class=MsoNormal><b>Profile</b>: set of one or more base standards and -
+where applicable - the identification of chosen clauses, classes, subsets,
+options and parameters of those base standards that are necessary for
+accomplishing a particular function [ISO 19101, ISO 19106]</p>
+
+<p class=MsoNormal><b>Resource</b>: An identifiable thing that fulfills a
+requirement. Usage here is closer to definition used in RDF (<a
+href="http://www.w3.org/TR/REC-rdf-syntax">www.w3.org/TR/REC-rdf-syntax</a><cite><span
+style='font-family:"Arial","sans-serif"'>), </span></cite>generalized from
+ISO19115, which defines resource as an ‘asset or means that fulfills a
+requirement’. Another definition is &quot;An object or artifact that is described
+by a record in the information model of a catalogue&quot; (OGC 07-006r1), but
+we broaden the intention to include any object or artifact that <i>can be</i>
+described by a record…</p>
+
+<p class=MsoNormal><b>Service metadata</b>: metadata describing the operations
+and information available from a server.</p>
+
+<p class=MsoNormal><b>Source Specification</b>: The specification or standard
+that is being profiled.</p>
+
+<p class=MsoNormal><b>User Community</b>: A group of users, e.g. within a
+supply-chain industry, the members of which decide to make a similar usage of
+the source specification in order to be able to interoperate.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Note that throughout this document, the names of xml
+elements are shown in <span class=ElementxPath><span style='font-size:9.0pt'>this
+typecase</span></span>. Long X-paths have been broken with non-breaking hyphen
+characters. Note that hyphens are not used in any xml attribute or element
+name, so if they appear in the text, they are strictly for better text
+wrapping. In Xpath expressions <span class=ElementxPath><span style='font-size:
+9.0pt'>/../</span></span> indicates that some elements have been omitted from
+the path.</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:6.0pt 0in 0in 0in'>
+
+<h1><a name="_Toc161664991"></a><a name="_Toc268092853"></a><a
+name="_Toc252891536"></a><a name="_Toc247465904"></a><a name="_Toc247465905"></a><a
+name="_Toc247465907"></a>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Abbreviations</h1>
+
+</div>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>CSW</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Metadata Catalog for the Web. Also abbreviated as CS-W and
+  CS/W</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>GeoSciML</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Geoscience Markup Language</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>GML</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Geographic Markup Language</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>GUID</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Global Unique Identifier</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>IEC</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>International Electrotechnical Commission</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>ISO</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>International Organization for Standardization</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>UML</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Unified Modeling Language</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>URI</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Universal Resource Identifier</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>USGIN</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>U.S. Geoscience Information Network</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>WCS</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Web coverage Service</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>WFS</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Web Feature Service</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>WSDL</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Web Services Description Language</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=105 valign=top style='width:63.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>XML</p>
+  </td>
+  <td width=594 valign=top style='width:4.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>eXtensible Markup Language</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:6.0pt 0in 0in 0in'>
+
+<h1><a name="_Toc268092854">3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Use cases, scenarios, requirements</a></h1>
+
+</div>
+
+<p class=MsoNormal>This section includes a number of user scenarios for how we
+intend USGIN metadata to be used, and discussion of several basic approach
+requirements that guide metadata content recommendations. At its heart, the
+problem is to find resources of interest via the internet, based on criteria of
+topic, place, or time, evaluate resources for an intended purpose, and learn
+how to access those resources. Detailed metadata describing a resource data
+schema, describing service or application operation, or providing detailed descriptions
+of analytical techniques and parameter are outside the scope intended for USGIN
+metadata. Our contention is that this more domain/resource specific type
+information is better accounted for with linked documents utilizing schema
+appropriate to those specific resource. Some examples include OGC
+getCapabilities, WSDL, and ISO 19110 feature catalogs. </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A user specifies a geographic bounding box or one or more text
+keywords to constrain the resources of interest, and searches a metadata
+catalog using these criteria. The user is presented with a web page containing a
+list of resources that meet the criteria, with links for each resource that
+provide additional detailed metadata, and direct access to the resource if an
+online version is accessible, e.g. as a web page, Adobe Acrobat document, or
+online application (see Accessing Resources, below).</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A client application provides user with a map window that
+contains some simple base map information (political boundaries, major roads
+and rivers). User wishes to assemble a variety of other data layers for a
+particular area for some analysis or data exploration, e.g. slope steepness,
+geologic units, bedding orientation, and vegetation type for a hazard
+assessment. User centers map view on area of interest, then using an ‘add data’
+tab, accesses a catalog application that allows them to search for web services
+that provide the desired datasets. After obtaining the results and reviewing
+the metadata for the located services, user selects one or more to add to the
+table of contents for the client application. Response from catalog has
+sufficient information to enable the client application to load and use the
+resource (e.g. serviceType, OnlineResourceLinkage). More concrete instances of
+this case would be finding Web Map services to add as layers in an ESRI ArcMap
+project, borehole Web Feature Services to post borehole logs in a 3-D mapping application,
+or water chemistry data Web Feature Service to bring data into a spreadsheet or
+database.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>User searches for boreholes in an area. Returned metadata records
+have links to metadata for related resources, like logs of different types,
+core, water quality data, etc. that the user can follow to browse metadata for
+these resources.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A catalog operator wishes to import and cache catalog records
+from a collaborating catalog that have been inserted or updated during the last
+month (harvest). This operation requires knowledge of the metadata standard and
+version used for the returned records.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A user discovers an error in a metadata record for a resource
+that they have authored, and wishes to contact the metadata producer to request
+correction.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A search returns several results that appear to contain the
+desired content, and user must select the most likely to meet their needs.
+Metadata should provide sufficient information to guide this decision.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A project geologist at Company X is searching for data relevant
+to a new exploration target, and wishes to restrict the search to resources
+that are publicly available. </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Complex search examples (see further discussion in the Query complexity section, below):</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Search based on
+related resources, for example a search for boreholes that have core. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Boreholes that
+penetrate the Escabrosa formation.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Sample
+locations for samples with uranium-lead geochronologic data.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Find links to
+pdfs of publications by Harold Drewes on southeast Arizona.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Find geologic
+maps at scale &lt; 100,000 in the Iron Mountains. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Who has a
+physical copy of USGS I-427?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc268092855">3.1 Efficient searching</a></h2>
+
+<p class=MsoNormal>A search should return results that are actually relevant. Existing
+web search tools are very good at indexing relevance based on association of
+words in text, and using links and user navigation history for those links.
+This kind of indexing does not work for datasets, in which the information may
+be encoded in binary format, and proximity of strings may be a function of the
+data serialization algorithm, not the semantics. Semantic technology is
+advancing rapidly, and there is significant effort devoted to increasing search
+efficiency using background information (common sense) encoded in ontologies.
+To index structured data more effectively and take advantage of semantic
+technology, users must describe resources using controlled vocabularies
+(ideally linked to an ontology) in a formal metadata schema. Practically
+speaking, semantic technology is still in its infancy (maybe early childhood?),
+but the issue is important for discovery of structure data. Thus, use of
+controlled vocabularies for metadata content that is meant to enable search for
+particular resource characteristics is a requirement. Determining the elements
+requiring such vocabularies must be based on specific use cases. </p>
+
+<h2><a name="_Toc268092856">3.2 Identifiers</a></h2>
+
+<p class=MsoNormal>A widely used identifier scheme is important to reduce
+duplication, and determine associations between resources. Globally unique
+identifiers are essential for the described resource, and for the metadata record.</p>
+
+<p class=MsoNormal>The current thinking in the WWW community appears to be
+converging on a consensus to use HTTP URIs that are expected to dereference to
+some useful resource representation. A widely used and understood identifier
+scheme also enables semantic web functionality; “anyone can say anything about
+anything” requires being able to identify the things. Of primary interest here
+are crowd-sourced tagging of resources and feed back on utility, and related
+resources.</p>
+
+<h2><a name="_Ref256056668"></a><a name="_Toc268092857"></a><a
+name="_Ref256067297">3.3 Query complexity</a> </h2>
+
+<p class=MsoNormal>The complex search examples in the use cases section involve
+associations between resources, or resource-specific properties. The following
+table is a decomposition of some complex query examples</p>
+
+<p class=MsoNormal><a name="_Toc268092584">Table </a>1. Analysis of complex
+queries</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt'>
+   <p class=Tableheading>Case#</p>
+   </td>
+   <td width=167 valign=top style='width:99.95pt;border:solid black 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=Tableheading>Plain language query</p>
+   </td>
+   <td width=315 valign=top style='width:189.05pt;border:solid black 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=Tableheading>Decomposition</p>
+   </td>
+   <td width=161 valign=top style='width:96.65pt;border:solid black 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+   <p class=Tableheading>Simplified solution</p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Boreholes that have core in a particular depth interval in
+  a given area. </p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Borehole-centric approach -- geographic search for
+  borehole resources (assume collar location), filter for those that have a
+  related resource ‘core’, filter again for property of related resource ‘core
+  interval = min, max depth meters’. </p>
+  <p class=MsoNormal>Alternatively, view search as actually for a ‘core’
+  resource, so search should be for ‘core’ with some given vertical extent. The
+  core resource must provide an ID ‘xxxx’ for the borehole from which it was
+  obtained. To obtain more details about the borehole, search for metadata on
+  borehole with resource ID = ‘xxxx’.</p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Include keywords for other resources associated with
+  borehole. Put information about these in the abstract. User searches catalog
+  for borehole with keyword (thesaurus=related resource) = ‘core’, reads
+  abstract to see if it is what they want.  The keywords would have to be a
+  controlled vocabulary.</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Boreholes that penetrate the Escabrosa formation in a
+  given area.</p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Geographic search for borehole resources (assume collar
+  location), filter for property ‘intersects Escabrosa formation’.
+  Alternatively, search for borehole service that includes property =
+  “formation tops”, then query that service. Service properties would have to
+  be from controlled vocabulary.</p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Include names of penetrated formations as keywords on a
+  borehole. Formation names ideally from a geologic unit lexicon.</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Locations for samples with uranium-lead geochronologic
+  data in a given area.</p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Search catalog for Geochronology data service with
+  property = ‘analysis type’ and backtrack to location point through sample
+  metadata, or search catalog for U-Pb Geochronology Data Service and backtrack
+  to location point through sample metadata, or search for ‘sample service’
+  with property = ‘analysis type’. In the second case, there would still need
+  to be some metadata property to indicate the analysis type for the service.
+  Approach via the analytical data service requires chaining to the sample
+  feature service, analogous to case 1 for borehole service.</p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Include keywords for kinds of analytical data associated
+  with a sample in the sample metadata record.  Search for samples with keyword
+  (thesaurus=analysis type) = ‘U-Pb geochronology’.  </p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Find links to pdfs of publications by Harold Drewes on
+  southeast Arizona.</p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Search for document resource with author = ‘Harold Drewes’
+  and geographic extent = ‘SE Arizona’, and online distribution format = ‘pdf’.
+  </p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Is search by representation format high enough priority to
+  support?</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Find geologic maps at scale &lt; 100,000 in the Iron Mountains.
+  </p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Search for geologic map resource with geographic extent =
+  ‘Iron Mountains, and resolution scale denominator &lt; 100000.</p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Is search by resolution high enough priority to support</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=67 valign=top style='width:40.4pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td width=167 valign=top style='width:99.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Who has a physical copy of USGS I-427?</p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Search for document publisher = USGS, Series ID = I-427,
+  offline distribution format = ‘paper copy’</p>
+  </td>
+  <td width=161 valign=top style='width:96.65pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Include the document ID in the resource description.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Consideration of these queries indicates a requirement to
+distinguish metadata service from a data service. When the request involves
+properties of specific instances of a particular resource type, a data service
+for that resource should be accessed. The metadata for that service should
+describe the properties offered for resource instances in that service. </p>
+
+<p class=MsoNormal>Cases 1-3 can be handled in a general way by a service
+chaining process, in which the catalog is searched for services offering the
+feature of interest with the property of interest that will be used as a selection
+criteria. This approach keeps the top level resource catalog simpler, but makes
+discovery operations significantly more complex. Cases 1-3 can also be handled
+with scoped keyword terms, where the scope includes things like ‘analysis
+type’,  ‘geologic unit’, ‘related resource type’. In this usage, the scope
+specifies a controlled vocabulary of categories related to some concept. Addition
+of new querying capabilities requires adding additional scoped keywords in the
+metadata. The second approach is viewed as more appropriate in a ‘keep it
+simple’ design framework for minimum metadata requirements.</p>
+
+<p class=MsoNormal>Cases 4-6 are related to document-oriented searches, for
+which distribution format and online access are important, and a number of
+bibliographic properties (scale, publisher, series, series ID, media, file
+format) come into play. </p>
+
+<h2><a name="_Toc268092858">3.4 Accessing resources</a></h2>
+
+<p class=MsoNormal>Strong conventions for what kind of URL’s are in metadata
+and how they are typed so that software can utilize them without operator
+intervention. Links in metadata to access resource should in general be
+complete URL’s that can be invoked with a simple HTTP get, without having to
+add additional request parameters. Formal elements (with controlled vocabulary
+content) should provide machine-processable information to distinguish links
+that will return a document from links that invoke a service or access an online
+interactive application. The idea is that sufficient information should be
+provided that client software can parse the metadata record and provide useful
+functionality on the resource with minimal user interaction.</p>
+
+<p class=MsoNormal>For many resources, different representations may be
+available. These might be different file formats for the same document for
+information resources. For non-information resources, a variety of
+representations that have different uses might be available. For example a
+physical sample may be represented by a text description of the sample, a
+GeoSciML xml description, visible light photograph, or images of the sample
+using other sensors.  A geologic map may be available as a paper copy, a
+scanned image, a georeferenced scanned image, a vector data set in one of
+several formats (gml, shape file, file geodatabase, MIF, DWG), through a web
+map service, or through a web feature service. Metadata for a resource should
+be able to describe all of these different representations that the resource
+provider wishes to make available, in such a way that automated clients can
+seek representations useful to that client, or search clients can present users
+with links to access different formats or representations.</p>
+
+<h2><a name="_Toc268092859">3.5 Citation and contact information</a></h2>
+
+<p class=MsoNormal>Citation information specifies the source of some content.
+Citations for the described resource specify the source for the resource
+intellectual content. The cited agent may have played various roles relative to
+the resource—author, compiler, editor, collector etc., and a controlled
+vocabulary is necessary to specify these. Citation for a metadata record
+specifies the agent responsible for producing the record, typically thought of
+as the metadata record creator. Metadata production involves elements of
+authoring, compiling, and editing. Minimally, citations must identify an
+individual person, an organization, or a role in an organization that is the
+agent filling a specified role relative to the cited resource. In most cases an
+organization will be specified, either as the employer or sponsor of a person,
+an institutional actor, or the host for some role (web master, metadata
+editor).  In addition, information required to contact the cited actor is
+required to enable metadata users to contact a person with some knowledge of
+the cited resource. For long-lived metadata, contact for an agency role is most
+likely to persist. The minimum metadata contact information required is either
+an e-mail address or telephone number.</p>
+
+<h2><a name="_Toc268092860">3.6 Fitness for purpose</a></h2>
+
+<p class=MsoNormal>The metadata should provide sufficient description of the
+resource for a user to determine if the resource is likely to meet their needs,
+and to determine what representation to access.  At the simplest level, such
+information should be provided in the abstract in the metadata record. This
+puts the onus on metadata producers to document in the abstract information
+that will be useful for users to determine fitness. Such information includes
+why the resource was produced, what sort of observation procedures were used, assessment
+of data completeness, accuracy, and precision, and comparison with other known
+similar resources.  The data quality section of ISO 19115 provides a data
+structure to formally describe this information, but the cost of using this is
+high (complex data entry), and there do not currently appear to be clients that
+utilize the information. The guiding principal should be that if users need to
+search on some particular quality criteria, specific guidance on how to encode
+that criteria in the metadata (which ISO 19139 elements, what controlled
+vocabulary to use if terminology is involved) is necessary. This is out of
+scope for a minimum metadata requirement. </p>
+
+<h2><a name="_Toc268092861">3.7 Branding</a></h2>
+
+<p class=MsoNormal>In a distributed, federated catalog system with harvesting,
+metadata records are expected to propagate far beyond their original point of
+introduction into the system. If an organization producing metadata wishes to
+be recognized, and in order for users to be able to contact the metadata originator,
+contact information for the metadata originator must be considered part of the
+metadata record, and maintained in harvest processes. For presentation to
+users, it is desirable to provide a link to an icon that can be displayed with
+records to brand the origination of the metadata. </p>
+
+<p class=MsoNormal>The same considerations hold for the resource itself.</p>
+
+<h2><a name="_Toc268092862">3.8 Access constraints, legal limitations</a></h2>
+
+<p class=MsoNormal>Metadata records that are not for public consumption should
+never be exposed to a harvesting request. Implementation of security and access
+control must occur at a lower layer in the network stack than the catalog
+service is operating, such that authorization/ user authentication information
+is handled by the environment containing the catalog client and server. Metadata
+for commercially licensed resources may be publicly accessible, but should clearly
+indicate the licensing requirements and procedure.</p>
+
+<h2><a name="_Toc268092863">3.9 Low cost of entry</a></h2>
+
+<p class=MsoNormal>Metadata producers should be able to reuse and build on
+existing structured metadata. Minimum requirements should be limited to
+information that is commonly available. Resource specific details should be
+provided in text elements in the metadata. Special information necessary to
+utilize web links (e.g. web service operation) in metadata should be provided
+by text in the metadata or through linked documents. </p>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:6.0pt 0in 0in 0in'>
+
+<h1><a name="_Toc268092864">4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Content specification</a></h1>
+
+</div>
+
+<p class=MsoNormal>Based on the above discussion, the following metadata content
+requirements are specified. </p>
+
+<p class=MsoNormal>We are not proscribing any particular metadata format, but
+strongly recommend <a
+href="http://lab.usgin.org/profiles/usgin-iso-19139-profile">ISO19139 XML</a> or
+<a href="http://www.fgdc.gov/metadata/geospatial-metadata-standards">FGDC CSDGM
+XML</a>. Explanation of fonts used: <i>Terms in italics are groupings of
+metadata properties</i>;  <span class=RequiredField><u><span style='color:red'>required
+(not nilable)</span></u></span>, <span class=RequiredField><u>required
+(nilable)</u></span>, <span class=ConditionalField><u>conditional</u></span>,
+and <b>optional</b> metadata content; (<span class=Cardinality>number of values
+that can be specified are in gray</span>). </p>
+
+<h2><a name="_Toc268092865">4.1 Minimum content</a></h2>
+
+<p class=MsoNormal>The follow list includes the minimum required content for
+basic resource description, discovery, and access. Several of the use case
+scenarios outlined above could not be supported with only this content.</p>
+
+<h3>4.1.1 Essential</h3>
+
+<p class=MsoNormal>If these elements do not provide useful information, the
+metadata is considered useless for even the most rudimentary discovery use
+cases. USGIN conformant metadata MUST provide valid values, i.e. a meaningful
+title that identifies the resource, either a URL or text statement of how to
+obtain the resource, and if the resource is geolocated, a bounding box (see
+discussion of Extent, below).</p>
+
+<p class=ColorfulList-Accent11CxSpFirst style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u><span style='color:red'>Title</span></u></span><span
+style='color:red'> </span>(<span class=Cardinality>1 entry</span>): Succinct
+(preferably &lt;250 characters) name of the resource; should be sufficient to
+uniquely identify the resource for a human user.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u><span style='color:red'>Access
+Instructions</span></u></span><span style='color:red'> </span>(<span
+class=Cardinality>1 entry</span>): Text description of how to access the
+resource. If the resource is accessible online, this must be a URL that will
+retrieve the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpLast style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Geographic Extent - Horizontal</i> (<span class=Cardinality>1
+entry</span>, minimum bounding rectangle):<span class=RequiredField><u><span
+style='color:red'> North Bounding Latitude, South Bounding Latitude, East
+Bounding Longitude, West Bounding Longitude.</span></u></span> Values given in
+decimal degrees using the <a
+href="http://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a> datum.
+Some resources may not be usefully described by an extent; if no extent is
+specified the default is Earth. If a resource is located by a point, a tiny
+bounding box will be constructed with the point location in the SW corner.</p>
+
+<h3>4.1.2 Mandatory, but nilable</h3>
+
+<p class=MsoNormal>Content elements for which every resource should have useful
+information, but for which the information may not be available. Must be
+included in metadata record, but may have value 'nil:missing'.</p>
+
+<p class=ColorfulList-Accent11CxSpFirst style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Description</u></span> (<span
+class=Cardinality>1 entry</span>): Inform the reader about the resource's
+content as well as its context. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Originators</u></span> (<span
+class=Cardinality>1 to many entries</span>): Authors, editors, or corporate
+authors/curators of the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpLast style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Publication Date</u></span><strong><span
+style='font-family:"Arial","sans-serif"'> </span></strong>(<span
+class=Cardinality>1 entry</span>): Publication, origination, or update date
+(not temporal extent) for the resource. Use a &quot;year&quot; or <a
+href="http://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations">ISO
+8601 date and time</a> format. Alternative date formatting must be machine
+readable and consistent across all datasets. If no publication date is known,
+estimate the publication date range, enter the oldest year as the publication
+date, and include the estimated date range in the Description field.</p>
+
+<h3>4.1.3 Mandatory, generally provided automatically</h3>
+
+<p class=MsoNormal>These elements provide essential information for the
+operation of a distributed catalog system with harvesting of metadata between
+catalog servers. Values should be populated automatically by metadata creation
+tools, requiring no user input. Nil values are allowed.</p>
+
+<p class=ColorfulList-Accent11CxSpFirst style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u>Distribution Contact Party</u></span><i> </i>(<span
+class=Cardinality>1 entry</span>): The party (name of organization or person,
+etc.) to contact about accessing the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u>Distribution Contact Email</u></span> (<span
+class=Cardinality>1 entry</span>): How to contact the party responsible for
+distribution</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Metadata Date</u></span> (<span
+class=Cardinality>1 entry</span>): Last metadata update/creation date-time
+stamp in <a
+href="http://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations">ISO
+8601 date and time</a> format. This may be automatically updated on metadata
+import if a metadata format conversion is necessary. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Metadata Contact Party</u></span><i>
+</i>(<span class=Cardinality>1 entry</span>): The party (name of organization
+or person, etc.) to contact with questions about the metadata itself</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Metadata Contact Email</u></span> (<span
+class=Cardinality>1 entry</span>): How to contact the party responsible for
+metadata content and accuracy </p>
+
+<p class=ColorfulList-Accent11CxSpLast style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u>Metadata Specification</u></span> (<span
+class=Cardinality>1 entry</span>): Identifier for metadata specification used
+to create a metadata record encoding this content. </p>
+
+<h2><a name="_Toc268092866">4.2 Recommended metadata content</a></h2>
+
+<p class=MsoNormal>This section extends the minimum content requirements with
+recommended content to produce useful metadata to describe resources, credit
+the originator of the resource, and inform users how to obtain or access a
+resource. The resource description should provide sufficient information to
+assist in discovery of the resource through an online search, and to allow
+users to evaluate the fitness of the resource for an intended purpose.</p>
+
+<p class=MsoNormal>Explanation of fonts used: <i>Terms in italics are groupings
+of metadata properties</i>;  <span class=RequiredField><u><span
+style='color:red'>required (not nilable)</span></u></span>, <span
+class=RequiredField><u>required (nilable)</u></span>, <span
+class=ConditionalField><u>conditional</u></span>, and <b>optional</b> metadata
+content; (<span class=Cardinality>number of values that can be specified are in
+gray</span>). </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=ColorfulList-Accent11CxSpFirst style='margin-left:.25in;text-indent:
+-.25in'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i>Resource</i></p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u><span style='color:red'>Title</span></u></span><span
+style='color:red'> </span>(<span class=Cardinality>1 entry</span>): Succinct
+(preferably &lt;250 characters) name of the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Description</u></span> (<span
+class=Cardinality>1 entry</span>): Inform the reader about the resource's
+content as well as its context. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Originators</u></span> (<span
+class=Cardinality>1 to many entries</span>): Authors, editors, or corporate
+authors/curators of the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Publication Date</u></span><strong><span
+style='font-family:"Arial","sans-serif"'> </span></strong>(<span
+class=Cardinality>1 entry</span>): Publication, origination, or update date
+(not temporal extent) for the resource. Use a &quot;year&quot; or <a
+href="http://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations">ISO
+8601 date and time</a> format. Alternative date formatting must be machine
+readable and consistent across all datasets. If no publication date is known,
+estimate the publication date range, enter the oldest year as the publication
+date, and include the estimated date range in the Description field.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Geographic Extent - Horizontal</i> (<span class=Cardinality>1
+entry</span>, minimum bounding rectangle):<span class=RequiredField><u><span
+style='color:red'> North Bounding Latitude</span></u></span><span
+class=RequiredField><u><span style='color:red;font-weight:normal'>, </span></u></span><span
+class=RequiredField><u><span style='color:red'>South Bounding Latitude</span></u></span><span
+class=RequiredField><u><span style='color:red;font-weight:normal'>, </span></u></span><span
+class=RequiredField><u><span style='color:red'>East Bounding Longitude</span></u></span><span
+class=RequiredField><u><span style='color:red;font-weight:normal'>, </span></u></span><span
+class=RequiredField><u><span style='color:red'>West Bounding Longitude.</span></u></span>
+Values given in decimal degrees using the <a
+href="http://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a> datum.
+Some resources may not be usefully described by an extent; if no extent is
+specified the default is Earth. If a resource is located by a point, a tiny
+bounding box will be constructed with the point location in the SW corner.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Contact - Author or Intellectual Originator</i> (<span
+class=Cardinality>0 to 1 entry</span>): The primary party responsible for creating
+the resource.<b> <span class=ConditionalField><u>Organization Name</u></span></b>,<b>
+<span class=ConditionalField><u>Person Name</u></span>, Street Address</b>,<b> city</b>,<b>
+State</b>,<b> ZIP Code</b>,<b> Email</b>,<b> Phone</b>,<b> Fax, URL</b>. If
+contact information is provided, include at least the organization or author
+name.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><strong><span style='font-family:"Arial","sans-serif"'>Bibliographic
+Citation</span></strong> (<span class=Cardinality>0 to 1 entry</span>):  Full
+bibliographic citation if the resource has been published. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><strong><span style='font-family:"Arial","sans-serif"'>Subject Keywords
+</span></strong>(<span class=Cardinality>0 to many entries</span>): Thematic,
+spatial and temporal free-form subject descriptors for the resource. A keyword
+may be assigned on metadata import if none are present. If possible, submit
+keywords in separate Thematic, Spatial, and Temporal keyword categories. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><strong><span style='font-family:"Arial","sans-serif"'>Resource Language
+</span></strong>(<span class=Cardinality>0 to 1 entry</span>): Use three letter
+<a href="http://www.loc.gov/standards/iso639-2/langhome.html">ISO 639-2
+language code</a> (defaults to &quot;eng&quot; for English).</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Resource ID</b> (<span class=Cardinality>0 to many entries</span>):
+Resource identifier(s) following any public or institutional standard.
+Identified consists of an identifier string and if applicable a<b> Resource ID
+Protocol</b> identifier string that specifies the protocol for the resource ID
+standard. For example: undefined, ISBN-10, ISBN-13, ISSN, URN, URI, IRI, DOI,
+HTTP, SSN, etc. <br>
+Examples: <span class=XMLExampleChar><span style='font-size:8.0pt;line-height:
+115%'>doi:10.1000/182</span></span>; <span class=XMLExampleChar><span
+style='font-size:8.0pt;line-height:115%'>isbn:0-671-62964-6</span></span>; <span
+class=XMLExampleChar><span style='font-size:8.0pt;line-height:115%'>issn:1935-6862</span></span>;
+<span class=XMLExampleChar><span style='font-size:8.0pt;line-height:115%'>azgs</span></span>:<span
+class=XMLExampleChar><span style='font-size:8.0pt;line-height:115%'>OFR-10-02</span></span><span
+class=XMLExampleChar><span style='line-height:115%;font-family:"Arial","sans-serif"'>
+<br>
+</span></span>Many protocols build the identifier for the protocol into the
+identifier string. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Geographic Extent – Vertical </i>(<span class=Cardinality>0 to
+1 entry*</span>): <strong><span style='font-family:"Arial","sans-serif"'>Datum Elevation</span></strong>,
+<strong><span style='font-family:"Arial","sans-serif"'>Datum Type</span></strong>,
+<strong><span style='font-family:"Arial","sans-serif"'>Maximum Elevation, Minimum
+Elevation</span></strong>. Values given in meters. Maximum and Minimum Elevations
+are relative to the reported datum elevation, which will typically be the Earth
+surface at the location of the resource or sea level. Datum Elevation must be
+reported relative to mean sea level (MSL) in meters using <a
+href="http://www.epsg-registry.org/report.htm?type=selection&amp;entity=urn:ogc:def:crs:EPSG::5714&amp;reportDetail=long&amp;style=urn:uuid:report-style:default-with-urn&amp;style_name=OGP%20Default%20With%20Urn&amp;title=">EPSG::5714
+geodetic parameters</a> (WGS 84). Datum type must be a controlled vocabulary
+(Earth surface, MSL, Kelly bushing, etc.). The maximum is always numerically
+greater than the minimum elevation. For boreholes with datum at the earth
+surface, use the EPSG codes for vertical coordinate systems summarized in Table 2. These codes specify the units of measure and orientation of the coordinate
+system, i.e. positive up or positive down. The Datum elevation is the ground
+surface when defining these local reference systems.  <span class=Cardinality>*</span>Vertical
+extent may be reported relative to different datum (e.g. sea level, Earth
+surface) in the same record.  Example: core from borehole at depths between 100
+and 470 feet, borehole collar at 4787 feet above sea level. Vertical extent
+could be reported in any of the following ways: </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:1.25in;text-indent:
+-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>{0, EPSG::5714, 1420, 1308}</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:1.25in;text-indent:
+-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>{1450.6,EPSG::6499, -30.3, -142.4}</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:1.25in;text-indent:
+-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>{1450.6, EPSG:6498, 30.3, 142.4}.</p>
+
+<p class=ColorfulList-Accent11CxSpLast style='margin-left:.75in'><a
+name="_Ref348554428">Method 3 is the normal approach to reporting depth
+positive downward in a borehole, and is the preferred representation.</a></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Table 2. EPSG codes for vertical coordinate systems</p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=134 valign=top style='width:80.15pt;border:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><b><span style='font-size:12.0pt'>EPSG
+  code</span></b></p>
+  </td>
+  <td width=248 valign=top style='width:148.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><b><span style='font-size:12.0pt'>Vertical
+  CS.</span></b></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=134 valign=top style='width:80.15pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>EPSG::6495</p>
+  </td>
+  <td width=248 valign=top style='width:148.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>Orientation: down. UoM: ft.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:80.15pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>EPSG::6498</p>
+  </td>
+  <td width=248 valign=top style='width:148.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>Orientation: down. UoM: m.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:80.15pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>EPSG::1030</p>
+  </td>
+  <td width=248 valign=top style='width:148.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>Orientation: up. UoM: ft.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:80.15pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>EPSG::6499</p>
+  </td>
+  <td width=248 valign=top style='width:148.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'>Orientation: up. UoM: m.</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=ColorfulList-Accent11CxSpFirst>&nbsp;</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Temporal Extent</i> – Temporal range over which the resource
+was collected or is valid. If the resource pertains to specific named geologic
+time periods, those terms should be entered as keywords (preferable as part of
+Temporal Keywords). <b>Start Date</b> (<span class=Cardinality>0 to 1 entry</span>),
+<span class=ConditionalField><u>End Date</u></span> (<span class=Cardinality>0
+to 1 entry</span>; required if start date exists),use <a
+href="http://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations">ISO
+8601 date and time</a> format.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Quality Statement</b> (<span class=Cardinality>0 to 1 entry</span>):
+Text specification of the quality of the resource.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Lineage Statement</b> (<span class=Cardinality>0 to 1 entry</span>):
+Text description of the resource's provenance.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.25in;text-indent:
+-.25in'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i>Access</i></p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u><span style='color:red'>Access
+Instructions</span></u></span><span style='color:red'> </span>(<span
+class=Cardinality>1 entry</span>): Text description of how to access the
+resource. If the resource is accessible online, this must be a URL that will
+retrieve the resource (see below).</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=ConditionalField><u>Link to the resource</u></span> (<span
+class=Cardinality>0 to many entries</span>): A URL pointing to a resource or
+resource webpage, mandatory, not nilable if the resource is accessible online.   <strong><span
+style='font-family:"Arial","sans-serif";color:red'>URL</span></strong>, <strong><span
+style='font-family:"Arial","sans-serif"'>Link</span></strong> <strong><span
+style='font-family:"Arial","sans-serif"'>Function</span></strong>, <strong><span
+style='font-family:"Arial","sans-serif"'>Representation Format</span></strong>.
+URL is minimum content required if a link is included. Optionally, a Link Function
+term from the ISO19115 OnlineFunctionCode controlled vocabulary specifies what
+a HTTP GET using the URL will invoke. The link might return an html page,
+electronic document in some other format, an end point for a service, an online
+application that requires user interaction, etc. Representation Format is a controlled
+vocabulary term specifying the format (MIME media types) of a file-based response
+if applicable. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Distribution Contact</i> (<span class=Cardinality>1 entry</span>):
+The party to contact about accessing the resource. <span class=Required><u>Organization</u></span><span
+class=RequiredField><u> Name</u></span>, <b>Person Name, Street Address</b>, <b>City</b>,
+<b>State</b>, <b>ZIP Code</b>, <span class=Required><u>Email</u></span>, <strong><span
+style='font-family:"Arial","sans-serif"'>Phone</span></strong>, <b>Fax, URL</b>.
+In general, a contact for distribution should be required for physical
+resources. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Constraints Statement</b> (<span class=Cardinality>0 to 1 entry</span>):
+describe the resource's legal and usage constraints.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Distribution Keywords </b>(<span class=Cardinality>0 to many
+entries</span>): keywords describing the physical form of the resource (core,
+rock sample, digital file, book, journal article), formatting of resource
+content (file format, e.g. tiff, xls, MIME type), or physical distribution
+media (film, floppy disk, online service, hard copy). Table 6 in USGIN ISO
+metadata profile includes a vocabulary for distribution format for use with the
+ISO19115 distributionFormat name property. Use of these keywords allows users
+to search for particular kinds of artifacts.</p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.25in;text-indent:
+-.25in;page-break-after:avoid'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i>Metadata </i></p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=RequiredField><u>Metadata Date</u></span> (<span
+class=Cardinality>1 entry</span>): Last metadata update/creation date-time
+stamp in <a
+href="http://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations">ISO
+8601 date and time</a> format. This may be automatically updated on metadata
+import if a metadata format conversion is necessary. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><i>Metadata Contact</i> (<span class=Cardinality>1 entry</span>):
+The party to contact with questions about the metadata itself. <span
+class=RequiredField><u>Organization Name</u></span>, <b>Person Name, Street Address</b>,
+<b>City</b>, <b>State</b>, <b>ZIP Code</b>, <span class=RequiredField><u>Email</u></span>,
+<b>Phone</b>, <b>Fax, URL</b>. </p>
+
+<p class=ColorfulList-Accent11CxSpMiddle style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span class=Required><u>Metadata Specification</u></span> (<span
+class=Cardinality>1 entry</span>): Identifier string for the metadata
+specification used to create a metadata record encoding this content. Should
+indicate the base standard and version, as well as any profile that applies to
+the content or encoding. Ideally the identifier could be dereferenced to obtain
+information about the applicable specification. Identifiers for metadata
+encoding specifications to be used in the USGIN and NGDS systems will have to
+be formally defined and registered for such identifiers to be broadly useful.</p>
+
+<p class=ColorfulList-Accent11CxSpLast style='margin-left:.75in;text-indent:
+-.25in'><span style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Metadata UUID</b> (<span class=Cardinality>0 to 1 entry</span>):
+A Universally Unique Identifier (<a
+href="http://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUID</a>)
+will be assigned during the metadata import process if one is not provided.
+Unique identification of each metadata record is required to avoid duplicate
+entries across multiple metadata catalogs. The UUID format provides unique
+identification without centralized coordination.</p>
+
+<h3><a name="_Toc268092867">4.2.1 Information that will be assumed unless
+specified otherwise</a></h3>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><a href="http://en.wikipedia.org/wiki/Character_encoding">Character
+     encoding </a>of the metadata. Default is <a
+     href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a>.</li>
+ <li class=MsoNormal>Language of metadata (English)</li>
+ <li class=MsoNormal>Language of resource (English)</li>
+</ol>
+
+<h3><a name="_Toc268092868">4.2.2 Resource specific requirements</a></h3>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Vertical extent is required for resources that pertain to a
+     subsurface, ocean, or atmosphere location.  If no vertical extent is
+     specified, it is assumed to be the current Earth surface.</li>
+ <li class=MsoNormal>Published documents require a standard bibliographic citation
+     (author, year, publisher, series, volume, page numbers, etc.) as specified
+     by a publication style or guideline. Some example guidelines include <a
+     href="http://pubs.usgs.gov/sta7/">USGS Suggestions to Authors</a> and MLA
+     Style Manual; the community will need to agree on conventions to use for
+     citation syntax to improve interoperability. In general, for
+     web-accessible digital resources that are the typical items of interest
+     that will be cited, full text searches are anticipated to be the most
+     common use case. Unless clear examples of use cases requiring more
+     disaggregated representation of citations in the metadata (e.g. separate
+     attributes for publisher, larger work title, larger work editor, volume,
+     issue number, etc…) we will stick to simple text blob citations. </li>
+ <li class=MsoNormal>Spatial data specification require information on spatial
+     resolution and terms to categorize spatial representation type: raster
+     (spatial array), polygon, lines, and points</li>
+ <li class=MsoNormal>Web Services require: </li>
+ <ol style='margin-top:0in' start=1 type=a>
+  <li class=MsoNormal>service type from controlled vocabulary. See Table 11 in
+      USGIN ISO metadata profile for a starting-point interim vocabulary.</li>
+  <li class=MsoNormal>URL for service-specific document that describes
+      operation of service (e.g. OGC GetCapabilities, WSDL)</li>
+  <li class=MsoNormal>Base URL for service requests</li>
+  <li class=MsoNormal>Contact information for service provider</li>
+ </ol>
+</ol>
+
+<h3><a name="_Toc268092869">4.2.3 Optional but highly recommended</a></h3>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Citations for resource creator and metadata creator should
+     include URL for icons to display to brand content in presentation to user.</li>
+ <li class=MsoNormal>Use scoped keywords from community thesauri to increase
+     search efficiency. A gazetteer thesaurus like USGS place names is one
+     obvious candidate. Details need to be determined.</li>
+</ol>
+
+<h2><a name="_Toc268092870">4.3 Issues</a></h2>
+
+<p class=MsoNormal>How to deal with binding between related resources, like
+core association with logs from same borehole.</p>
+
+<b><span style='font-size:18.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<div style='border:none;border-top:solid gray 1.0pt;padding:6.0pt 0in 0in 0in'>
+
+<h1 style='page-break-before:auto'><a name="_Toc268092871">5<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References</a></h1>
+
+</div>
+
+<h2><a name="_Toc268092872">5.1 Cited literature</a></h2>
+
+<p class=Ref>[Dublin Core]  2008-01-14 Dublin core Metadata Element Set,
+Version 1.1: Dublin Core Metadata Initiative, accessed at <a
+href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>.
+</p>
+
+<p class=Ref>Franklin, Michael, Halevy, Alon, and Maier, David, 2005, From
+databases to dataspaces: a new abstraction for information management: ACM
+SIGMOD Record, V. 34, No. 4, ISSN:0163-5808.</p>
+
+<p class=Ref>[ANZLIC, 2007]  ANZLIC Metadata Profile Guidelines, Version 1.0:
+Turner, ACT, ANZLIC - the Spatial Information Council, ISBN: 978-0-646-46940-9,
+372 p. </p>
+
+<p class=Ref><span class=Refterm><span style='font-family:"Arial","sans-serif"'>[</span></span><span
+class=Refterm><span style='font-family:"Arial","sans-serif"'>INSPIRE
+ISO19115/119</span></span><span class=Refterm><span style='font-family:"Arial","sans-serif"'>]    </span></span>Drafting
+Team Metadata and European Commision Joint Research Centre, 2009-02-18, INSPIRE
+Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN
+ISO 19119,v. 1.1: European Commission Joint Research Centre,
+MD_IR_and_ISO_20090218.</p>
+
+<p class=Ref>[USGIN 2010]  2010-0304,  Use of ISO 19139 xml schema to describe
+geoscience information resources, v. 1.1.2, USGIN Standards and protocols
+drafting team, document gin2010-009, accessed at http://lab.usgin.org/sites/default/files/profile/file/u1/USGIN_ISO_Metadata_1.1.2.pdf.</p>
+
+</div>
+
+</body>
+
+</html>
