@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>API Blueprint::ParametersSection</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ParametersSection", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">5/7/2015 1:03:57 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/7/2015 1:19:36 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">srichard</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{1B017ED5-87C1-4410-8E61-BDDEE3691AFA}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA46.htm">API Blueprint Document</a>, <a href="EA50.htm">APIBlueprintSection hierarchy</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Defined by the Parameters keyword written in a Markdown list item:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;+ Parameters&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Discussion of URI parameters in the scope of the parent section.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;This section must be composed of nested list items only. This section must not contain any other elements. Each list item describes a single URI parameter. The nested list items subsections inherit from the Named section and are subject to additional formatting as follows:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;+ &lt;parameter name&gt;: `&lt;example value&gt;` (&lt;type&gt; | enum[&lt;type&gt;], required | optional) - &lt;description&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; &lt;additional description&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; + Default: `&lt;default value&gt;`&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; + Members&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; + `&lt;enumeration value 1&gt;` - &lt;enumeration description 1&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; + `&lt;enumeration value 2&gt;` - &lt;enumeration description 2&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ...&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160; + `&lt;enumeration value N&gt;` - &lt;enumeration description N&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Where:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;parameter name&lt;/b&gt;&gt; is the parameter name as written in Resource Section&#39;s URI (e.g. &quot;id&quot;).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;description&lt;/b&gt;&gt; is any optional Markdown-formatted description of the parameter.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;additional description&lt;/b&gt;&gt; is any additional optional Markdown-formatted description of the parameter.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;default value&lt;/b&gt;&gt; is an optional default value of the parameter &#8211; a value that is used when no value is explicitly set (optional parameters only).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;example value&lt;/b&gt;&gt; is an optional example value of the parameter (e.g. 1234).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;type&lt;/b&gt;&gt; is the optional parameter type as expected by the API (e.g. &quot;number&quot;, &quot;string&quot;, &quot;boolean&quot;). &quot;string&quot; is the default.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Members is the optional enumeration of possible values. &lt;type&gt; should be surrounded by enum[] if this is present. For example, if enumeration values are present for a parameter whose type is number, then enum[number] should be used instead of number to.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;enumeration value n&lt;/b&gt;&gt; represents an element of enumeration type.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;&lt;b&gt;enumeration description n&lt;/b&gt;&gt; is the optional description of the corresponding enumeration element.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;required is the optional specifier of a required parameter (this is the default)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;optional is the optional specifier of an optional parameter.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE: This section should only contain parameters that are specified in the parent&#39;s resource URI template, and does not have to list every URI parameter.&lt;br /&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA84.htm">ResourceSection</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> URIparameters<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink133" onclick="parent.toggleDiv('detailsDIVLink133','DetailsImageLink133')" />Details:
+							<div id="detailsDIVLink133" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">URI parameters defined in the scope of a Resource section apply to any and all nested Action sections except when an URI template has been defined for the Action.</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA54.htm">ActionSection</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> actionParameter<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink134" onclick="parent.toggleDiv('detailsDIVLink134','DetailsImageLink134')" />Details:
+							<div id="detailsDIVLink134" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">This section may include one nested URI parameters section describing any URI parameters specific to the action &#8211; URI parameters discussed in the scope of an Action section apply to the respective Action section ONLY.</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA68.htm">ListSection</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

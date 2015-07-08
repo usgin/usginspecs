@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.3:1", "", "DCAT", "EARoot/EA3/EA90.htm", "175.png", "5", "0", "", "Logical diagram0","{8071E028-9F4D-4a9b-92BE-C697D8B900D7}");
+tocTab[tocTab.length] = new Array("0.3:2", "", "accessURL", "EARoot/EA3/EA92.htm", "5.png", "33", "0", "", "Class0","{04974909-B118-4e7b-8564-270D3DA688A4}");
+tocTab[tocTab.length] = new Array("0.3:3", "", "byteSize", "EARoot/EA3/EA93.htm", "5.png", "37", "0", "", "Class0","{EC405E8B-236A-43f6-BD25-5D95BD2069F3}");
+tocTab[tocTab.length] = new Array("0.3:4", "", "Catalog", "EARoot/EA3/EA94.htm", "5.png", "44", "0", "", "Class0","{E13C0B65-4A70-47ae-BDEB-1234BC7F3D35}");
+tocTab[tocTab.length] = new Array("0.3:5", "", "CatalogRecord", "EARoot/EA3/EA95.htm", "5.png", "39", "0", "", "Class0","{EF425362-05D9-426c-8E16-184F1A65D6C5}");
+tocTab[tocTab.length] = new Array("0.3:6", "", "contactPoint", "EARoot/EA3/EA96.htm", "5.png", "27", "0", "", "Class0","{4518B028-BCA3-41fa-AAED-F05B9923C916}");
+tocTab[tocTab.length] = new Array("0.3:7", "", "Dataset", "EARoot/EA3/EA97.htm", "5.png", "16", "0", "", "Class0","{FC4E5768-810E-4b28-A4EB-8E115D28F5F3}");
+tocTab[tocTab.length] = new Array("0.3:8", "", "Distribution", "EARoot/EA3/EA98.htm", "5.png", "48", "0", "", "Class0","{FBA4C4EE-9CCD-4c92-9055-58A034E654A0}");
+tocTab[tocTab.length] = new Array("0.3:9", "", "downloadURL", "EARoot/EA3/EA99.htm", "5.png", "35", "0", "", "Class0","{62814752-C9D7-4e11-9F57-A8C9A5F4CD66}");
+tocTab[tocTab.length] = new Array("0.3:10", "", "keyword", "EARoot/EA3/EA100.htm", "5.png", "25", "0", "", "Class0","{C55CD865-27BB-4eae-A2C0-18E3AB847E2A}");
+tocTab[tocTab.length] = new Array("0.3:11", "", "landingPage", "EARoot/EA3/EA101.htm", "5.png", "38", "0", "", "Class0","{CA3C00CC-2893-4aff-8620-C5D2B689776E}");
+tocTab[tocTab.length] = new Array("0.3:12", "", "mediaType", "EARoot/EA3/EA102.htm", "5.png", "36", "0", "", "Class0","{8CA2A835-7F5C-41e1-BF00-792048C3F19A}");

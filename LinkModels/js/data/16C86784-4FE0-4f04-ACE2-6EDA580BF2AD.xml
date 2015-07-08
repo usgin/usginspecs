@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.1", "1", "synthesisSMR", "EARoot/EA1.htm", "4.png", "", "", "{BAE4DB47-A2AC-4c4e-B5FE-CBE0DE0C3862}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "API Blueprint", "EARoot/EA2.htm", "4.png", "", "", "{5F69872F-57EF-4b21-A2B3-A5ECEA0D474D}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "DCAT", "EARoot/EA3.htm", "4.png", "", "", "{BD7848AC-947D-47f4-B1F9-A8C5A9F62952}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "RAML", "EARoot/EA4.htm", "4.png", "", "", "{2D15818F-237F-4f9c-8F35-0A231C2B0E0C}", "Package");
+tocTab[tocTab.length] = new Array("0.5", "1", "Swagger", "EARoot/EA5.htm", "4.png", "", "", "{69F72940-A07F-40d6-ACE2-B483C9CB663F}", "Package");
+tocTab[tocTab.length] = new Array("0.6", "1", "SKOS", "EARoot/EA6.htm", "4.png", "", "", "{135CEDD3-E3FC-48e6-8911-31E5FC6F5C54}", "Package");
+tocTab[tocTab.length] = new Array("0.7", "1", "dct", "EARoot/EA7.htm", "4.png", "", "", "{4F616A82-2B02-4ff7-99D8-33ACD54B0317}", "Package");
+tocTab[tocTab.length] = new Array("0.8", "1", "dctype", "EARoot/EA8.htm", "4.png", "", "", "{238F64DC-785C-4906-A4A9-FF183CBA5DB7}", "Package");
+tocTab[tocTab.length] = new Array("0.9", "1", "foaf", "EARoot/EA9.htm", "4.png", "", "", "{F1E88509-39AA-423d-97CB-C437A33F81B2}", "Package");

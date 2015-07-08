@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.7:1", "", "dct", "EARoot/EA7/EA144.htm", "175.png", "7", "0", "", "Logical diagram0","{2766CB44-1EC5-4911-99AB-16701923BF8E}");
+tocTab[tocTab.length] = new Array("0.7:2", "", "accrualPeriodicity", "EARoot/EA7/EA146.htm", "5.png", "30", "0", "", "Class0","{D2919D18-473B-4d1c-8848-09B941578490}");
+tocTab[tocTab.length] = new Array("0.7:3", "", "description", "EARoot/EA7/EA147.htm", "5.png", "21", "0", "", "Class0","{844B94E8-F032-439c-8BC0-954C6AB9058B}");
+tocTab[tocTab.length] = new Array("0.7:4", "", "format", "EARoot/EA7/EA148.htm", "5.png", "34", "0", "", "Class0","{DDCFCC11-BF86-4e78-AAB7-C0E8C7DF5B53}");
+tocTab[tocTab.length] = new Array("0.7:5", "", "identifier", "EARoot/EA7/EA149.htm", "5.png", "24", "0", "", "Class0","{2820DE40-D51A-4946-A6A2-2C90C3A365FE}");
+tocTab[tocTab.length] = new Array("0.7:6", "", "issued", "EARoot/EA7/EA150.htm", "5.png", "22", "0", "", "Class0","{18C1C2AD-ED2F-407f-B450-7D2F7B18E83E}");
+tocTab[tocTab.length] = new Array("0.7:7", "", "language", "EARoot/EA7/EA151.htm", "5.png", "26", "0", "", "Class0","{89CB2C8B-4398-4f7a-8379-F70147314D6C}");
+tocTab[tocTab.length] = new Array("0.7:8", "", "license", "EARoot/EA7/EA152.htm", "5.png", "31", "0", "", "Class0","{EA1DAC00-A05B-4c48-A325-0E7C8BA1BBEA}");
+tocTab[tocTab.length] = new Array("0.7:9", "", "Location", "EARoot/EA7/EA153.htm", "5.png", "51", "0", "", "Class0","{FBDCBB93-32D2-4bdf-AFAB-E468934F0538}");
+tocTab[tocTab.length] = new Array("0.7:10", "", "modified", "EARoot/EA7/EA154.htm", "5.png", "23", "0", "", "Class0","{730028E1-7100-4292-AEF4-A38AED4106D7}");
+tocTab[tocTab.length] = new Array("0.7:11", "", "rights", "EARoot/EA7/EA155.htm", "5.png", "32", "0", "", "Class0","{EF966022-153E-4a23-99B9-BA401B180DE9}");
+tocTab[tocTab.length] = new Array("0.7:12", "", "spatial", "EARoot/EA7/EA156.htm", "5.png", "29", "0", "", "Class0","{AB454E13-D934-4912-A1A2-81100EC5C71A}");
+tocTab[tocTab.length] = new Array("0.7:13", "", "temporal", "EARoot/EA7/EA157.htm", "5.png", "28", "0", "", "Class0","{1DCD36AB-FE05-4c9b-9C9E-B5CB30D05B66}");
+tocTab[tocTab.length] = new Array("0.7:14", "", "title", "EARoot/EA7/EA158.htm", "5.png", "20", "0", "", "Class0","{12D94B4B-E488-4fe5-9EF6-6275842F1747}");
