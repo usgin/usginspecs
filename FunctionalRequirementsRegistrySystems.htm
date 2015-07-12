@@ -1,0 +1,499 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Registry Brainstorming for Interoperability</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0in 0in 4.0pt 0in'>
+
+<p class=MsoTitle>Functional Requirements for Vocabulary and Information model
+registry systems</p>
+
+</div>
+
+<p class=MsoNormal>Stephen Richard 2015-07-12 13:10</p>
+
+<h1>Vocabulary registry functions:</h1>
+
+<p class=MsoNormal>Scope is a concept vocabulary—each item represents a unique
+concept; the definition of the item in natural language, along with examples,
+images etc. convey the intention of the concept in a manner that should make it
+clear to all within the target community for the vocabulary.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Target applications:</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>reference for communities to document the meaning of terminology
+they adopt</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Annotation of resources (keywords)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Semantic search—concept expansion, synonomy</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Terminological-property domain validation in data</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Pick lists for user interfaces</p>
+
+<h2>Functions:</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Basic CRUD operations on concept; registry needs to allow various
+policies on update and deletion (i.e. no delete, only deprecate)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Concepts have URI, prefLabel, altLabels, definition, source
+(minimum)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Resolve URI to definition, source and labels for human
+consumption</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Language localization?</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Status properties for concepts, e.g. proposed, adopted,
+deprecated, superseded (with links to successor).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>CRUD operations on Relations/objectProperties (add new
+relationships). Relationships/associations are first order concepts</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get related concepts; </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>simplest case are SKOS type relations; </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>general relation navigation (CRUD operations on relations,
+essentially becomes an ontology?), </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>transitive relations/transitive closure, </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>relation hierarchies (e.g. ‘chapter’ is a kind of ‘partOf'
+relation).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get URI associated with Label</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Find concepts related to text strings (full text search—labels +
+definitions)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>CRUD operations for mapping relations between concepts in
+different collections or conceptSchemes</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define collections of concepts, e.g. as a domain for some property
+value; </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>CRUD operations on collections and collection items; </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>formal concept of a ‘conceptScheme’ that has properties like
+intended scope (concept space), isCovering, isComplete, uniqueConcepts,
+hierarchical…</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Given concept and collection, report if concept is member of
+collection (for domain validation processes)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get all members of a collection (tools use to construct pick
+lists…)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Track source of concept (citation), steward for concept (who put
+in, who is responsible for maintenance and status)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>auto-complete functionality</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>OpenRefine resolution services</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>Information model registry</h1>
+
+<p class=MsoNormal>Scope is formal representation of data types, which would
+include a definition of the ‘types’ or ‘entities’, and specification of a
+collection of attributes, with domains and cardinalities for those attributes, constituting
+the  representation of instances of that type/entity. These could be
+implemented as JSON objects, XML elements, rows in a relation, RDF graphs etc,
+all different representations of the same fundamental type.  Note that this
+kind of registry seems to be the objective of the <a
+href="https://www.rd-alliance.org/groups/data-type-registries-wg.html">RDA Data
+Type Registry work group</a>. </p>
+
+<h2>Target applications:</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Reference for communities to document the meaning of entities and
+attributes in data that they share.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Discover existing data type and attribute definitions for use in
+constructing data models, to foster interoperability.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Machine-assisted data integration, based on identification of
+matching or ‘integratable’ attribute content.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Validation of data instances against a type definition.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tools that spin up a UI for a particular data type.</p>
+
+<h2>Information concepts:</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>‘<a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration">Integratable<span
+style='color:windowtext;text-decoration:none'>’ </span></a>is a somewhat
+tortured adjective, used here to mean ‘capable of integration’, i.e. values
+from different sources can be used in an application as if they were part of a
+single data set to obtain scientifically sound results.  The data integration
+process might involve transformations such as conversion of measurement units
+that do not inherently change the meaning of the measurement. See discussion of
+property values, below. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Entities, Attributes, and Properties are concepts, thus inherit
+properties from concepts as defined for vocabulary (above)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Attribute is a logical implementation for representing a Property
+value. A given property, e.g. temperature, may be represented in various ways,
+e.g. as a number (Celsius, Farenheit), or a term (high, medium, low). Attributes
+representing the same Property should be integratable.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Property values may be measured or reported using a variety of
+different methods, e.g. measured with mercury thermometer, alcohol thermometer,
+infrared sensor, reported as ‘Average temperature (over some interval)’, ‘Peak
+temperature (over some interval)’, ‘instantaneous temperature’.  These all
+relate to a general ‘temperature’ concept, but may not be integratable, and for
+the purposes of data integration these distinctions need to be documented. 
+There is a continuum from the most general concept of temperature (least likely
+to be integratable) to a property representing a temperature measurement by a
+particular observer using a single measurement and reporting method (most
+likely to be integratable)</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Entity and Type.  CSDGM metadata data defines entities and
+attributes, but this entity concept is essentially a type definition. Type is
+concerned with the definition of a data structure; any entity has an inherent
+type, so the concepts are closely related. Thus this text mostly uses both
+terms like this ‘entity/type’ (subject to getting a better idea…)</p>
+
+<h2>Functions:</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get property definition</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get all attributes related to a property</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get related properties </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get schema for entity/type. Possible representations (content
+negotiation?): rdf schema, xml schema, JSON schema, others…</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get entities that include an attribute</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get entities that include a property</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Get related entities/types. Allow inheritance of attributes from
+parent to child types.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Register new type</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Create through forms</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Ingest schema document (XML schema, rdf schema, JSON schema,
+ISO19110 feature catalog, others…)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Assert relationships between entities, properties, attributes
+(similar to general relation functions in vocabulary; basically constructing an
+ontology ….)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Find transformation between attributes</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Find similar entities (compare attributes)</p>
+
+<h1>Summary</h1>
+
+<p class=MsoNormal>Two kinds of registries: one for vocabulary, one for
+information model.  The Information Model Registry builds on the Vocabulary
+Registry, because the entity/type, attribute, and property concepts that are
+its basis are all concepts, thus manageable using the vocabulary registry. The
+information model registry requires a variety of more complex relationships,
+functions, and additional attributes on the concepts. For instance an attribute
+will need a data type, and value domain. An attribute in the context of a
+type/entity will need a cardinality, and perhaps restriction on value domain. 
+Properties will be a complex vocabulary rooted in abstract ‘phenomenon’
+concepts like temperature, density, length, with more granular properties
+defined based on context (observer?, environment, intention), reporting method,
+and measurement method. Transformation methods linking attributes will also be
+useful.  Processes for finding transformations between attributes, determining
+similarity between entity/type definitions, and ingesting new schema will also
+be needed.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
