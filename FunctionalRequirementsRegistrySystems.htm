@@ -1,496 +1,1101 @@
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 14 (filtered)">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List
+href="FunctionalRequirementsRegistrySystems_files/filelist.xml">
 <title>Registry Brainstorming for Interoperability</title>
+<link rel=themeData
+href="FunctionalRequirementsRegistrySystems_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="FunctionalRequirementsRegistrySystems_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
  @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
 	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
 @font-face
 	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
 @font-face
 	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0in;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 h1
-	{mso-style-link:"Heading 1 Char";
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
 	margin-top:24.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:1;
 	font-size:14.0pt;
 	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
 	color:#365F91;}
 h2
-	{mso-style-link:"Heading 2 Char";
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
 	margin-top:10.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:2;
 	font-size:13.0pt;
 	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
 	color:#4F81BD;}
 p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-link:"Title Char";
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:15.0pt;
 	margin-left:0in;
-	border:none;
-	padding:0in;
+	mso-pagination:widow-orphan;
 	font-size:26.0pt;
 	font-family:"Cambria","serif";
-	color:#17365D;
-	letter-spacing:.25pt;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-link:"Title Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	border:none;
-	padding:0in;
-	font-size:26.0pt;
-	font-family:"Cambria","serif";
-	color:#17365D;
-	letter-spacing:.25pt;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-link:"Title Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	border:none;
-	padding:0in;
-	font-size:26.0pt;
-	font-family:"Cambria","serif";
-	color:#17365D;
-	letter-spacing:.25pt;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-link:"Title Char";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:15.0pt;
-	margin-left:0in;
-	border:none;
-	padding:0in;
-	font-size:26.0pt;
-	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
 	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0in;
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:.5in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 span.Heading1Char
 	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Heading 1";
 	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
 	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
+	color:#4F81BD;
 	font-weight:bold;}
 span.TitleChar
 	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:Title;
 	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
+	{mso-style-name:msotitlecxspfirst;
+	mso-style-unhide:no;
+	mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxspmiddle, li.msotitlecxspmiddle, div.msotitlecxspmiddle
+	{mso-style-name:msotitlecxspmiddle;
+	mso-style-unhide:no;
+	mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.msotitlecxsplast, li.msotitlecxsplast, div.msotitlecxsplast
+	{mso-style-name:msotitlecxsplast;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 span.BalloonTextChar
 	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Balloon Text";
-	font-family:"Tahoma","sans-serif";}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;}
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
-	{font-family:"Calibri","sans-serif";}
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;}
 @page WordSection1
 	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;}
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0in;}
-ul
-	{margin-bottom:0in;}
 -->
 </style>
-
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=EN-US link=blue vlink=purple>
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
 
 <div class=WordSection1>
-
-<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0in 0in 4.0pt 0in'>
 
 <p class=MsoTitle>Functional Requirements for Vocabulary and Information model
 registry systems</p>
 
-</div>
-
 <p class=MsoNormal>Stephen Richard 2015-07-12 13:10</p>
 
-<h1>Vocabulary registry functions:</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Vocabulary registry
+functions:<o:p></o:p></span></h1>
 
-<p class=MsoNormal>Scope is a concept vocabulary—each item represents a unique
-concept; the definition of the item in natural language, along with examples,
-images etc. convey the intention of the concept in a manner that should make it
-clear to all within the target community for the vocabulary.</p>
+<p class=MsoNormal>Scope is a concept vocabulary—each item represents a unique concept;
+the definition of the item in natural language, along with examples, images
+etc. convey the intention of the concept in a manner that should make it clear
+to all within the target community for the vocabulary.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h2>Target applications:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Target
+applications:<o:p></o:p></span></h2>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>reference for communities to document the meaning of terminology
-they adopt</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>reference</span> for communities to document the
+meaning of terminology they adopt</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Annotation of resources (keywords)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Annotation of resources (keywords)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Semantic search—concept expansion, synonomy</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Semantic search—concept expansion, <span class=SpellE>synonomy</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Terminological-property domain validation in data</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Terminological-property domain validation in data</p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Pick lists for user interfaces</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Pick lists for user interfaces</p>
 
-<h2>Functions:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Functions:<o:p></o:p></span></h2>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Basic CRUD operations on concept; registry needs to allow various
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Basic CRUD operations on concept; registry needs to allow various
 policies on update and deletion (i.e. no delete, only deprecate)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Concepts have URI, prefLabel, altLabels, definition, source
-(minimum)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Concepts have URI, <span class=SpellE>prefLabel</span>, <span
+class=SpellE>altLabels</span>, definition, source (minimum)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Resolve URI to definition, source and labels for human
-consumption</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Resolve URI to definition, source and labels for human consumption</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Language localization?</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span class=GramE><span
+style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:
+"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Language
+localization?</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Status properties for concepts, e.g. proposed, adopted,
-deprecated, superseded (with links to successor).</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Status properties for concepts, e.g. proposed, adopted, deprecated,
+superseded (with links to successor).</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>CRUD operations on Relations/objectProperties (add new
-relationships). Relationships/associations are first order concepts</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>CRUD operations on Relations/<span class=SpellE>objectProperties</span>
+(add new relationships). Relationships/associations are first order concepts</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get related concepts; </p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Get related concepts; </p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>simplest case are SKOS type relations; </p>
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp; </span>simplest
+case are SKOS type relations; </p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>general relation navigation (CRUD operations on relations,
-essentially becomes an ontology?), </p>
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp; </span>general
+relation navigation (CRUD operations on relations, essentially becomes an
+ontology?), </p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>transitive relations/transitive closure, </p>
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp; </span>transitive
+relations/transitive closure, </p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>relation hierarchies (e.g. ‘chapter’ is a kind of ‘partOf'
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp; </span>relation
+hierarchies (e.g. ‘chapter’ is a kind of ‘<span class=SpellE>partOf</span>'
 relation).</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get URI associated with Label</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Get URI associated with Label</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Find concepts related to text strings (full text search—labels +
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Find concepts related to text strings (full text search—labels +
 definitions)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>CRUD operations for mapping relations between concepts in
-different collections or conceptSchemes</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>CRUD operations for mapping relations between concepts in different
+collections or <span class=SpellE>conceptSchemes</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Define collections of concepts, e.g. as a domain for some property
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Define collections of concepts, e.g. as a domain for some property
 value; </p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>CRUD operations on collections and collection items; </p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>CRUD operations on collections and collection items; </p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>formal concept of a ‘conceptScheme’ that has properties like
-intended scope (concept space), isCovering, isComplete, uniqueConcepts,
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>formal</span> concept of a ‘<span class=SpellE>conceptScheme</span>’
+that has properties like intended scope (concept space), <span class=SpellE>isCovering</span>,
+<span class=SpellE>isComplete</span>, <span class=SpellE>uniqueConcepts</span>,
 hierarchical…</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Given concept and collection, report if concept is member of
-collection (for domain validation processes)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>Given</span> concept and collection, report if concept
+is member of collection (for domain validation processes)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get all members of a collection (tools use to construct pick
-lists…)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Get all members of a collection (tools <span class=SpellE>use</span> to
+construct pick lists…)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Track source of concept (citation), steward for concept (who put
-in, who is responsible for maintenance and status)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Track source of concept (citation), steward for concept (who put in, who
+is responsible for maintenance and status)</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>auto-complete functionality</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>auto-complete functionality</p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>OpenRefine resolution services</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=SpellE>OpenRefine</span> resolution services</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h1>Information model registry</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Information model
+registry<o:p></o:p></span></h1>
 
 <p class=MsoNormal>Scope is formal representation of data types, which would
 include a definition of the ‘types’ or ‘entities’, and specification of a
-collection of attributes, with domains and cardinalities for those attributes, constituting
-the  representation of instances of that type/entity. These could be
-implemented as JSON objects, XML elements, rows in a relation, RDF graphs etc,
-all different representations of the same fundamental type.  Note that this
-kind of registry seems to be the objective of the <a
+collection of attributes, with domains and cardinalities for those attributes,
+constituting the &nbsp;representation of instances of that type/entity. These
+could be implemented as JSON objects, XML elements, rows in a relation, RDF
+graphs <span class=SpellE>etc</span>, <span class=GramE>all</span> different
+representations of the same fundamental type.&nbsp; Note that this kind of
+registry seems to be the objective of the <a
 href="https://www.rd-alliance.org/groups/data-type-registries-wg.html">RDA Data
 Type Registry work group</a>. </p>
 
-<h2>Target applications:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Target
+applications:<o:p></o:p></span></h2>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Reference for communities to document the meaning of entities and
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reference for communities to document the meaning of entities and
 attributes in data that they share.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Discover existing data type and attribute definitions for use in
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Discover existing data type and attribute definitions for use in
 constructing data models, to foster interoperability.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Machine-assisted data integration, based on identification of
-matching or ‘integratable’ attribute content.</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Machine-assisted data integration, based on identification of matching
+or ‘<span class=SpellE>integratable</span>’ attribute content.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Validation of data instances against a type definition.</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Validation of data instances against a type definition.</p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Tools that spin up a UI for a particular data type.</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Tools that spin up a UI for a particular data type.</p>
 
-<h2>Information concepts:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Information
+concepts:<o:p></o:p></span></h2>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>‘<a
-href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration">Integratable<span
-style='color:windowtext;text-decoration:none'>’ </span></a>is a somewhat
-tortured adjective, used here to mean ‘capable of integration’, i.e. values
-from different sources can be used in an application as if they were part of a
-single data set to obtain scientifically sound results.  The data integration
-process might involve transformations such as conversion of measurement units
-that do not inherently change the meaning of the measurement. See discussion of
-property values, below. </p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>‘<span class=SpellE><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration">Integratable</a></span><span
+class=MsoHyperlink><span style='color:windowtext;text-decoration:none;
+text-underline:none'>’ </span></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Entities, Attributes, and Properties are concepts, thus inherit
-properties from concepts as defined for vocabulary (above)</p>
+<span style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>is a somewhat tortured adjective, used here to mean
+‘capable of integration’, i.e. values from different sources can be used in an
+application as if they were part of a single data set to obtain scientifically
+sound results.&nbsp; The data integration process might involve transformations
+such as conversion of measurement units that do not inherently change the
+meaning of the measurement. See discussion of property values, below. </span>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Attribute is a logical implementation for representing a Property
-value. A given property, e.g. temperature, may be represented in various ways,
-e.g. as a number (Celsius, Farenheit), or a term (high, medium, low). Attributes
-representing the same Property should be integratable.</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Entities, Attributes, and Properties
+are concepts, thus inherit properties from concepts as defined for vocabulary
+(above)</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Property values may be measured or reported using a variety of
-different methods, e.g. measured with mercury thermometer, alcohol thermometer,
-infrared sensor, reported as ‘Average temperature (over some interval)’, ‘Peak
-temperature (over some interval)’, ‘instantaneous temperature’.  These all
-relate to a general ‘temperature’ concept, but may not be integratable, and for
-the purposes of data integration these distinctions need to be documented. 
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Attribute is a logical implementation
+for representing a Property value. A given property, e.g. temperature, may be
+represented in various ways, e.g. as a number (Celsius, <span class=SpellE>Farenheit</span>),
+or a term (high, medium, low). Attributes representing the same Property should
+be <span class=SpellE>integratable</span>.</span></a></span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Property values may be measured or
+reported using a variety of different methods, e.g. measured with mercury
+thermometer, alcohol thermometer, infrared sensor, reported as ‘Average
+temperature (over some interval)’, ‘Peak temperature (over some interval)’,
+‘instantaneous temperature’.&nbsp; These all relate to a general ‘temperature’
+concept, but may not be <span class=SpellE>integratable</span>, and for the
+purposes of data integration these distinctions need to be documented.&nbsp;
 There is a continuum from the most general concept of temperature (least likely
-to be integratable) to a property representing a temperature measurement by a
-particular observer using a single measurement and reporting method (most
-likely to be integratable)</p>
+to be <span class=SpellE>integratable</span>) to a property representing a
+temperature measurement by a particular observer using a single measurement and
+reporting method (most likely to be <span class=SpellE>integratable</span>)</span></a></span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Entity and Type.  CSDGM metadata data defines entities and
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
+none'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif";
+color:windowtext;text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Entity and Type.</span></span><span
+style='font-family:"Calibri","sans-serif";color:windowtext;text-decoration:
+none;text-underline:none'>&nbsp; CSDGM metadata data defines entities and
 attributes, but this entity concept is essentially a type definition. Type is
 concerned with the definition of a data structure; any entity has an inherent
 type, so the concepts are closely related. Thus this text mostly uses both
-terms like this ‘entity/type’ (subject to getting a better idea…)</p>
+terms like this ‘entity/type’ (subject to getting a better idea…)</span></a></span></p>
 
-<h2>Functions:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:#4F81BD;text-decoration:none;text-underline:none'>Functions:<o:p></o:p></span></a></span></h2>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get property definition</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get property definition</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get all attributes related to a property</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get all attributes related to a
+property</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get related properties </p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get related properties </span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get schema for entity/type. Possible representations (content
-negotiation?): rdf schema, xml schema, JSON schema, others…</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
+none'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif";
+color:windowtext;text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get schema for entity/type.</span></span><span
+style='font-family:"Calibri","sans-serif";color:windowtext;text-decoration:
+none;text-underline:none'> Possible representations (content negotiation?): <span
+class=SpellE><span class=GramE>rdf</span></span> schema, xml schema, JSON
+schema, others…</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get entities that include an attribute</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get entities that include an
+attribute</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get entities that include a property</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get entities that include a property</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Get related entities/types. Allow inheritance of attributes from
-parent to child types.</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Get related entities/types. Allow
+inheritance of attributes from parent to child types.</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Register new type</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Register new type</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Create through forms</p>
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
+none'>o</span></span><span style='font-size:7.0pt;font-family:"Times New Roman","serif";
+color:windowtext;text-decoration:none;text-underline:none'>&nbsp;&nbsp; </span><span
+style='font-family:"Calibri","sans-serif";mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>Create through forms</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Ingest schema document (XML schema, rdf schema, JSON schema,
-ISO19110 feature catalog, others…)</p>
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+class=GramE><span style='color:windowtext;text-decoration:none;text-underline:
+none'>o</span></span><span style='font-size:7.0pt;font-family:"Times New Roman","serif";
+color:windowtext;text-decoration:none;text-underline:none'>&nbsp;&nbsp; </span><span
+style='font-family:"Calibri","sans-serif";mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>Ingest schema
+document (XML schema, <span class=SpellE>rdf</span> schema, JSON schema,
+ISO19110 feature catalog, others…)</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Assert relationships between entities, properties, attributes
-(similar to general relation functions in vocabulary; basically constructing an
-ontology ….)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Assert relationships between
+entities, properties, attributes (similar to general relation functions in
+vocabulary; basically constructing <span class=GramE>an ontology</span> ….)</span></a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Find transformation between attributes</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Find transformation between
+attributes</span></a></span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Find similar entities (compare attributes)</p>
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>·</span><span
+style='font-size:7.0pt;font-family:"Times New Roman","serif";color:windowtext;
+text-decoration:none;text-underline:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Calibri","sans-serif";color:windowtext;
+text-decoration:none;text-underline:none'>Find similar entities (compare
+attributes)</span></a></span></p>
 
-<h1>Summary</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:#365F91;text-decoration:none;text-underline:none'>Summary<o:p></o:p></span></a></span></h1>
 
-<p class=MsoNormal>Two kinds of registries: one for vocabulary, one for
-information model.  The Information Model Registry builds on the Vocabulary
-Registry, because the entity/type, attribute, and property concepts that are
-its basis are all concepts, thus manageable using the vocabulary registry. The
-information model registry requires a variety of more complex relationships,
-functions, and additional attributes on the concepts. For instance an attribute
-will need a data type, and value domain. An attribute in the context of a
-type/entity will need a cardinality, and perhaps restriction on value domain. 
-Properties will be a complex vocabulary rooted in abstract ‘phenomenon’
-concepts like temperature, density, length, with more granular properties
-defined based on context (observer?, environment, intention), reporting method,
-and measurement method. Transformation methods linking attributes will also be
-useful.  Processes for finding transformations between attributes, determining
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>Two kinds of
+registries: one for vocabulary, one for information model.&nbsp; The
+Information Model Registry builds on the Vocabulary Registry, because the
+entity/type, attribute, and property concepts that are its basis are all
+concepts, thus manageable using the vocabulary registry. The information model
+registry requires a variety of more complex relationships, functions, and
+additional attributes on the concepts. For instance an attribute will need a
+data type, and value domain. An attribute in the context of a type/entity will
+need a cardinality, and perhaps restriction on value domain.&nbsp; Properties
+will be a complex vocabulary rooted in abstract ‘phenomenon’ concepts like
+temperature, density, length, with more granular properties defined based on
+context (observer?, environment, intention), reporting method, and measurement
+method. Transformation methods linking attributes will also be useful.&nbsp;
+Processes for finding transformations between attributes, determining
 similarity between entity/type definitions, and ingesting new schema will also
-be needed.</p>
+be needed.</span></a></p>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p>&nbsp;</o:p></span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p>&nbsp;</o:p></span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>Existing
+systems:</span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>GEOSS
+standards and interoperability registry</span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>SciCrunch</span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+class=SpellE><span style='color:windowtext;text-decoration:none;text-underline:
+none'>BioPortal</span></span><span style='color:windowtext;text-decoration:
+none;text-underline:none'>, ESIP COR</span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>MMI ORR</span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p>&nbsp;</o:p></span></a></p>
+
+<p class=MsoNormal><a
+href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>&nbsp;</span></a></p>
 
 </div>
 
