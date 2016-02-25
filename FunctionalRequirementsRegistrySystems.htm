@@ -1,179 +1,954 @@
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List
+href="FunctionalRequirementsRegistrySystems_files/filelist.xml">
 <title>Vocabulary and Information Model Registry</title>
+<link rel=themeData
+href="FunctionalRequirementsRegistrySystems_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="FunctionalRequirementsRegistrySystems_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
  @font-face
 	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
 @font-face
 	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
 @font-face
 	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0in;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 h1
-	{mso-style-link:"Heading 1 Char";
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
 	margin-top:24.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:1;
 	font-size:14.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
 	color:#365F91;}
 h2
-	{mso-style-link:"Heading 2 Char";
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
 	margin-top:10.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	page-break-after:avoid;
+	mso-outline-level:2;
 	font-size:13.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
 	color:#4F81BD;}
 p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-link:"Title Char";
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:15.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:26.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
 	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:8.0pt;
-	font-family:"Tahoma",sans-serif;}
+	font-family:"Tahoma",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0in;
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:.5in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 span.Heading1Char
 	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Heading 1";
 	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
 	color:#365F91;
 	font-weight:bold;}
 span.Heading2Char
 	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Heading 2";
 	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
 	color:#4F81BD;
 	font-weight:bold;}
 span.TitleChar
 	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:Title;
 	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;
 	color:#17365D;
 	letter-spacing:.25pt;}
 span.BalloonTextChar
 	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Balloon Text";
-	font-family:"Tahoma",sans-serif;}
+	font-family:"Tahoma",sans-serif;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
 p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
 	{mso-style-name:msotitlecxspfirst;
+	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:26.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 p.msotitlecxspmiddle, li.msotitlecxspmiddle, div.msotitlecxspmiddle
 	{mso-style-name:msotitlecxspmiddle;
+	mso-style-unhide:no;
 	margin:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:26.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 p.msotitlecxsplast, li.msotitlecxsplast, div.msotitlecxsplast
 	{mso-style-name:msotitlecxsplast;
+	mso-style-unhide:no;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:15.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:26.0pt;
 	font-family:"Cambria",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
 	color:#17365D;
 	letter-spacing:.25pt;}
 p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
 	{mso-style-name:msolistparagraphcxspfirst;
+	mso-style-unhide:no;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:.5in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
 	{mso-style-name:msolistparagraphcxspmiddle;
+	mso-style-unhide:no;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:.5in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
 	{mso-style-name:msolistparagraphcxsplast;
+	mso-style-unhide:no;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:.5in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 p.msochpdefault, li.msochpdefault, div.msochpdefault
 	{mso-style-name:msochpdefault;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
 	margin-right:0in;
+	mso-margin-bottom-alt:auto;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
 span.apple-converted-space
-	{mso-style-name:apple-converted-space;}
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
-	{font-size:10.0pt;
-	font-family:"Calibri",sans-serif;}
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;}
 @page WordSection1
 	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;}
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
 -->
 </style>
-
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=EN-US link=blue vlink=purple>
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
 
 <div class=WordSection1>
 
@@ -182,21 +957,23 @@ registry systems</p>
 
 <p class=MsoNormal>Stephen Richard 2016-01-20 08:32</p>
 
-<h1>Vocabulary registry functions:</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Vocabulary registry
+functions:<o:p></o:p></span></h1>
 
-<p class=MsoNormal>Scope is a concept vocabulary-each item represents a unique concept;
-the definition of the item in natural language, along with examples, images
-etc. convey the intention of the concept in a manner that should make it clear
-to all within the target community for the vocabulary.</p>
+<p class=MsoNormal>Scope is a concept vocabulary-each item represents a unique
+concept; the definition of the item in natural language, along with examples,
+images etc. convey the intention of the concept in a manner that should make it
+clear to all within the target community for the vocabulary.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h2>Target applications:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Target
+applications:<o:p></o:p></span></h2>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>reference for communities to document the meaning of terminology they
-adopt</p>
+</span><span class=GramE>reference</span> for communities to document the
+meaning of terminology they adopt</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -204,7 +981,7 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Semantic search-concept expansion, synonomy</p>
+</span>Semantic search-concept expansion, <span class=SpellE>synonomy</span></p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -214,7 +991,7 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Pick lists for user interfaces</p>
 
-<h2>Functions:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Functions:<o:p></o:p></span></h2>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -223,7 +1000,8 @@ policies on update and deletion (i.e. no delete, only deprecate)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Concepts have URI, prefLabel, altLabels, definition, source (minimum)</p>
+</span>Concepts have URI, <span class=SpellE>prefLabel</span>, <span
+class=SpellE>altLabels</span>, definition, source (minimum)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -240,32 +1018,34 @@ superseded (with links to successor).</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>CRUD operations on Relations/objectProperties (add new relationships).
-Relationships/associations are first order concepts</p>
+</span>CRUD operations on Relations/<span class=SpellE>objectProperties</span>
+(add new relationships). Relationships/associations are first order concepts</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Get related concepts; </p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>simplest case are SKOS
-type relations; </p>
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>simplest
+case are SKOS type relations; </p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>general relation
-navigation (CRUD operations on relations, essentially becomes an ontology?), </p>
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>general
+relation navigation (CRUD operations on relations, essentially becomes an
+ontology?), </p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>transitive
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>transitive
 relations/transitive closure, </p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>relation hierarchies
-(e.g. -chapter- is a kind of -partOf' relation).</p>
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>relation
+hierarchies (e.g. -chapter- is a kind of -<span class=SpellE>partOf</span>'
+relation).</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -279,7 +1059,7 @@ definitions)</p>
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>CRUD operations for mapping relations between concepts in different
-collections or conceptSchemes</p>
+collections or <span class=SpellE>conceptSchemes</span></p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -292,17 +1072,20 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>formal concept of a -conceptScheme- that has properties like intended
-scope (concept space), isCovering, isComplete, uniqueConcepts, hierarchical-</p>
+</span><span class=GramE>formal</span> concept of a -<span class=SpellE>conceptScheme</span>-
+that has properties like intended scope (concept space), <span class=SpellE>isCovering</span>,
+<span class=SpellE>isComplete</span>, <span class=SpellE>uniqueConcepts</span>,
+hierarchical-</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Given concept and collection, report if concept is member of collection
-(for domain validation processes)</p>
+</span><span class=GramE>Given</span> concept and collection, report if concept
+is member of collection (for domain validation processes)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Get all members of a collection (tools use to construct pick lists-)</p>
+</span>Get all members of a collection (tools <span class=SpellE>use</span> to
+construct pick lists-)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -315,24 +1098,45 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>OpenRefine resolution services</p>
+</span><span class=SpellE>OpenRefine</span> resolution services</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h1>Information model registry</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Information model
+registry<o:p></o:p></span></h1>
 
-<p class=MsoNormal>Scope is formal representation of data types, which would
-include a definition of the -types- or -entities-, and specification of a
-collection of attributes, with domains and cardinalities for those attributes,
-constituting the &nbsp;representation of instances of that type/entity. These
-could be implemented as JSON objects, XML elements, rows in a relation, RDF
-graphs etc, all different representations of the same fundamental type.&nbsp;
-The information models need to be documented at the conceptual level to support
-interaction with domain users, as well as the logical and physical level to
-support development of new, interoperable models, and to enable automation of
-some data integration steps. </p>
+<p class=MsoNormal>Scope the registry considered here is the formal
+representation of data types. The term <b style='mso-bidi-font-weight:normal'>data
+type</b> is used to mean &quot;A specification of the representation of a
+single value in an information system&quot; (http://earthlexicon.sdsc.edu/wiki/Data_type,
+http://en.wikipedia.org/wiki/Data_type). Use of the <span
+style='mso-spacerun:yes'> </span>term 'data type' often leads to confusion
+because it is applied to representations at a conceptual, logical, and physical
+implementation level, as well as a wide spectrum of granularity, ranging from
+primitive types like 'integer, character' to complex structured data types like
+'metadata record', and to resource container types like MIME types. The data
+type concept is also used to denote both an information item representing some
+'thing' in the domain of interest (an entity or object), and to denote an
+information item representing a value for a property of <span class=SpellE>some
+thing</span> in the domain of interest. The applications of the various
+denotations of the the term 'data type' require a variety of different information
+models and relationships. It is thus imperative that the registry make clear
+distinctions about what kind of 'data type' a model element represents.</p>
 
-<h2>Target applications:</h2>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>, which would include a definition of the types or entities,
+and specification of a collection of attributes, with domains and cardinalities
+for those attributes, constituting the representation of instances of that
+type/entity. These could be implemented as JSON objects, XML elements, rows in
+a relation, RDF graphs <span class=SpellE>etc</span>, <span class=GramE>all</span>
+different representations of the same fundamental type.&nbsp; The information
+models need to be documented at the conceptual level to support interaction
+with domain users, as well as the logical and physical level to support
+development of new, interoperable models, and to enable automation of some data
+integration steps. </p>
+
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Target applications:<o:p></o:p></span></h2>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -362,25 +1166,26 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Tools that spin up a UI for a particular data type.</p>
 
-<h2>Information concepts:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Information
+concepts:<o:p></o:p></span></h2>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><b>Concept</b>. A mental phenomena that human beings use in their
 internal representation of the world. Webster-s dictionary [1996] uses the
-terms -idea- and -object of thought- to convey the meaning of -concept.-
-Concepts exist in the mind of human observers.</p>
+terms -idea- and -object of thought- to convey the meaning of -concept<span
+class=GramE>.-</span> Concepts exist in the mind of human observers.</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>-<a
 href="http://english.stackexchange.com/questions/244609/is-integratable-a-correct-adjective-for-capable-of-integration"><b>Integratable</b><b><span
-style='color:windowtext;text-decoration:none'>-</span></b><span
-style='color:windowtext;text-decoration:none'> </span></a>is a somewhat
-tortured adjective, used here to mean -capable of integration-, i.e. values
-from different sources can be used in an application as if they were part of a
-single data set to obtain scientifically sound results.&nbsp; The data
-integration process might involve transformations such as conversion of
+style='color:windowtext;text-decoration:none;text-underline:none'>-</span></b><span
+style='color:windowtext;text-decoration:none;text-underline:none'> </span></a>is
+a somewhat tortured adjective, used here to mean -capable of integration-, i.e.
+values from different sources can be used in an application as if they were
+part of a single data set to obtain scientifically sound results.&nbsp; The
+data integration process might involve transformations such as conversion of
 measurement units that do not inherently change the meaning of the measurement.
 See discussion of property values, below. </p>
 
@@ -393,8 +1198,9 @@ properties from concepts as defined for vocabulary (above)</p>
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><b>Attribute</b> is a logical implementation for representing a Property
 value. A given property, e.g. temperature, may be represented in various ways,
-e.g. as a number (Celsius, Farenheit), or a term (high, medium, low).
-Attributes representing the same Property should be integratable.</p>
+e.g. as a number (Celsius, <span class=SpellE>Farenheit</span>), or a term
+(high, medium, low). Attributes representing the same Property should be
+integratable.</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -419,16 +1225,17 @@ this -entity/type- (subject to getting a better idea-)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><b>ConceptSpace</b>. An abstract space in which the bases are composed
-by quality dimensions, which denote basic features in which concepts and
-objects can be compared, as such as weight, colour, taste, etc. (Gardenfors,
+</span><span class=SpellE><b>ConceptSpace</b></span>. An abstract space in
+which the bases are composed by quality dimensions, which denote basic features
+in which concepts and objects can be compared, as such as weight, <span
+class=SpellE>colour</span>, taste, etc. (<span class=SpellE>Gardenfors</span>,
 2000 [ISBN:0262071991]). In this view, natural categories are convex regions in
 a conceptual spaces. In that if x and y are elements of a category, and if z is
 between x and y, then z is also likely to belong to the category. The notion of
 concept convexity allow the interpretation of the focal points of regions as
 category prototypes. (<a href="https://en.wikipedia.org/wiki/Conceptual_Spaces">https://en.wikipedia.org/wiki/Conceptual_Spaces</a>)</p>
 
-<h2>Functions:</h2>
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Functions:<o:p></o:p></span></h2>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -444,8 +1251,9 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Get schema for entity/type. Possible representations (content negotiation?):
-rdf schema, xml schema, JSON schema, others-</p>
+</span>Get schema for entity/type. Possible representations (content
+negotiation?): <span class=SpellE><span class=GramE>rdf</span></span> schema,
+xml schema, JSON schema, others-</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -465,13 +1273,15 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 </span>Register new type</p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>Create through forms</p>
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>Create
+through forms</p>
 
 <p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
-font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>Ingest schema document
-(XML schema, rdf schema, JSON schema, ISO19110 feature catalog, others-)</p>
+class=GramE><span style='font-family:"Courier New"'>o</span></span><span
+style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span>Ingest
+schema document (XML schema, <span class=SpellE>rdf</span> schema, JSON schema,
+ISO19110 feature catalog, others-)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -487,24 +1297,24 @@ Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif
 Symbol'>+</span><span style='font-size:7.0pt;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Find similar entities (compare attributes)</p>
 
-<h1>Summary</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Summary<o:p></o:p></span></h1>
 
 <p class=MsoNormal>An Information Model Registry builds on a Vocabulary
-Registry, because the DataObject/entity/type, attribute, and property concepts
-that are its basis are all concepts, thus manageable using the vocabulary
-registry. The information model registry requires a variety of more complex
-relationships, functions, and additional attributes on the concepts. For
-instance an attribute will need a data type, and value domain. An attribute in
-the context of a type/entity will need a cardinality, and perhaps restriction
-on value domain.&nbsp; Properties will be a complex vocabulary rooted in
-abstract -phenomenon- concepts like temperature, density, length, with more
-granular properties defined based on context (observer?, environment,
-intention), reporting method, and measurement method. Transformation methods
-linking attributes will also be useful.&nbsp; Processes for finding
-transformations between attributes, determining similarity between entity/type
-definitions, and ingesting new schema will also be needed.</p>
+Registry, because the <span class=SpellE>DataObject</span>/entity/type,
+attribute, and property concepts that are its basis are all concepts, thus
+manageable using the vocabulary registry. The information model registry requires
+a variety of more complex relationships, functions, and additional attributes
+on the concepts. For instance an attribute will need a data type, and value
+domain. An attribute in the context of a type/entity will need a cardinality,
+and perhaps restriction on value domain.&nbsp; Properties will be a complex
+vocabulary rooted in abstract -phenomenon- concepts like temperature, density,
+length, with more granular properties defined based on context (observer?,
+environment, intention), reporting method, and measurement method.
+Transformation methods linking attributes will also be useful.&nbsp; Processes
+for finding transformations between attributes, determining similarity between
+entity/type definitions, and ingesting new schema will also be needed.</p>
 
-<h1>Registry items</h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Registry items<o:p></o:p></span></h1>
 
 <p class=MsoNormal>This section enumerates a set of registry item types that
 could be used to implement a vocabulary and information model registry. For
@@ -515,29 +1325,33 @@ href="https://github.com/usgin/usginspecs/raw/gh-pages/DataTypeModelDraft.pdf">h
 
 <p class=MsoNormal style='margin-bottom:4.5pt'><b>Concept</b>. The registry
 item for a concept includes a definition in natural language that explains the
-idea for people to understand; and a unique, machine-parseable identifier
-(operationally, it-s a string-) for use by computer software. The item also
-includes labels (words, designations) that are used in natural language
-communication to signify the concept. These labels are language-localized, and
-ideally would be context localized to account for different community practice
-using the same language. A preferred label in at least one language is
-required.&nbsp; Finally, the concept item should include source information
-citing the intellectual origin of the definition. Concept register items are
-the base representations in the vocabulary registry for various classes that
-are extended with additional properties for the Information Model Registry.
-These classes include DataType (logical and syntactic/primitive), MeasureClass,
-ArrayDimension, ObjectClass, Property, and UnitOfMeasure.</p>
+idea for people to understand; and a unique, machine-<span class=SpellE>parseable</span>
+identifier (operationally, it-s a string-) for use by computer software. The
+item also includes labels (words, designations) that are used in natural
+language communication to signify the concept. These labels are
+language-localized, and ideally would be context localized to account for
+different community practice using the same language. A preferred label in at
+least one language is required.&nbsp; Finally, the concept item should include
+source information citing the intellectual origin of the definition. Concept
+register items are the base representations in the vocabulary registry for
+various classes that are extended with additional properties for the
+Information Model Registry. These classes include <span class=SpellE>DataType</span>
+(logical and syntactic/primitive), <span class=SpellE>MeasureClass</span>, <span
+class=SpellE>ArrayDimension</span>, <span class=SpellE>ObjectClass</span>,
+Property, and <span class=SpellE>UnitOfMeasure</span>.</p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>ConceptScheme</b>: A
-collection of concepts defined within a single conceptSpace. The implication of
-definition in the concept space is that every concept in the scheme denotes a
-value or value range on each axis (base dimension) of the concept space.</p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>ConceptScheme</b></span>:
+A collection of concepts defined within a single <span class=SpellE>conceptSpace</span>.
+The implication of definition in the concept space is that every concept in the
+scheme denotes a value or value range on each axis (base dimension) of the
+concept space.</p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>ControlledVocabulary</b>: a
-collection of concepts and labels (designations) for those concepts that will
-be used to populate a DataElement value. Typically will equate with a
-ConceptScheme or some subset of a ConceptScheme, but may include values from
-different schemes.</p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>ControlledVocabulary</b></span>:
+a collection of concepts and labels (designations) for those concepts that will
+be used to populate a <span class=SpellE>DataElement</span> value. Typically
+will equate with a <span class=SpellE>ConceptScheme</span> or some subset of a <span
+class=SpellE>ConceptScheme</span>, but may include values from different
+schemes.</p>
 
 <p class=MsoNormal style='margin-bottom:4.5pt'><b>Source</b> (Citation). An
 information object that identifies a resource and provides information for
@@ -547,58 +1361,65 @@ representation of the resource. </p>
 
 <p class=MsoNormal style='margin-bottom:4.5pt'><b>Contact</b> (Agent). A
 contact registry item identifies an agent. &quot;An agent is something that
-bears some form of responsibility for an activity taking place, for the
-existence of an entity, or for another agent's activity.&quot; (W3C PROV). In
-this view, software can also be an agent. Responsibility does not have to be
-'conscious' or intentional. An agent is an identifiable entity; could be an
-organization, an individual who may or may not be associated with an
-organization, an entity identified via a role (position) relative to an
-organization, or an artificial entity (software, a machine).</p>
+bears some form of responsibility for an activity taking place, for the existence
+of an entity, or for another agent's activity.&quot; (W3C PROV). In this view,
+software can also be an agent. Responsibility does not have to be 'conscious'
+or intentional. An agent is an identifiable entity; could be an organization,
+an individual who may or may not be associated with an organization, an entity
+identified via a role (position) relative to an organization, or an artificial
+entity (software, a machine).</p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>DataObject</b>. An
-information object that represents an entity of interest (ObjectClass in this
-model, based on ISO11179) in some domain; the representation consists of a
-collection of DataElements that are used to quantify properties of instances of
-the entity. Corresponds to 'dataType' in ISO11179, Entity in
-Entity-Relationship models, Object in object models, 'document' in document
-type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common
-data model (OGC 10-090r3) or a 'Feature' in GML.&nbsp; DataObject can be
-thought of as an information model for a particular entity of interest, like
-the Content Models in NGDS (http://schemas.usgin.org/models), exchange models
-in NIEM, or ontology design patterns. A dataObject may have additional metadata
-attributes (metaAttributes) necessary to understand the data object, for
-example sampling basis, geometry type (for spatial data), coordinate reference
-system.</p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>DataObject</b></span>.
+An information object that represents an entity of interest (<span
+class=SpellE>ObjectClass</span> in this model, based on ISO11179) in some
+domain; the representation consists of a collection of <span class=SpellE>DataElements</span>
+that are used to quantify properties of instances of the entity. Corresponds to
+'<span class=SpellE>dataType</span>' in ISO11179, Entity in Entity-Relationship
+models, Object in object models, 'document' in document type <span
+class=SpellE>noSQL</span> databases (e.g. <span class=SpellE>CouchDb</span>, <span
+class=SpellE>MongoDb</span>), 'Variable' in the <span class=SpellE>netCDF</span>
+common data model (OGC 10-090r3) or a 'Feature' in GML.&nbsp; <span
+class=SpellE>DataObject</span> can be thought of as an information model for a
+particular entity of interest, like the Content Models in NGDS
+(http://schemas.usgin.org/models), exchange models in NIEM, or ontology design
+patterns. A <span class=SpellE>dataObject</span> may have additional metadata
+attributes (<span class=SpellE>metaAttributes</span>) necessary to understand
+the data object, for example sampling basis, geometry type (for spatial data), <span
+class=GramE>coordinate</span> reference system.</p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>DataElement. </b>An
-information object representing a unit of data that quantifies a property in
-the context of an ObjectClass. The identity of a DataElement is based on its
-meaning and domain.&nbsp;&nbsp; The intention is that a DataElement does not
-denote a particular implementation environment, corresponding to 'logical
-model' data modeling approaches.&nbsp; An ArrayVariable is a special case of a
-DataElement in a gridded (discrete coverage) data set that assigns a property
-value for each cells &nbsp;in a spaces defined by intervals on one or more
-dimension axes. DataElements may have associated metadata attributes
-(metaAttribute) that specify additional information necessary to understand the
-DataElement, for example units of measure. </p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>DataElement</b></span><b>.
+</b>An information object representing a unit of data that quantifies a
+property in the context of an <span class=SpellE>ObjectClass</span>. The
+identity of a <span class=SpellE>DataElement</span> is based on its meaning and
+domain.&nbsp;&nbsp; The intention is that a <span class=SpellE>DataElement</span>
+does not denote a particular implementation environment, corresponding to
+'logical model' data modeling approaches.&nbsp; An <span class=SpellE>ArrayVariable</span>
+is a special case of a <span class=SpellE>DataElement</span> in a gridded
+(discrete coverage) data set that assigns a property value for each cells
+&nbsp;in a spaces defined by intervals on one or more dimension axes. <span
+class=SpellE>DataElements</span> may have associated metadata attributes (<span
+class=SpellE>metaAttribute</span>) that specify additional information
+necessary to understand the <span class=SpellE>DataElement</span>, for example
+units of measure. </p>
 
 <p class=MsoNormal style='margin-bottom:4.5pt'><b>Domain</b>. A representation
 of the restrictions on values that are allowed for quantification of a
 property. A Conceptual domains restricts the values based on the modeler's
 conception of what is of interest in the realm that a model is intended to
-represent. A Value Domain restricts values in terms that can be implemented in an
-information system, independently of a specific implementation. Domains can be
-specified through enumeration, based on rules (a description), or with other
+represent. A Value Domain restricts values in terms that can be implemented in
+an information system, independently of a specific implementation. Domains can
+be specified through enumeration, based on rules (a description), or with other
 constraints.</p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>ImplementationObject</b>.
-Information objects representing artifacts that map DataElements and
-DataObjects to specific software environments, and physical datatypes. Includes
-ImplementationElement and ImplementationObject. </p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>ImplementationObject</b></span>.
+Information objects representing artifacts that map <span class=SpellE>DataElements</span>
+and <span class=SpellE>DataObjects</span> to specific software environments,
+and physical datatypes. Includes <span class=SpellE>ImplementationElement</span>
+and <span class=SpellE>ImplementationObject</span>. </p>
 
-<p class=MsoNormal style='margin-bottom:4.5pt'><b>InterchangeFormat</b>.
-Register item representing a document format used to serialize one or
-ImplementationObjects for information exchange.</p>
+<p class=MsoNormal style='margin-bottom:4.5pt'><span class=SpellE><b>InterchangeFormat</b></span>.
+Register item representing a document format used to serialize one or <span
+class=SpellE>ImplementationObjects</span> for information exchange.</p>
 
 </div>
 
