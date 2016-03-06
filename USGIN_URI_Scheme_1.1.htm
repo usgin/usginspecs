@@ -921,7 +921,7 @@ redirection that are invisible to the user violate the requirement for URI
 transparency. One of the objectives of this URI scheme is to define a syntax
 that makes clear the distinction between an identifier for a non-information
 resource, information resource and specific representation resource to address
-the issues raised by Booth (2003-01-28).  Another important design criterion is
+the issues raised by Booth (2003-01-28).  Another important design criterion is
 that the http URIs should be dereferenceable using standard web server resource
 path conventions on any commonly used operating system, in order to make
 implementation of dereferencing as simple as possible. The ABNF syntax can be
@@ -929,8 +929,8 @@ summarized as: </p>
 
 <p class=MsoNormal><span class=BNFinline><span style='font-size:10.0pt'>ginURI =</span></span>
 <span class=BNFinline><span style='font-size:10.0pt'>&quot;http:&quot;
-&quot;//&quot; uriHost “/” URIscheme “/” nameAuthority “/”<br>
-  resourcePath  [“/” resourceSpecificString] [( “/” / “/” representationPart )]</span></span></p>
+&quot;//&quot; uriHost "/" URIscheme "/" nameAuthority "/"<br>
+  resourcePath  ["/" resourceSpecificString] [( "/" / "/" representationPart )]</span></span></p>
 
 <h1><a name="_Toc445107643"></a><a name="_Toc254960997">Introduction</a></h1>
 
@@ -1101,7 +1101,7 @@ non-information resources, and the URIs are expected to be dereferenceable
 using the existing DNS system on the Internet, careful consideration is necessary
 to clarify what is actually identified. As pointed out by Booth (2003-01-28)
 there are at least four distinct but related resources that we might like to identify
-using an HTTP URI, e.g.  &quot;http://resources.usgin.org/granite&quot;. These
+using an HTTP URI, e.g.  &quot;http://resources.usgin.org/granite&quot;. These
 are:</p>
 
 <p class=MsoNormal style='margin-left:60.0pt;text-indent:-.5in'>1.<span
@@ -1266,13 +1266,13 @@ summarized here from RFC3986 (<a href="http://tools.ietf.org/html/rfc3986">http:
 &quot;//&quot; authority path-abempty <span class=BNFCommentChar>; path begins
 with &quot;/&quot; or is empty</span></p>
 
-<p class=BNF style='text-indent:.5in'>/ path-absolute   <span
+<p class=BNF style='text-indent:.5in'>/ path-absolute   <span
 class=BNFCommentChar>; begins with &quot;/&quot; but not &quot;//&quot;</span></p>
 
-<p class=BNF style='text-indent:.5in'>/ path-rootless   <span
+<p class=BNF style='text-indent:.5in'>/ path-rootless   <span
 class=BNFCommentChar>; begins with a segment</span></p>
 
-<p class=BNF style='text-indent:.5in'>/ path-empty      <span
+<p class=BNF style='text-indent:.5in'>/ path-empty      <span
 class=BNFCommentChar>; zero characters</span></p>
 
 <p class=BNF>authority = [ userinfo &quot;@&quot; ] host [ &quot;:&quot; port ]</p>
@@ -1307,15 +1307,15 @@ is not immediately apparent, and should limit these names to no more than 255
 characters in length.</p>
 
 <p class=MsoNormal>URIs that are hierarchical in nature use the slash
-&quot;/&quot; character for separating hierarchical components.  For some file
+&quot;/&quot; character for separating hierarchical components.  For some file
 systems, a &quot;/&quot; character (used to denote the hierarchical structure
 of a URI) is the delimiter used to construct a file name hierarchy, and thus
-the URI path will look similar to a file pathname.  This does NOT imply that
+the URI path will look similar to a file pathname.  This does NOT imply that
 the resource is a file or that the URI maps to an actual file system pathname. </p>
 
 <h2><a name="_Toc445107650"></a><a name="_Toc254961004">http URI scheme</a></h2>
 
-<p class=MsoNormal>http URI’s are formally defined in  <a
+<p class=MsoNormal>http URI’s are formally defined in  <a
 href="http://tools.ietf.org/html/rfc2616">RFC2616</a> (Fielding et al.,
 1999-06), which imports definitions of &quot;URI-reference&quot;,
 &quot;absoluteURI&quot;, &quot;relativeURI&quot;, &quot;port&quot;,
@@ -1347,7 +1347,7 @@ class=BNFinline><span style='font-size:10.0pt'>host:port</span></span> part of
 the URI as part of the actual resource identifier, these do not matter (see
 below).</p>
 
-<p class=MsoNormal> If the port is empty or not given, port 80 is assumed. The
+<p class=MsoNormal> If the port is empty or not given, port 80 is assumed. The
 semantics are that the identified resource is located at the server listening
 for TCP connections on that port of that host, and the Request-URI for the
 resource is abs_path (RFC 2616, section 5.1.2). The use of IP addresses in URLs
@@ -1358,7 +1358,7 @@ class=BNFinline><span style='font-size:10.0pt'>Request-URI</span></span> is a
 Uniform Resource Identifier and identifies the resource upon which to apply the
 http request.</p>
 
-<p class=BNF> Request-URI  = &quot;*&quot; | absoluteURI | abs_path | authority</p>
+<p class=BNF> Request-URI  = &quot;*&quot; | absoluteURI | abs_path | authority</p>
 
 <p class=MsoNormal>The four options for Request-URI are dependent on the nature
 of the request.</p>
@@ -1379,37 +1379,37 @@ class=BNFinline><span style='font-size:10.0pt'>http_URL</span></span> as
 specified in RFC2616. See <i>Appendix 1. Collected ABNF for URI, RFC-3986</i><i>
 </i>for explanation of BNF not defined here.</p>
 
-<p class=BNF>httpURI = &quot;http:&quot; &quot;//&quot; uriHost “/” URIscheme
-“/” identifier</p>
+<p class=BNF>httpURI = &quot;http:&quot; &quot;//&quot; uriHost "/" URIscheme
+"/" identifier</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>ginURI = &quot;http:&quot; &quot;//&quot; uriHost “/uri-gin/”
+<p class=BNF>ginURI = &quot;http:&quot; &quot;//&quot; uriHost "/uri-gin/"
 identifier</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>URIscheme = “uri-” safestring </p>
+<p class=BNF>URIscheme = "uri-" safestring </p>
 
 <p class=BNF>uriHost = ( IP-literal / IPv4address / reg-name ) [ &quot;:&quot;
 port ]</p>
 
-<p class=BNF>port  = *DIGIT</p>
+<p class=BNF>port  = *DIGIT</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>identifier = resourcePart [ (“/” / “/” representationPart ) ] <span
+<p class=BNF>identifier = resourcePart [ ("/" / "/" representationPart ) ] <span
 class=BNFCommentChar>; for a non-information resource, the resource part has a
 terminal ‘/’; an information resource URI is not terminated by a ‘/’.</span></p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>resourcePart = nameAuthority “/” resourcePath  [ “/” resourceSpecificString
+<p class=BNF>resourcePart = nameAuthority "/" resourcePath  [ "/" resourceSpecificString
 ]</p>
 
 <p class=BNF>nameAuthority = safeString</p>
 
-<p class=BNF>resourcePath =  resourceType *( “/” resourceType )</p>
+<p class=BNF>resourcePath =  resourceType *( "/" resourceType )</p>
 
 <p class=BNF>resourceType = safeString</p>
 
@@ -1425,7 +1425,7 @@ special semantics to other special characters (&quot;-&quot; / &quot;.&quot; /
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>representationPart = safeString [ “.” safeString ]<span
+<p class=BNF>representationPart = safeString [ "." safeString ]<span
 class=BNFCommentChar> ; If a ‘.’ is present, the identified representation is
 implied to be a specific format, which may be different from the canonical
 form. Note that syntactically (and conceptually), an abstract representation
@@ -1447,15 +1447,15 @@ various operating systems. </span></p>
 
 <p class=BNF>safeString_np = safeBoundChar <br>
 [ *( ALPHA / DIGIT / &quot;-&quot; / &quot;_&quot; / &quot;~&quot; /
-pct-encoded) ] safeBoundChar  <span class=BNFCommentChar>; a safe­String with
+pct-encoded) ] safeBoundChar  <span class=BNFCommentChar>; a safe­String with
 no contained ‘.’ characters</span></p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>unreserved  = ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; /
+<p class=BNF>unreserved  = ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; /
 &quot;_&quot; / &quot;~&quot; </p>
 
-<p class=BNF>pct-encoded = &quot;%&quot; HEXDIG HEXDIG  <span
+<p class=BNF>pct-encoded = &quot;%&quot; HEXDIG HEXDIG  <span
 class=BNFCommentChar>; e.g. %20 for space, from RFC3986</span></p>
 
 <h2><a name="_Toc445107652"></a><a name="_Toc254961006">Interpretation of a
@@ -1490,21 +1490,21 @@ with web architecture, but it is useful.</p>
 
 <p class=Definition style='margin-bottom:6.0pt'>Summary of URI syntax: <span
 class=BNFinline><span style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot;
-uriHost “/uri-gin/” nameAuthority “/”<br>
- resourcePath “/” [ resourceSpecificString ] [( “/” / “/” representationPart )]</span></span><span
+uriHost "/uri-gin/" nameAuthority "/"<br>
+ resourcePath "/" [ resourceSpecificString ] [( "/" / "/" representationPart )]</span></span><span
 class=BNFinline><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
 color:windowtext'> </span></span></p>
 
 <p class=Definition style='margin-bottom:6.0pt'>URI for a non information
-resource: <span class=BNFinline><span style='font-size:10.0pt'> &quot;http:&quot;
-&quot;//&quot; uriHost “/uri-gin/” nameAuthority “/”  resourcePath [ “/”
-resourceSpecificString ] “/” . </span></span>The terminal ‘/’ denotes that the
+resource: <span class=BNFinline><span style='font-size:10.0pt'> &quot;http:&quot;
+&quot;//&quot; uriHost "/uri-gin/" nameAuthority "/"  resourcePath [ "/"
+resourceSpecificString ] "/" . </span></span>The terminal ‘/’ denotes that the
 identified resource is a non-information resource.</p>
 
-<p class=Definition>URI for an information resource:   <span class=BNFinline><span
-style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot; uriHost “/uri-gin/”
-nameAuthority “/”<br>
-  resourcePath “/” safeString_np</span></span> . Absence of a terminal ‘/’ denotes
+<p class=Definition>URI for an information resource:   <span class=BNFinline><span
+style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot; uriHost "/uri-gin/"
+nameAuthority "/"<br>
+  resourcePath "/" safeString_np</span></span> . Absence of a terminal ‘/’ denotes
 that the identified resource is an information resource. Absence of a ‘.’ indicates
 that identifier is not for a specific representation. The resourceType
 definition should specify dereferencing behavior when specific representation
@@ -1512,8 +1512,8 @@ is not identified.</p>
 
 <p class=Definition>URI for Specific representation of a resource: <span
 class=BNFinline><span style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot;
-uriHost “/uri-gin/” nameAuthority “/” resourcePath [“/” resourceSpecificString ]
-[( “/” / “/” representationPart )]. </span></span> Absence of a terminal ‘/’,
+uriHost "/uri-gin/" nameAuthority "/" resourcePath ["/" resourceSpecificString ]
+[( "/" / "/" representationPart )]. </span></span> Absence of a terminal ‘/’,
 and the presence of a ‘.’ in the last segment of the URI denotes that the
 identified resource is a representation (which is an information resource).</p>
 
@@ -1538,10 +1538,10 @@ RFC1123 (Braden, 1989). Such a name consists of a sequence of domain labels
 separated by &quot;.&quot;, each domain label starting and ending with an
 alphanumeric character and possibly also containing &quot;-&quot; characters. RFC3986
 (Berners-Lee et al., 2005) states that URI producers should limit these names
-to no more than 255 characters in length.  </p>
+to no more than 255 characters in length.  </p>
 
 <p class=Definition><span class=BNFinline><span style='font-size:10.0pt'>resourcePart
--- </span></span>The sequence of characters between “uri-gin/” and the last “/”
+-- </span></span>The sequence of characters between "uri-gin/" and the last "/"
 in <span class=BNFinline><span style='font-size:10.0pt'>URI</span></span>
 constitute an identifier for a resource that may have several possible
 associated information resources, which may be specific representations
@@ -1575,14 +1575,14 @@ Definition of <span class=BNFinline><span style='font-size:10.0pt'>resourceSpeci
 syntax should be in the resource type definition. The string should include
 version information if appropriate. Recommended practice for a term in a
 vocabulary is to include the resource­SpecificString for the vocabulary,
-followed by “.”, and then a string identifying the term in the scope of that vocabulary
+followed by ".", and then a string identifying the term in the scope of that vocabulary
 (see concept example, below).</p>
 
 <p class=Definition><span class=BNFinline><span style='font-size:10.0pt'>representationPart</span></span>
 is intended to identify a representation of the preceding resource part. If a
-“. safestring” segment is present, the <span class=BNFinline><span
+". safestring" segment is present, the <span class=BNFinline><span
 style='font-size:10.0pt'>representationPart </span></span>identifies a specific
-representation. If no “.” is present, the <span class=BNFinline><span
+representation. If no "." is present, the <span class=BNFinline><span
 style='font-size:10.0pt'>representationPart</span></span> identifies an
 abstract document. Dereferencing behavior for such an identifier is defined in
 the associated resource type definition. Note that an abstract document is an
@@ -1628,9 +1628,9 @@ provide additional functionality for this resource type.</p>
 
 <p class=MsoNormal>String comparisons of USGIN URIs to determine equivalence
 are based on the <span class=BNFinline><span style='font-size:10.0pt'>URIscheme
-“/” identifier </span></span>part of the URI. Thus the following URI pairs are
-equivalent. “http://resources.usgin.org/uri-gin/azgs/person/steveRichard/cv/cv20100110.doc”
-and “http://geon.org:88/uri-gin/azgs/person/steveRichard/cv/cv20100110.doc”
+"/" identifier </span></span>part of the URI. Thus the following URI pairs are
+equivalent. "http://resources.usgin.org/uri-gin/azgs/person/steveRichard/cv/cv20100110.doc"
+and "http://geon.org:88/uri-gin/azgs/person/steveRichard/cv/cv20100110.doc"
 identify the same representation of the same resource. </p>
 
 <h2><a name="_Toc445107654"></a><a name="_Toc254961008">Fragments</a></h2>
@@ -1694,10 +1694,10 @@ provide access to the functionality of the resource—thus may present a web
 interface for the resource, or enable download of a file containing code that
 will provide the functionality on the client machine. For practical purposes,
 USGIN proposes a non-information abstract view of a functional resource like <a
-name="OLE_LINK4"></a><a name="OLE_LINK3">“spreadsheetApplication/MicrosoftExcel/</a>”
+name="OLE_LINK4"></a><a name="OLE_LINK3">"spreadsheetApplication/MicrosoftExcel/</a>"
 (to identify the Microsoft Excel Application), an information view that would
-be a particular software implementation of the functionality: “spreadsheetApplication/MicrosoftExcel/­winExcel11_8316_8221”,
-and a particular representation would be a file format: “spreadsheetApplication/MicrosoftExcel/winExcel11_8316_8221.msi”.
+be a particular software implementation of the functionality: "spreadsheetApplication/MicrosoftExcel/­winExcel11_8316_8221",
+and a particular representation would be a file format: "spreadsheetApplication/MicrosoftExcel/winExcel11_8316_8221.msi".
 See Examples section.</p>
 
 <h1><a name="_Toc254961012"></a><a name="_Toc445107658">Meta-resource
@@ -1722,7 +1722,7 @@ itself, thus a special URI is used to identify top level nameAuthorities: http:/
 This construction is used mostly for branding purposes such that top-level
 authorities are not presented as subsidiary to the USGIN organization. Any name
 authority registered at this level may defined sub authorities within the
-purview of that authority using URIs like “http://resources.usgin.org/uri-gin/azgs/authority/azgs.mapping/”</p>
+purview of that authority using URIs like "http://resources.usgin.org/uri-gin/azgs/authority/azgs.mapping/"</p>
 
 <h1><a name="_Toc445107659">Comparison with other schemes</a></h1>
 
@@ -1731,13 +1731,13 @@ purview of that authority using URIs like “http://resources.usgin.org/uri-gin/az
 <p class=MsoNormal>Mandates use of http URIs. </p>
 
 <p class=MsoNormal><span class=BNFinline><span style='font-size:10.0pt'>&quot;http:&quot;
-&quot;//&quot; uriHost “/” uriType “/” <br>
- resourcePath “/” [ resourceSpecificString ] [( “/” / “/” representationPart )]</span></span></p>
+&quot;//&quot; uriHost "/" uriType "/" <br>
+ resourcePath "/" [ resourceSpecificString ] [( "/" / "/" representationPart )]</span></span></p>
 
 <p class=MsoNormal><span class=BNFinline><span style='font-size:10.0pt'>uriType
-= (“id” / “doc” / “def” / “set”)</span></span></p>
+= ("id" / "doc" / "def" / "set")</span></span></p>
 
-<p class=MsoNormal>Elements not defined here are reused from the <i>USGIN URI syntax</i> section, above.  This scheme implies the name authority by the
+<p class=MsoNormal>Elements not defined here are reused from the <i>USGIN URI syntax</i> section, above.  This scheme implies the name authority by the
 use of data.gov.uk in the uriHost element. The URI types are defined somewhat
 fuzzily in Davidson (2009-10): </p>
 
@@ -1764,7 +1764,7 @@ reference specifies an instance of the concept. </p>
 on what they identify and usage. These have mostly been invented for didactic
 and experimental purposes, and are NOT NORMATIVE. In the future the URIs in
 this section will be real URIs that will dereference according to the
-provisions of the scheme outlined here.  To emphasize that the uriHost name is
+provisions of the scheme outlined here.  To emphasize that the uriHost name is
 not part of the actual identifier, the token ‘http://%uriHost%/’ is used
 instead of an actual registered domain name, except for the normative name
 authority registry for the USGIN URI scheme, which resides at
@@ -1779,14 +1779,14 @@ necessary as a foundation for trust that identifiers are properly dereferenced.<
 
 <h3><a name="_Toc445107663">URI host</a></h3>
 
-<p class=Example>http://resources.usgin.org/  <span class=BNFCommentChar><span
+<p class=Example>http://resources.usgin.org/  <span class=BNFCommentChar><span
 style='font-size:10.0pt'>; special URI that identifies the URI host. This URI
 should dereference to an HTML page that identifies the authority maintaining
 the host, and the URI profiles that are known to this host.</span></span></p>
 
 <h3><a name="_Toc445107664">URI profile</a></h3>
 
-<p class=Example>http://resources.usgin.org/uri-gin/  <span
+<p class=Example>http://resources.usgin.org/uri-gin/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for the URI
 profile (‘uri-gin’ in this example). Assuming this profile is one of the URI
 profiles know to the host, this URI should dereference to an HTML page
@@ -1797,17 +1797,17 @@ interpretation of URIs conforming to the profile.</span></span></p>
 
 <h3><a name="_Toc445107665">Naming authority</a></h3>
 
-<p class=Example>http://resources.usgin.org/uri-gin/usgin/  <span
+<p class=Example>http://resources.usgin.org/uri-gin/usgin/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for top level
 name authority usgin under the uri-gin URI scheme. Assuming the URI profile
 (‘uri-gin’) is one of the profiles know to the host, this </span></span></p>
 
-<p class=Example>http://resources.usgin.org/uri-gin/azgs/  <span
+<p class=Example>http://resources.usgin.org/uri-gin/azgs/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for top level
 name authority azgs under the uri-gin URI scheme. This authority is recognized
 to define subauthorities (see below)</span></span></p>
 
-<p class=Example>http://%uriHost%/uri-gin/azgs/authority/azgs.mapping/  <span
+<p class=Example>http://%uriHost%/uri-gin/azgs/authority/azgs.mapping/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; URI for the azgs.mapping
 subauthority under the azgs name authority.</span></span></p>
 
@@ -1837,7 +1837,7 @@ non-information resource that is physical entity.</span></span></p>
 version of a vocabulary. Dereferencing behavior is defined in resource type
 definition for urn-gin/cgi/conceptScheme</span></span></p>
 
-<p class=Example>http://%uriHost%/uri-gin/cgi/conceptScheme/simpleLithology200811/SimpleLithology200811.skos.rdf      <span
+<p class=Example>http://%uriHost%/uri-gin/cgi/conceptScheme/simpleLithology200811/SimpleLithology200811.skos.rdf      <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; skos encoded
 representation of the vocabulary. </span></span></p>
 
@@ -1941,7 +1941,7 @@ unit.</span></span></p>
 
 <h3><a name="_Toc445107674"></a><a name="_Toc254961022">Document</a></h3>
 
-<p class=Example>http://%uriHost%/uri-gin/usgin/doc/USGIN_ISO_metadatahttp://%uriHost%/usgin1_1/  
+<p class=Example>http://%uriHost%/uri-gin/usgin/doc/USGIN_ISO_metadatahttp://%uriHost%/usgin1_1/  
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; this URI identifies
 an ‘abstract’ document named USGIN_ISO_metadata1_1</span></span></p>
 
@@ -1965,7 +1965,7 @@ resource for conducting the search</span></span></p>
 bibliography search web application; this resource bundles a collection of
 operations, and the dataset that is available to invoke operations on. Technically,
 the representation is whatever php, javascript, html, xml etc. code is
-presented to the client that dereferences this identifier.  The content that
+presented to the client that dereferences this identifier.  The content that
 the resource accesses is a different resource—a bibliography dataset in this
 case.</span></span></p>
 
@@ -2000,7 +2000,7 @@ description document like an OGC getCapabilities or WSDL document.</span></span>
 registry (start at https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/CGIRegisterRegister)</p>
 
 <p class=Definition>urn:cgi:register:CGI:resourceClass -- http://%uriHost%/uri-gin/cgi/register/resourceClass/
-or http://cgi.iugs.org/uri-gin/cgi/register/resourceClass  or http://cgi.iugs.org/uri_cgi/cgi/register/resourceClass 
+or http://cgi.iugs.org/uri-gin/cgi/register/resourceClass  or http://cgi.iugs.org/uri_cgi/cgi/register/resourceClass 
 if CGI wants to define different conventions for use of the URI scheme</p>
 
 <p class=Definition>urn:cgi:register:CGI:classifierScheme -- http://%uriHost%/uri-gin/cgi/register/classifierScheme/</p>
@@ -2237,7 +2237,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    identifier. May include association with other resources related to the
    registered resource. Typically registered items are non-information resources.
    Each register should specify the canonical representation used for items in
-   the register. Canonical representation of register is  </span></p>
+   the register. Canonical representation of register is  </span></p>
    </td>
   </tr>
   <tr style='page-break-inside:avoid'>
@@ -2419,7 +2419,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    images of textual materials if the intent of the image is to capture the
    textual content as opposed to the appearance of the medium containing the
    text. Instances of the type Still Image must also be describable as
-   instances of the broader type Image.  Subtype of Image.</span></p>
+   instances of the broader type Image.  Subtype of Image.</span></p>
    </td>
   </tr>
   <tr style='page-break-inside:avoid'>
@@ -3133,7 +3133,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
    padding:0in 5.4pt 0in 5.4pt'>
    <p class=Tableentry><span style='font-size:9.0pt'>A computer program in
-   source or compiled form. Comment:  Examples include a C source file,
+   source or compiled form. Comment:  Examples include a C source file,
    MS-Windows .exe executable, or Perl script.</span></p>
    </td>
   </tr>
@@ -3968,7 +3968,7 @@ Track, STD 3, RFC 1123.</p>
 
 <p class=Reference>Berners-Lee, T., Fielding, R., Masinter, L., 1998-08,
 Uniform Resource Identifiers (URI): Generic Syntax: The Internet Society
-Network Working Group Standards Track,  RFC 2396 (superseded by RFC-3986),
+Network Working Group Standards Track,  RFC 2396 (superseded by RFC-3986),
 accessed at <a href="http://tools.ietf.org/html/rfc2396">http://tools.ietf.org/html/rfc2396</a>
 2010-02-19.</p>
 
@@ -3999,7 +3999,7 @@ href="http://tools.ietf.org/html/rfc2616">http://tools.ietf.org/html/rfc2616</a>
 <p class=Reference>Lewis, Rhys, editor, 2007-05-31, Dereferencing HTTP URIs:
 W3C Draft Tag Finding, 10 p., accessed at <a
 href="http://www.w3.org/2001/tag/doc/httpRange-14/2007-05-31/HttpRange-14.html"><span
-style='font-size:10.5pt'>http://www.w3.org/2001/tag/doc/httpRange-14/2007-05-31/HttpRange-14.html</span></a> 
+style='font-size:10.5pt'>http://www.w3.org/2001/tag/doc/httpRange-14/2007-05-31/HttpRange-14.html</span></a> 
 2010-02-19 (note current version dated 2007-10-04 strikes all content from this
 document).</p>
 
@@ -4037,13 +4037,13 @@ name="_Ref254517222">Appendix 1. Collected ABNF for URI</a>, RFC-3986</h1>
 <p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>;
 path begins with &quot;/&quot; or is empty</span></span></p>
 
-<p class=BNF>   / path-absolute      <span class=BNFCommentChar>; begins with
+<p class=BNF>   / path-absolute      <span class=BNFCommentChar>; begins with
 &quot;/&quot; but not &quot;//&quot;</span></p>
 
-<p class=BNF>   / path-rootless      <span class=BNFCommentChar>; begins with
+<p class=BNF>   / path-rootless      <span class=BNFCommentChar>; begins with
 1*pchar, e.g. urn:cgi:classifier</span></p>
 
-<p class=BNF>   / path-empty         <span class=BNFCommentChar>; zero
+<p class=BNF>   / path-empty         <span class=BNFCommentChar>; zero
 characters e.g. foo:?fred</span></p>
 
 <p class=BNF>&nbsp;</p>
@@ -4052,12 +4052,12 @@ characters e.g. foo:?fred</span></p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>absolute-URI  = scheme &quot;:&quot; hier-part [ &quot;?&quot;
+<p class=BNF>absolute-URI  = scheme &quot;:&quot; hier-part [ &quot;?&quot;
 query ]</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>relative-ref  = relative-part [ &quot;?&quot; query ] [
+<p class=BNF>relative-ref  = relative-part [ &quot;?&quot; query ] [
 &quot;#&quot; fragment ]</p>
 
 <p class=BNF>&nbsp;</p>
@@ -4067,13 +4067,13 @@ query ]</p>
 <p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>;
 path begins with &quot;/&quot; or is empty</span></span></p>
 
-<p class=BNF>   / path-absolute      <span class=BNFCommentChar>; begins with
+<p class=BNF>   / path-absolute      <span class=BNFCommentChar>; begins with
 &quot;/&quot; but not &quot;//&quot;</span></p>
 
-<p class=BNF>   / path-noscheme      <span class=BNFCommentChar>; begins with a
+<p class=BNF>   / path-noscheme      <span class=BNFCommentChar>; begins with a
 non-colon segment</span></p>
 
-<p class=BNF>   / path-empty         <span class=BNFCommentChar>; zero
+<p class=BNF>   / path-empty         <span class=BNFCommentChar>; zero
 characters</span></p>
 
 <p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>;the
@@ -4084,23 +4084,23 @@ path-rootless but not path-noscheme.</span></span></p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>scheme  = ALPHA *( ALPHA / DIGIT / &quot;+&quot; / &quot;-&quot; /
+<p class=BNF>scheme  = ALPHA *( ALPHA / DIGIT / &quot;+&quot; / &quot;-&quot; /
 &quot;.&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
 <p class=BNF>authority = [ userinfo &quot;@&quot; ] host [ &quot;:&quot; port ]</p>
 
-<p class=BNF>userinfo  = *( unreserved / pct-encoded / sub-delims /
+<p class=BNF>userinfo  = *( unreserved / pct-encoded / sub-delims /
 &quot;:&quot; )</p>
 
-<p class=BNF>host  = IP-literal / IPv4address / reg-name</p>
+<p class=BNF>host  = IP-literal / IPv4address / reg-name</p>
 
-<p class=BNF>port  = *DIGIT</p>
+<p class=BNF>port  = *DIGIT</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>IP-literal  = &quot;[&quot; ( IPv6address / IPvFuture  )
+<p class=BNF>IP-literal  = &quot;[&quot; ( IPv6address / IPvFuture  )
 &quot;]&quot;</p>
 
 <p class=BNF>&nbsp;</p>
@@ -4110,69 +4110,69 @@ sub-delims / &quot;:&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>IPv6address =    6( h16 &quot;:&quot; ) ls32</p>
+<p class=BNF>IPv6address =    6( h16 &quot;:&quot; ) ls32</p>
 
-<p class=BNF>   /   &quot;::&quot; 5( h16 &quot;:&quot; ) ls32</p>
+<p class=BNF>   /   &quot;::&quot; 5( h16 &quot;:&quot; ) ls32</p>
 
-<p class=BNF>   / [   h16 ] &quot;::&quot; 4( h16 &quot;:&quot; ) ls32</p>
+<p class=BNF>   / [   h16 ] &quot;::&quot; 4( h16 &quot;:&quot; ) ls32</p>
 
-<p class=BNF>   / [ *1( h16 &quot;:&quot; ) h16 ] &quot;::&quot; 3( h16
+<p class=BNF>   / [ *1( h16 &quot;:&quot; ) h16 ] &quot;::&quot; 3( h16
 &quot;:&quot; ) ls32</p>
 
-<p class=BNF>   / [ *2( h16 &quot;:&quot; ) h16 ] &quot;::&quot; 2( h16
+<p class=BNF>   / [ *2( h16 &quot;:&quot; ) h16 ] &quot;::&quot; 2( h16
 &quot;:&quot; ) ls32</p>
 
-<p class=BNF>   / [ *3( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  h16
+<p class=BNF>   / [ *3( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  h16
 &quot;:&quot; ls32</p>
 
-<p class=BNF>   / [ *4( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  ls32</p>
+<p class=BNF>   / [ *4( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  ls32</p>
 
-<p class=BNF>   / [ *5( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  h16</p>
+<p class=BNF>   / [ *5( h16 &quot;:&quot; ) h16 ] &quot;::&quot;  h16</p>
 
-<p class=BNF>   / [ *6( h16 &quot;:&quot; ) h16 ] &quot;::&quot;</p>
+<p class=BNF>   / [ *6( h16 &quot;:&quot; ) h16 ] &quot;::&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>h16   = 1*4HEXDIG</p>
+<p class=BNF>h16   = 1*4HEXDIG</p>
 
-<p class=BNF>ls32  = ( h16 &quot;:&quot; h16 ) / IPv4address</p>
+<p class=BNF>ls32  = ( h16 &quot;:&quot; h16 ) / IPv4address</p>
 
 <p class=BNF>IPv4address = dec-octet &quot;.&quot; dec-octet &quot;.&quot;
 dec-octet &quot;.&quot; dec-octet</p>
 
-<p class=BNF>dec-octet = DIGIT   ; 0-9</p>
+<p class=BNF>dec-octet = DIGIT   ; 0-9</p>
 
-<p class=BNF>   / %x31-39 DIGIT ; 10-99</p>
+<p class=BNF>   / %x31-39 DIGIT ; 10-99</p>
 
-<p class=BNF>   / &quot;1&quot; 2DIGIT  ; 100-199</p>
+<p class=BNF>   / &quot;1&quot; 2DIGIT  ; 100-199</p>
 
-<p class=BNF>   / &quot;2&quot; %x30-34 DIGIT ; 200-249</p>
+<p class=BNF>   / &quot;2&quot; %x30-34 DIGIT ; 200-249</p>
 
-<p class=BNF>   / &quot;25&quot; %x30-35  ; 250-255</p>
-
-<p class=BNF>&nbsp;</p>
-
-<p class=BNF>reg-name  = *( unreserved / pct-encoded / sub-delims )</p>
+<p class=BNF>   / &quot;25&quot; %x30-35  ; 250-255</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>path  = path-abempty  <span class=BNFCommentChar>; begins with
+<p class=BNF>reg-name  = *( unreserved / pct-encoded / sub-delims )</p>
+
+<p class=BNF>&nbsp;</p>
+
+<p class=BNF>path  = path-abempty  <span class=BNFCommentChar>; begins with
 &quot;/&quot; or is empty</span></p>
 
-<p class=BNF>  / path-absolute <span class=BNFCommentChar>; begins with
+<p class=BNF>  / path-absolute <span class=BNFCommentChar>; begins with
 &quot;/&quot; but not &quot;//&quot;</span></p>
 
-<p class=BNF>  / path-noscheme <span class=BNFCommentChar>; begins with a
+<p class=BNF>  / path-noscheme <span class=BNFCommentChar>; begins with a
 non-colon segment</span></p>
 
-<p class=BNF>  / path-rootless <span class=BNFCommentChar>; begins with a
+<p class=BNF>  / path-rootless <span class=BNFCommentChar>; begins with a
 segment</span></p>
 
-<p class=BNF>  / path-empty  <span class=BNFCommentChar>; zero characters</span></p>
+<p class=BNF>  / path-empty  <span class=BNFCommentChar>; zero characters</span></p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>path-abempty  = *( &quot;/&quot; segment )</p>
+<p class=BNF>path-abempty  = *( &quot;/&quot; segment )</p>
 
 <p class=BNF>path-absolute = &quot;/&quot; [ segment-nz *( &quot;/&quot;
 segment ) ]</p>
@@ -4181,19 +4181,19 @@ segment ) ]</p>
 
 <p class=BNF>path-rootless = segment-nz *( &quot;/&quot; segment )</p>
 
-<p class=BNF>path-empty  = 0&lt;pchar&gt;</p>
+<p class=BNF>path-empty  = 0&lt;pchar&gt;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>segment = *pchar        <span class=BNFCommentChar>;may be empty</span></p>
+<p class=BNF>segment = *pchar        <span class=BNFCommentChar>;may be empty</span></p>
 
-<p class=BNF>segment-nz  = 1*pchar   <span class=BNFCommentChar>;non-empty
+<p class=BNF>segment-nz  = 1*pchar   <span class=BNFCommentChar>;non-empty
 string</span></p>
 
 <p class=BNF>segment-nz-nc = 1*( unreserved / pct-encoded / sub-delims /
 &quot;@&quot; )</p>
 
-<p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>  
+<p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>  
 ; non-zero-length segment without any colon &quot;:&quot;</span></span></p>
 
 <p class=BNF>&nbsp;</p>
@@ -4201,27 +4201,27 @@ string</span></p>
 <p class=BNF>pchar = unreserved / pct-encoded / sub-delims / &quot;:&quot; /
 &quot;@&quot;</p>
 
-<p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>  
-; any character except “/”, “?”, “#”, “[“, “]”</span></span></p>
+<p class=MsoNormal><span class=BNFCommentChar><span style='font-size:10.0pt'>  
+; any character except "/", "?", "#", "[", "]"</span></span></p>
 
 <p class=BNF>query = *( pchar / &quot;/&quot; / &quot;?&quot; )</p>
 
-<p class=BNF>fragment  = *( pchar / &quot;/&quot; / &quot;?&quot; )</p>
+<p class=BNF>fragment  = *( pchar / &quot;/&quot; / &quot;?&quot; )</p>
 
 <p class=BNF>pct-encoded = &quot;%&quot; HEXDIG HEXDIG</p>
 
-<p class=BNF>unreserved  = ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; /
+<p class=BNF>unreserved  = ALPHA / DIGIT / &quot;-&quot; / &quot;.&quot; /
 &quot;_&quot; / &quot;~&quot;</p>
 
-<p class=BNF>reserved  = gen-delims / sub-delims</p>
+<p class=BNF>reserved  = gen-delims / sub-delims</p>
 
-<p class=BNF>gen-delims  = &quot;:&quot; / &quot;/&quot; / &quot;?&quot; /
+<p class=BNF>gen-delims  = &quot;:&quot; / &quot;/&quot; / &quot;?&quot; /
 &quot;#&quot; / &quot;[&quot; / &quot;]&quot; / &quot;@&quot;</p>
 
-<p class=BNF>sub-delims  = &quot;!&quot; / &quot;$&quot; / &quot;&amp;&quot; /
+<p class=BNF>sub-delims  = &quot;!&quot; / &quot;$&quot; / &quot;&amp;&quot; /
 &quot;'&quot; / &quot;(&quot; / &quot;)&quot;</p>
 
-<p class=BNF>   / &quot;*&quot; / &quot;+&quot; / &quot;,&quot; / &quot;;&quot;
+<p class=BNF>   / &quot;*&quot; / &quot;+&quot; / &quot;,&quot; / &quot;;&quot;
 / &quot;=&quot;</p>
 
 <h1><a name="_Toc445107682"></a><a name="_Ref255281799"></a><a
@@ -4232,141 +4232,141 @@ name="_Toc254961029">Appendix 2. Collected ABNF for URI, RFC-2396</a></h1>
 <p class=BNF>URI-reference = [ absoluteURI | relativeURI ] [ &quot;#&quot;
 fragment ]</p>
 
-<p class=BNF>absoluteURI   = scheme &quot;:&quot; ( hier_part | opaque_part )</p>
+<p class=BNF>absoluteURI   = scheme &quot;:&quot; ( hier_part | opaque_part )</p>
 
-<p class=BNF>relativeURI   = ( net_path | abs_path | rel_path ) [ &quot;?&quot;
+<p class=BNF>relativeURI   = ( net_path | abs_path | rel_path ) [ &quot;?&quot;
 query ]</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>hier_part     = ( net_path | abs_path ) [ &quot;?&quot; query ]</p>
+<p class=BNF>hier_part     = ( net_path | abs_path ) [ &quot;?&quot; query ]</p>
 
-<p class=BNF>opaque_part   = uric_no_slash *uric</p>
+<p class=BNF>opaque_part   = uric_no_slash *uric</p>
 
 <p class=BNF>&nbsp;</p>
 
 <p class=BNF>uric_no_slash = unreserved | escaped | &quot;;&quot; |
 &quot;?&quot; | &quot;:&quot; | &quot;@&quot; |</p>
 
-<p class=BNF>                &quot;&amp;&quot; | &quot;=&quot; | &quot;+&quot;
+<p class=BNF>                &quot;&amp;&quot; | &quot;=&quot; | &quot;+&quot;
 | &quot;$&quot; | &quot;,&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>net_path      = &quot;//&quot; authority [ abs_path ]</p>
+<p class=BNF>net_path      = &quot;//&quot; authority [ abs_path ]</p>
 
-<p class=BNF>abs_path      = &quot;/&quot;  path_segments</p>
+<p class=BNF>abs_path      = &quot;/&quot;  path_segments</p>
 
-<p class=BNF>rel_path      = rel_segment [ abs_path ]</p>
+<p class=BNF>rel_path      = rel_segment [ abs_path ]</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>rel_segment   = 1*( unreserved | escaped |</p>
+<p class=BNF>rel_segment   = 1*( unreserved | escaped |</p>
 
-<p class=BNF>                    &quot;;&quot; | &quot;@&quot; |
+<p class=BNF>                    &quot;;&quot; | &quot;@&quot; |
 &quot;&amp;&quot; | &quot;=&quot; | &quot;+&quot; | &quot;$&quot; |
 &quot;,&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>scheme        = alpha *( alpha | digit | &quot;+&quot; |
+<p class=BNF>scheme        = alpha *( alpha | digit | &quot;+&quot; |
 &quot;-&quot; | &quot;.&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>authority     = server | reg_name</p>
+<p class=BNF>authority     = server | reg_name</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>reg_name      = 1*( unreserved | escaped | &quot;$&quot; |
+<p class=BNF>reg_name      = 1*( unreserved | escaped | &quot;$&quot; |
 &quot;,&quot; |</p>
 
-<p class=BNF>                    &quot;;&quot; | &quot;:&quot; | &quot;@&quot;
+<p class=BNF>                    &quot;;&quot; | &quot;:&quot; | &quot;@&quot;
 | &quot;&amp;&quot; | &quot;=&quot; | &quot;+&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>server        = [ [ userinfo &quot;@&quot; ] hostport ]</p>
+<p class=BNF>server        = [ [ userinfo &quot;@&quot; ] hostport ]</p>
 
-<p class=BNF>userinfo      = *( unreserved | escaped |</p>
+<p class=BNF>userinfo      = *( unreserved | escaped |</p>
 
-<p class=BNF>                   &quot;;&quot; | &quot;:&quot; |
+<p class=BNF>                   &quot;;&quot; | &quot;:&quot; |
 &quot;&amp;&quot; | &quot;=&quot; | &quot;+&quot; | &quot;$&quot; |
 &quot;,&quot; )</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>hostport      = host [ &quot;:&quot; port ]</p>
+<p class=BNF>hostport      = host [ &quot;:&quot; port ]</p>
 
-<p class=BNF>host          = hostname | IPv4address</p>
+<p class=BNF>host          = hostname | IPv4address</p>
 
-<p class=BNF>hostname      = *( domainlabel &quot;.&quot; ) toplabel [
+<p class=BNF>hostname      = *( domainlabel &quot;.&quot; ) toplabel [
 &quot;.&quot; ]</p>
 
-<p class=BNF>domainlabel   = alphanum | alphanum *( alphanum | &quot;-&quot; )
+<p class=BNF>domainlabel   = alphanum | alphanum *( alphanum | &quot;-&quot; )
 alphanum</p>
 
-<p class=BNF>toplabel      = alpha | alpha *( alphanum | &quot;-&quot; )
+<p class=BNF>toplabel      = alpha | alpha *( alphanum | &quot;-&quot; )
 alphanum</p>
 
-<p class=BNF>IPv4address   = 1*digit &quot;.&quot; 1*digit &quot;.&quot;
+<p class=BNF>IPv4address   = 1*digit &quot;.&quot; 1*digit &quot;.&quot;
 1*digit &quot;.&quot; 1*digit</p>
 
-<p class=BNF>port          = *digit</p>
+<p class=BNF>port          = *digit</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>path          = [ abs_path | opaque_part ]</p>
+<p class=BNF>path          = [ abs_path | opaque_part ]</p>
 
 <p class=BNF>path_segments = segment *( &quot;/&quot; segment )</p>
 
-<p class=BNF>segment       = *pchar *( &quot;;&quot; param )</p>
+<p class=BNF>segment       = *pchar *( &quot;;&quot; param )</p>
 
-<p class=BNF>param         = *pchar</p>
+<p class=BNF>param         = *pchar</p>
 
-<p class=BNF>pchar         = unreserved | escaped |</p>
+<p class=BNF>pchar         = unreserved | escaped |</p>
 
-<p class=BNF>                &quot;:&quot; | &quot;@&quot; | &quot;&amp;&quot;
+<p class=BNF>                &quot;:&quot; | &quot;@&quot; | &quot;&amp;&quot;
 | &quot;=&quot; | &quot;+&quot; | &quot;$&quot; | &quot;,&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>query         = *uric</p>
+<p class=BNF>query         = *uric</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>fragment      = *uric</p>
+<p class=BNF>fragment      = *uric</p>
 
-<p class=BNF>uric          = reserved | unreserved | escaped</p>
+<p class=BNF>uric          = reserved | unreserved | escaped</p>
 
-<p class=BNF>reserved      = &quot;;&quot; | &quot;/&quot; | &quot;?&quot; |
+<p class=BNF>reserved      = &quot;;&quot; | &quot;/&quot; | &quot;?&quot; |
 &quot;:&quot; | &quot;@&quot; | &quot;&amp;&quot; | &quot;=&quot; |
 &quot;+&quot; |</p>
 
-<p class=BNF>                      &quot;$&quot; | &quot;,&quot;</p>
+<p class=BNF>                      &quot;$&quot; | &quot;,&quot;</p>
 
-<p class=BNF>unreserved    = alphanum | mark</p>
+<p class=BNF>unreserved    = alphanum | mark</p>
 
-<p class=BNF>mark          = &quot;-&quot; | &quot;_&quot; | &quot;.&quot; |
+<p class=BNF>mark          = &quot;-&quot; | &quot;_&quot; | &quot;.&quot; |
 &quot;!&quot; | &quot;~&quot; | &quot;*&quot; | &quot;'&quot; |</p>
 
-<p class=BNF>                      &quot;(&quot; | &quot;)&quot;</p>
+<p class=BNF>                      &quot;(&quot; | &quot;)&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>escaped       = &quot;%&quot; hex hex</p>
+<p class=BNF>escaped       = &quot;%&quot; hex hex</p>
 
-<p class=BNF>hex           = digit | &quot;A&quot; | &quot;B&quot; |
+<p class=BNF>hex           = digit | &quot;A&quot; | &quot;B&quot; |
 &quot;C&quot; | &quot;D&quot; | &quot;E&quot; | &quot;F&quot; |</p>
 
-<p class=BNF>                              &quot;a&quot; | &quot;b&quot; |
+<p class=BNF>                              &quot;a&quot; | &quot;b&quot; |
 &quot;c&quot; | &quot;d&quot; | &quot;e&quot; | &quot;f&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
-<p class=BNF>alphanum      = alpha | digit</p>
+<p class=BNF>alphanum      = alpha | digit</p>
 
-<p class=BNF>alpha         = lowalpha | upalpha</p>
+<p class=BNF>alpha         = lowalpha | upalpha</p>
 
 <p class=BNF>&nbsp;</p>
 
@@ -4374,28 +4374,28 @@ alphanum</p>
 &quot;d&quot; | &quot;e&quot; | &quot;f&quot; | &quot;g&quot; | &quot;h&quot; |
 &quot;i&quot; |</p>
 
-<p class=BNF>           &quot;j&quot; | &quot;k&quot; | &quot;l&quot; |
+<p class=BNF>           &quot;j&quot; | &quot;k&quot; | &quot;l&quot; |
 &quot;m&quot; | &quot;n&quot; | &quot;o&quot; | &quot;p&quot; | &quot;q&quot; |
 &quot;r&quot; |</p>
 
-<p class=BNF>           &quot;s&quot; | &quot;t&quot; | &quot;u&quot; |
+<p class=BNF>           &quot;s&quot; | &quot;t&quot; | &quot;u&quot; |
 &quot;v&quot; | &quot;w&quot; | &quot;x&quot; | &quot;y&quot; | &quot;z&quot;</p>
 
-<p class=BNF>upalpha  = &quot;A&quot; | &quot;B&quot; | &quot;C&quot; |
+<p class=BNF>upalpha  = &quot;A&quot; | &quot;B&quot; | &quot;C&quot; |
 &quot;D&quot; | &quot;E&quot; | &quot;F&quot; | &quot;G&quot; | &quot;H&quot; |
 &quot;I&quot; |</p>
 
-<p class=BNF>           &quot;J&quot; | &quot;K&quot; | &quot;L&quot; |
+<p class=BNF>           &quot;J&quot; | &quot;K&quot; | &quot;L&quot; |
 &quot;M&quot; | &quot;N&quot; | &quot;O&quot; | &quot;P&quot; | &quot;Q&quot; |
 &quot;R&quot; |</p>
 
-<p class=BNF>           &quot;S&quot; | &quot;T&quot; | &quot;U&quot; |
+<p class=BNF>           &quot;S&quot; | &quot;T&quot; | &quot;U&quot; |
 &quot;V&quot; | &quot;W&quot; | &quot;X&quot; | &quot;Y&quot; | &quot;Z&quot;</p>
 
-<p class=BNF>digit    = &quot;0&quot; | &quot;1&quot; | &quot;2&quot; |
+<p class=BNF>digit    = &quot;0&quot; | &quot;1&quot; | &quot;2&quot; |
 &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; |</p>
 
-<p class=BNF>           &quot;8&quot; | &quot;9&quot;</p>
+<p class=BNF>           &quot;8&quot; | &quot;9&quot;</p>
 
 <p class=BNF>&nbsp;</p>
 
@@ -4407,55 +4407,55 @@ Windows 2000 and later, Unix (versions?). Sources: <a
 href="http://www.portfoliofaq.com/pfaq/FAQ00352.htm">http://www.portfoliofaq.com/pfaq/FAQ00352.htm</a></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Disallowed filename characters. “:” “ ?”,
-“;”, “,” (All OSs). </p>
+style='font-family:Symbol'>·</span>  Disallowed filename characters. ":" " ?",
+";", "," (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  &gt;64 filename characters including
+style='font-family:Symbol'>·</span>  &gt;64 filename characters including
 extension. (Windows: ISO9660+Joliet CD or Hybrid CD partition). May need to be
 honored to allow for archiving resource directories on CD?</p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  No extension - extensions are mandatory
+style='font-family:Symbol'>·</span>  No extension - extensions are mandatory
 for Windows and the only means for Portfolio to tell file type. (Windows, Mac
 OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename has &gt;1 period - Portfolio may
+style='font-family:Symbol'>·</span>  Filename has &gt;1 period - Portfolio may
 misinterpret extension. (Windows, Mac OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Extension may be wrong, i.e. not 3
+style='font-family:Symbol'>·</span>  Extension may be wrong, i.e. not 3
 characters. (Windows, Mac OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Illegal characters in path to file - same
+style='font-family:Symbol'>·</span>  Illegal characters in path to file - same
 issue as #1 but for path. (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Deprecated characters in path to file -
+style='font-family:Symbol'>·</span>  Deprecated characters in path to file -
 same issue as #2 but for path. (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename may not begin with a period.
+style='font-family:Symbol'>·</span>  Filename may not begin with a period.
 (Windows not allowed, Mac treats as a hidden file) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename may not end in a period. (Windows
+style='font-family:Symbol'>·</span>  Filename may not end in a period. (Windows
 not allowed - OS 'throws away' the trailing period when naming/reading so
 incorrect matching vs. Mac name) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Names conflicting with some of Win OS' old
+style='font-family:Symbol'>·</span>  Names conflicting with some of Win OS' old
 DOS functions (Not allowed in either upper or lowercase and with or without a
 file extension or as a file extension: COM1 to COM9 inclusive, LPT1 to LPT9 inclusive,
 CON, PRN, AUX, CLOCK$ and NUL) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Case sensitivity. Windows OSs (and IIS web
+style='font-family:Symbol'>·</span>  Case sensitivity. Windows OSs (and IIS web
 servers) aren't case sensitive. Most other OSs (and web servers) are. </p>
 
-<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Filenames ought
+<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Filenames ought
 not to begin with a hyphen (Unix systems my interpret the filename as a flag to
 a command line call)</p>
 
