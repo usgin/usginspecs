@@ -1083,7 +1083,7 @@ al., 1999-06). The W3C Technical Architecture group has determined that if an
 HTTP response code of 200 (a successful retrieval) is given, then the URI identifies
 an information resource, but with no such response, or with a different code,
 no such assumption could be made. (See <a
-href="http://www.w3.org/2001/tag/fissues.html#httpRange-14">http://www.w3.org/2001/tag/­issues.html#httpRange-14</a>;
+href="http://www.w3.org/2001/tag/fissues.html#httpRange-14">http://www.w3.org/2001/tag/Â­issues.html#httpRange-14</a>;
 Berners-Lee, 2005-06-09, <a href="http://www.w3.org/DesignIssues/HTTP-URI2">http://www.w3.org/DesignIssues/-HTTP-URI2</a>;
 <a href="http://www.w3.org/2001/tag/doc/httpRange-14/2007-05-31/HttpRange-14">http://www.w3.org/2001/tag/doc/httpRange-14/2007-05-31/HttpRange-14</a>,
 from which all content was subsequently removed (2007-10-4) ). The issue with
@@ -1107,7 +1107,7 @@ are:</p>
 <p class=MsoNormal style='margin-left:60.0pt;text-indent:-.5in'>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>The actual string that is contained in the quotes. This will be referred
-to here as the identifier label (Booth uses ‘name’), and is an information
+to here as the identifier label (Booth uses â€˜nameâ€™), and is an information
 resource. This is not an interesting case for the requirements outlined below.
 Enclosing the string in quotes will be used to indicate that the reference is to
 the actual sequence of characters (independent of the character encoding used).</p>
@@ -1118,10 +1118,10 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 <p class=MsoNormal style='margin-left:60.0pt;text-indent:-.5in'>3.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>A ‘Web Location’, which can be thought of as the information resource
+</span>A â€˜Web Locationâ€™, which can be thought of as the information resource
 that is produced by an HTTP GET request using that URI. There is no guarantee
 that the same web location will GET the same document instance when it is
-recalled. As such, a Web Location identifies an abstraction. An organization’s
+recalled. As such, a Web Location identifies an abstraction. An organizationâ€™s
 home page is a typical example. An analogous resource would be a document in a
 computer file system that may be edited and change over time, or converted to a
 different format, but is considered to be the same document because of its
@@ -1315,7 +1315,7 @@ the resource is a file or that the URI maps to an actual file system pathname. <
 
 <h2><a name="_Toc445107650"></a><a name="_Toc254961004">http URI scheme</a></h2>
 
-<p class=MsoNormal>http URI’s are formally defined in  <a
+<p class=MsoNormal>http URIâ€™s are formally defined in  <a
 href="http://tools.ietf.org/html/rfc2616">RFC2616</a> (Fielding et al.,
 1999-06), which imports definitions of &quot;URI-reference&quot;,
 &quot;absoluteURI&quot;, &quot;relativeURI&quot;, &quot;port&quot;,
@@ -1342,7 +1342,7 @@ style='font-size:10.0pt'>hier-part</span></span> in a URI. The significant
 difference between RFC3986 and RFC2396 in this case is that the revised
 specification allows an empty path string, which is proscribed by RFC2396. The <span
 class=BNFinline><span style='font-size:10.0pt'>host</span></span> rule is also
-revised in RFC3986, but because USGIN URI’s do not treat the <span
+revised in RFC3986, but because USGIN URIâ€™s do not treat the <span
 class=BNFinline><span style='font-size:10.0pt'>host:port</span></span> part of
 the URI as part of the actual resource identifier, these do not matter (see
 below).</p>
@@ -1373,7 +1373,7 @@ name="_Toc254961005">USGIN URI syntax</a> </h1>
 <p class=MsoNormal>URI scheme specifications must define their own syntax so
 that all strings matching their scheme-specific syntax will also match the RFC3986
 <span class=BNFinline><span style='font-size:10.0pt'>absolute-URI</span></span>
-grammar, as described in Section 4.3 of RFC3986. USGIN URI’s are intended to
+grammar, as described in Section 4.3 of RFC3986. USGIN URIâ€™s are intended to
 function as locators as well, so their syntax must also conform to rules for <span
 class=BNFinline><span style='font-size:10.0pt'>http_URL</span></span> as
 specified in RFC2616. See <i>Appendix 1. Collected ABNF for URI, RFC-3986</i><i>
@@ -1400,7 +1400,7 @@ port ]</p>
 
 <p class=BNF>identifier = resourcePart [ ("/" / "/" representationPart ) ] <span
 class=BNFCommentChar>; for a non-information resource, the resource part has a
-terminal ‘/’; an information resource URI is not terminated by a ‘/’.</span></p>
+terminal â€˜/â€™; an information resource URI is not terminated by a â€˜/â€™.</span></p>
 
 <p class=BNF>&nbsp;</p>
 
@@ -1414,9 +1414,9 @@ terminal ‘/’; an information resource URI is not terminated by a ‘/’.</span></p>
 <p class=BNF>resourceType = safeString</p>
 
 <p class=BNF>resourceSpecificString = safeString <span class=BNFCommentChar>; Recommended
-practice is to use the ‘.’ to represent hierarchical relationships that are not
-reflected in the primary hierarchy represented by the ‘/’ delimiters. See
-examples. This use of ‘/’ vs. ‘.’ for representing hierarchy in the URI is up
+practice is to use the â€˜.â€™ to represent hierarchical relationships that are not
+reflected in the primary hierarchy represented by the â€˜/â€™ delimiters. See
+examples. This use of â€˜/â€™ vs. â€˜.â€™ for representing hierarchy in the URI is up
 to the name authority, and may be motivated by decisions about organization of
 a directory-based dereferencing implementation, a to represent semantics in the
 resource identification. Individual name authorities may decide to assign
@@ -1426,10 +1426,10 @@ special semantics to other special characters (&quot;-&quot; / &quot;.&quot; /
 <p class=BNF>&nbsp;</p>
 
 <p class=BNF>representationPart = safeString [ "." safeString ]<span
-class=BNFCommentChar> ; If a ‘.’ is present, the identified representation is
+class=BNFCommentChar> ; If a â€˜.â€™ is present, the identified representation is
 implied to be a specific format, which may be different from the canonical
 form. Note that syntactically (and conceptually), an abstract representation
-(no contained ‘.’in representationPart string) is equivalent to a resource­Specific­String
+(no contained â€˜.â€™in representationPart string) is equivalent to a resourceÂ­SpecificÂ­String
 for an information resource. Distinction between a resourceSpecificString and
 representation part is defined by naming authority in the resourceType definition.</span></p>
 
@@ -1447,8 +1447,8 @@ various operating systems. </span></p>
 
 <p class=BNF>safeString_np = safeBoundChar <br>
 [ *( ALPHA / DIGIT / &quot;-&quot; / &quot;_&quot; / &quot;~&quot; /
-pct-encoded) ] safeBoundChar  <span class=BNFCommentChar>; a safe­String with
-no contained ‘.’ characters</span></p>
+pct-encoded) ] safeBoundChar  <span class=BNFCommentChar>; a safeÂ­String with
+no contained â€˜.â€™ characters</span></p>
 
 <p class=BNF>&nbsp;</p>
 
@@ -1471,20 +1471,20 @@ that are intended for various parts of URIs minted using this scheme. </p>
 that makes clear the distinction between an identifier for a non-information
 resource, information resource and specific representation resource to address
 the issues raised by Booth (2003-01-28). The basic rules are that (1) a terminal
-‘/’ denotes that the identified resource is a non-information resource,
+â€˜/â€™ denotes that the identified resource is a non-information resource,
 otherwise it is an information resource, and (2) that absence of a terminal
-‘/’, and the presence of a ‘.’ in the last segment of the URI denotes that the
+â€˜/â€™, and the presence of a â€˜.â€™ in the last segment of the URI denotes that the
 identified resource is a representation (which is an information resource). If
-there is no terminal ‘/’ and no ‘.’ in the last segment, then the identified
-resource is an abstract information resource, like ‘USGS home page’ or ‘current
-National Weather Service Forecast discussion for Tucson’. </p>
+there is no terminal â€˜/â€™ and no â€˜.â€™ in the last segment, then the identified
+resource is an abstract information resource, like â€˜USGS home pageâ€™ or â€˜current
+National Weather Service Forecast discussion for Tucsonâ€™. </p>
 
 <p class=MsoNormal>Note that this interpretability is intended to assist users
 understand what the identifier is identifying. If the identifier is for a
 non-information resource the URI cannot be interpreted to provide information
 about the nature of the representation that will be returned when the
-identifier is dereferenced on the web – this follows the tenants of ‘web
-opacity’. Use of ‘.’ and a file extension to identify a particular
+identifier is dereferenced on the web â€“ this follows the tenants of â€˜web
+opacityâ€™. Use of â€˜.â€™ and a file extension to identify a particular
 representation format is common practice; purists will debate its consistency
 with web architecture, but it is useful.</p>
 
@@ -1498,14 +1498,14 @@ color:windowtext'> </span></span></p>
 <p class=Definition style='margin-bottom:6.0pt'>URI for a non information
 resource: <span class=BNFinline><span style='font-size:10.0pt'> &quot;http:&quot;
 &quot;//&quot; uriHost "/uri-gin/" nameAuthority "/"  resourcePath [ "/"
-resourceSpecificString ] "/" . </span></span>The terminal ‘/’ denotes that the
+resourceSpecificString ] "/" . </span></span>The terminal â€˜/â€™ denotes that the
 identified resource is a non-information resource.</p>
 
 <p class=Definition>URI for an information resource:   <span class=BNFinline><span
 style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot; uriHost "/uri-gin/"
 nameAuthority "/"<br>
-  resourcePath "/" safeString_np</span></span> . Absence of a terminal ‘/’ denotes
-that the identified resource is an information resource. Absence of a ‘.’ indicates
+  resourcePath "/" safeString_np</span></span> . Absence of a terminal â€˜/â€™ denotes
+that the identified resource is an information resource. Absence of a â€˜.â€™ indicates
 that identifier is not for a specific representation. The resourceType
 definition should specify dereferencing behavior when specific representation
 is not identified.</p>
@@ -1513,8 +1513,8 @@ is not identified.</p>
 <p class=Definition>URI for Specific representation of a resource: <span
 class=BNFinline><span style='font-size:10.0pt'>&quot;http:&quot; &quot;//&quot;
 uriHost "/uri-gin/" nameAuthority "/" resourcePath ["/" resourceSpecificString ]
-[( "/" / "/" representationPart )]. </span></span> Absence of a terminal ‘/’,
-and the presence of a ‘.’ in the last segment of the URI denotes that the
+[( "/" / "/" representationPart )]. </span></span> Absence of a terminal â€˜/â€™,
+and the presence of a â€˜.â€™ in the last segment of the URI denotes that the
 identified resource is a representation (which is an information resource).</p>
 
 <p class=MsoNormal>The following section has more detailed discussion of the
@@ -1556,7 +1556,7 @@ dereferencing behavior for the resource type.</p>
 
 <p class=Definition><span class=BNFinline><span style='font-size:10.0pt'>nameAuthority</span></span>
 A sequence of characters that identifies the naming authority for the
-identified resource, taken from the register with USGIN URI http://resources.usgin.org/uri-gin/usgin/­register/nameAuthority/.
+identified resource, taken from the register with USGIN URI http://resources.usgin.org/uri-gin/usgin/Â­register/nameAuthority/.
 This URI should dereference to access a list of registered name authorities,
 along with a description of other services that may be accessed for name
 authorities. </p>
@@ -1574,7 +1574,7 @@ A string that may have syntax specially scoped for a particular resource type.
 Definition of <span class=BNFinline><span style='font-size:10.0pt'>resourceSpecificString</span></span>
 syntax should be in the resource type definition. The string should include
 version information if appropriate. Recommended practice for a term in a
-vocabulary is to include the resource­SpecificString for the vocabulary,
+vocabulary is to include the resourceÂ­SpecificString for the vocabulary,
 followed by ".", and then a string identifying the term in the scope of that vocabulary
 (see concept example, below).</p>
 
@@ -1640,15 +1640,15 @@ intended to represent an individual resource. In general, a resource that is
 part of another resource is a different kind of resource, and will have a
 distinct resourceType path. Binding of parts to the whole should be available
 in the representations for the whole and part resources. For example a
-vocabulary term is a ‘classifier’ resource that is part of a ‘conceptScheme’.
+vocabulary term is a â€˜classifierâ€™ resource that is part of a â€˜conceptSchemeâ€™.
 The conceptScheme resource should include a listing of all classifiers that are
 part of that collection, and each contained classifier should contain a
-reference to the ‘owning’ concept­Scheme. Recommended approach for binding between
+reference to the â€˜owningâ€™ conceptÂ­Scheme. Recommended approach for binding between
 a part and some containing resource (e.g. a term in a vocabulary) in the URI is
-to use a ‘.’ hierarchy in the resourceSpecificString (see concept example
+to use a â€˜.â€™ hierarchy in the resourceSpecificString (see concept example
 below). Individual authorities may choose to implement dereferencing of
 fragments against URIs for container resources, but the URL using the URI
-fragment syntax (‘#’) should not be defined as the normative URI for the
+fragment syntax (â€˜#â€™) should not be defined as the normative URI for the
 resource.</p>
 
 <h2><a name="_Toc445107655"></a><a name="_Toc254961009">Versions</a></h2>
@@ -1657,8 +1657,8 @@ resource.</p>
 information in this URI scheme. Users are strongly encouraged to develop a
 system for including version information in identifiers for resources that are
 versioned. This system should distinguish between different versions, as well
-as identify the ‘current’ or ‘normative’ version (if these are different, and
-need to be identified…).</p>
+as identify the â€˜currentâ€™ or â€˜normativeâ€™ version (if these are different, and
+need to be identifiedâ€¦).</p>
 
 <h2><a name="_Toc445107656"></a><a name="_Toc254961010">Canonical forms</a></h2>
 
@@ -1675,7 +1675,7 @@ when an identifier is dereferenced. </p>
 <p class=MsoNormal><a name="_Toc254961011">Note that the canonical form is
 typically a particular representation of a document, like a formatted text document
 intended for people, or using some kind of formal syntax indented for machine
-consumption. This document has an identifier as a ‘document’ resource;
+consumption. This document has an identifier as a â€˜documentâ€™ resource;
 association with another resource as a canonical form is a role. Thus the
 document has two identifiers, one for the document itself, and one for the document
 in its role as the canonical representation of some other resource. The binding
@@ -1686,17 +1686,17 @@ registry.</a></p>
 
 <p class=MsoNormal>Functional resources are those that perform operations
 activated by user input via the web, or based on the content of the URL used to
-get the resource. An operation is a non-information concept—it can be invoked
+get the resource. An operation is a non-information conceptâ€”it can be invoked
 electronically, and the result can be transmitted electronically, but the
 actual activity can not. The concept of a representation for a functional
 resource is tricky. Dereferencing a URI for a functional resource should
-provide access to the functionality of the resource—thus may present a web
+provide access to the functionality of the resourceâ€”thus may present a web
 interface for the resource, or enable download of a file containing code that
 will provide the functionality on the client machine. For practical purposes,
 USGIN proposes a non-information abstract view of a functional resource like <a
 name="OLE_LINK4"></a><a name="OLE_LINK3">"spreadsheetApplication/MicrosoftExcel/</a>"
 (to identify the Microsoft Excel Application), an information view that would
-be a particular software implementation of the functionality: "spreadsheetApplication/MicrosoftExcel/­winExcel11_8316_8221",
+be a particular software implementation of the functionality: "spreadsheetApplication/MicrosoftExcel/Â­winExcel11_8316_8221",
 and a particular representation would be a file format: "spreadsheetApplication/MicrosoftExcel/winExcel11_8316_8221.msi".
 See Examples section.</p>
 
@@ -1705,7 +1705,7 @@ identifiers and registry structure</a></h1>
 
 <p class=MsoNormal>This section pertains to the implementation of a registry
 for USGIN URIs to allow dereferencing using web server and file-system paths. The
-defined URI syntax requires a URIScheme, nameAuthority, and resource­Type in
+defined URI syntax requires a URIScheme, nameAuthority, and resourceÂ­Type in
 any URI. Registration of resource types is in the scope of particular
 nameAuthorities, thus each name authority must have a registry/resourceType
 resource that is a vocabulary of resource categories defined by that authority.
@@ -1751,11 +1751,11 @@ document)</p>
 that may be used to categorize other resources</p>
 
 <p class=MsoNormal>set -- URI identifies a registry, or list of identifiers
-scoped to some unifying concept (e.g. schools, U. of Az master’s theses)</p>
+scoped to some unifying concept (e.g. schools, U. of Az masterâ€™s theses)</p>
 
 <p class=MsoNormal>The system does not appear to account for identifying events
 or functional entities. The resource path is modeled as a sequence of
-‘Concept/Reference’ pairs, in which the concept specifies a kind of thing, and
+â€˜Concept/Referenceâ€™ pairs, in which the concept specifies a kind of thing, and
 reference specifies an instance of the concept. </p>
 
 <h1><a name="_Toc445107661">Examples</a></h1>
@@ -1765,7 +1765,7 @@ on what they identify and usage. These have mostly been invented for didactic
 and experimental purposes, and are NOT NORMATIVE. In the future the URIs in
 this section will be real URIs that will dereference according to the
 provisions of the scheme outlined here.  To emphasize that the uriHost name is
-not part of the actual identifier, the token ‘http://%uriHost%/’ is used
+not part of the actual identifier, the token â€˜http://%uriHost%/â€™ is used
 instead of an actual registered domain name, except for the normative name
 authority registry for the USGIN URI scheme, which resides at
 http://resources.usgin.org.</p>
@@ -1774,7 +1774,7 @@ http://resources.usgin.org.</p>
 
 <p class=Example>Three special URI forms are defined for use with this URI
 scheme. These are identifiers for a URI host, a URI profile, and the
-authorities recognized for use with the URI profile. These ‘metalevel’ URIs are
+authorities recognized for use with the URI profile. These â€˜metalevelâ€™ URIs are
 necessary as a foundation for trust that identifiers are properly dereferenced.</p>
 
 <h3><a name="_Toc445107663">URI host</a></h3>
@@ -1788,7 +1788,7 @@ the host, and the URI profiles that are known to this host.</span></span></p>
 
 <p class=Example>http://resources.usgin.org/uri-gin/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for the URI
-profile (‘uri-gin’ in this example). Assuming this profile is one of the URI
+profile (â€˜uri-ginâ€™ in this example). Assuming this profile is one of the URI
 profiles know to the host, this URI should dereference to an HTML page
 explaining the purpose and scope of the URI profile, the authority responsible
 for the profile, a list of URI hosts trusted to dereference URIs in this
@@ -1800,7 +1800,7 @@ interpretation of URIs conforming to the profile.</span></span></p>
 <p class=Example>http://resources.usgin.org/uri-gin/usgin/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for top level
 name authority usgin under the uri-gin URI scheme. Assuming the URI profile
-(‘uri-gin’) is one of the profiles know to the host, this </span></span></p>
+(â€˜uri-ginâ€™) is one of the profiles know to the host, this </span></span></p>
 
 <p class=Example>http://resources.usgin.org/uri-gin/azgs/  <span
 class=BNFCommentChar><span style='font-size:10.0pt'>; special URI for top level
@@ -1813,13 +1813,13 @@ subauthority under the azgs name authority.</span></span></p>
 
 <p class=Example>http://%uriHost%/uri-gin/azgs.mapping/document/map/DGM37-HuachucaMountainN/
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; The mapping group
-is a sub authority under the azgs authority, responsible for assigning URI’s to
+is a sub authority under the azgs authority, responsible for assigning URIâ€™s to
 maps. (see Map examples for discussion of map URI).</span></span></p>
 
 <h2><a name="_Toc254961014"></a><a name="_Toc445107666">Resource URIs using the
 uri-gin profile</a></h2>
 
-<p class=MsoNormal>In these URIs, the string ‘%uriHost%’ is used instead of a particular
+<p class=MsoNormal>In these URIs, the string â€˜%uriHost%â€™ is used instead of a particular
 domain name to make it clear that the actual identifier is the part after the
 host identifier string.</p>
 
@@ -1867,7 +1867,7 @@ an organization within an organization.</span></span></p>
 
 <p class=Example>http://%uriHost%/uri-gin/azgs/organization/arizonaGeologicalSurvey/azgsIcon
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; this URI identifies
-an ‘abstract’ document that is the canonical representation of the icon for
+an â€˜abstractâ€™ document that is the canonical representation of the icon for
 AZGS.</span></span></p>
 
 <p class=Example>http://%uriHost%/uri-gin/azgs/organization/arizonaGeologicalSurvey/azgsIcon300_300.tif</p>
@@ -1943,15 +1943,15 @@ unit.</span></span></p>
 
 <p class=Example>http://%uriHost%/uri-gin/usgin/doc/USGIN_ISO_metadatahttp://%uriHost%/usgin1_1/  
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; this URI identifies
-an ‘abstract’ document named USGIN_ISO_metadata1_1</span></span></p>
+an â€˜abstractâ€™ document named USGIN_ISO_metadata1_1</span></span></p>
 
 <p class=Example>http://%uriHost%/uri-gin/usgin/doc/usginUSGIN_ISO_metadata1_1.doc
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; this URI identifies
-the ‘.doc’ representation of the abstract document named USGIN_ISO_metadata1_1</span></span></p>
+the â€˜.docâ€™ representation of the abstract document named USGIN_ISO_metadata1_1</span></span></p>
 
 <p class=Example>http://%http://%uriHost%/uri-gin/usgin/doc/usginUSGIN_ISO_metadata1_1.pdf
 <span class=BNFCommentChar><span style='font-size:10.0pt'>; this URI identifies
-the ‘.pdf’ representation of the abstract document named USGIN_ISO_metadata1_1</span></span></p>
+the â€˜.pdfâ€™ representation of the abstract document named USGIN_ISO_metadata1_1</span></span></p>
 
 <h3><a name="_Toc445107675"></a><a name="_Toc254961023">Web application</a></h3>
 
@@ -1966,7 +1966,7 @@ bibliography search web application; this resource bundles a collection of
 operations, and the dataset that is available to invoke operations on. Technically,
 the representation is whatever php, javascript, html, xml etc. code is
 presented to the client that dereferences this identifier.  The content that
-the resource accesses is a different resource—a bibliography dataset in this
+the resource accesses is a different resourceâ€”a bibliography dataset in this
 case.</span></span></p>
 
 <h3><a name="_Toc445107676"></a><a name="_Toc254961024">Application</a></h3>
@@ -2101,7 +2101,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    <p class=Tableentry><span style='font-size:9.0pt'>Default form is web page
    that includes a definition of the purose of the collection, the agent who
    maintains the collection, instructions for accessing the collection and a table
-   with URI’s for all items in the collection, </span></p>
+   with URIâ€™s for all items in the collection, </span></p>
    </td>
    <td width=377 valign=top style='width:225.9pt;border-top:none;border-left:
    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -2307,7 +2307,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    <p class=Tableentry><span style='font-size:9.0pt'>A collection of
    identifiable physical objects, unified based on some criteria. Criteria for
    defining a collection may be who collected, where curated, why collected,
-   kind of material…</span></p>
+   kind of materialâ€¦</span></p>
    </td>
   </tr>
   <tr style='page-break-inside:avoid'>
@@ -3062,8 +3062,8 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
    An implementation of an interface to some sort of digital resource, using
    either a 'pull' model in which client requests some content from the
    service, and receives that content in a single 'response' package, or a
-   ‘push’ model in which client establishes connection and monitors for change
-   events (update, new data…) from service. Difficult to draw line on when a
+   â€˜pushâ€™ model in which client establishes connection and monitors for change
+   events (update, new dataâ€¦) from service. Difficult to draw line on when a
    service provides 'files' and when it provides 'data', because responses are
    always in a form that could be considered a file. Also includes interfaces
    to digital resources that provide a continuous (with some sampling
@@ -3140,7 +3140,7 @@ system. Note this compilation should be considered an example, NOT NORMATIVE.</p
   <tr style='page-break-inside:avoid'>
    <td width=105 valign=top style='width:62.85pt;border:solid black 1.0pt;
    border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-   <p class=Tableentry><span style='font-size:9.0pt'>Stand-Alone­Application</span></p>
+   <p class=Tableentry><span style='font-size:9.0pt'>Stand-AloneÂ­Application</span></p>
    </td>
    <td width=182 valign=top style='width:109.05pt;border-top:none;border-left:
    none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
@@ -4407,55 +4407,55 @@ Windows 2000 and later, Unix (versions?). Sources: <a
 href="http://www.portfoliofaq.com/pfaq/FAQ00352.htm">http://www.portfoliofaq.com/pfaq/FAQ00352.htm</a></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Disallowed filename characters. ":" " ?",
+style='font-family:Symbol'>Â·</span>  Disallowed filename characters. ":" " ?",
 ";", "," (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  &gt;64 filename characters including
+style='font-family:Symbol'>Â·</span>  &gt;64 filename characters including
 extension. (Windows: ISO9660+Joliet CD or Hybrid CD partition). May need to be
 honored to allow for archiving resource directories on CD?</p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  No extension - extensions are mandatory
+style='font-family:Symbol'>Â·</span>  No extension - extensions are mandatory
 for Windows and the only means for Portfolio to tell file type. (Windows, Mac
 OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename has &gt;1 period - Portfolio may
+style='font-family:Symbol'>Â·</span>  Filename has &gt;1 period - Portfolio may
 misinterpret extension. (Windows, Mac OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Extension may be wrong, i.e. not 3
+style='font-family:Symbol'>Â·</span>  Extension may be wrong, i.e. not 3
 characters. (Windows, Mac OS X). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Illegal characters in path to file - same
+style='font-family:Symbol'>Â·</span>  Illegal characters in path to file - same
 issue as #1 but for path. (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Deprecated characters in path to file -
+style='font-family:Symbol'>Â·</span>  Deprecated characters in path to file -
 same issue as #2 but for path. (All OSs). </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename may not begin with a period.
+style='font-family:Symbol'>Â·</span>  Filename may not begin with a period.
 (Windows not allowed, Mac treats as a hidden file) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Filename may not end in a period. (Windows
+style='font-family:Symbol'>Â·</span>  Filename may not end in a period. (Windows
 not allowed - OS 'throws away' the trailing period when naming/reading so
 incorrect matching vs. Mac name) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Names conflicting with some of Win OS' old
+style='font-family:Symbol'>Â·</span>  Names conflicting with some of Win OS' old
 DOS functions (Not allowed in either upper or lowercase and with or without a
 file extension or as a file extension: COM1 to COM9 inclusive, LPT1 to LPT9 inclusive,
 CON, PRN, AUX, CLOCK$ and NUL) </p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
-style='font-family:Symbol'>·</span>  Case sensitivity. Windows OSs (and IIS web
+style='font-family:Symbol'>Â·</span>  Case sensitivity. Windows OSs (and IIS web
 servers) aren't case sensitive. Most other OSs (and web servers) are. </p>
 
-<p class=MsoNormal><span style='font-family:Symbol'>·</span>  Filenames ought
+<p class=MsoNormal><span style='font-family:Symbol'>Â·</span>  Filenames ought
 not to begin with a hyphen (Unix systems my interpret the filename as a flag to
 a command line call)</p>
 
